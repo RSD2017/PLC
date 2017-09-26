@@ -1,0 +1,3 @@
+VAR
+	alive_led : BOOL := TRUE;
+END_VAR

@@ -1,0 +1,4 @@
+Im_alive	"$(AS_CPU_PATH)/Im_alive/Main.st.o" "$(AS_CPU_PATH)/Im_alive/_bur_pvdef.st.o"  -o "$(AS_CPU_PATH)/Im_alive/a.out"  -G V4.1.2  -T SG4  -M IA32  -specs=I386specs_brelf -nostdlib
+Conveyor	"$(AS_CPU_PATH)/Conveyor/Cyclic.st.o" "$(AS_CPU_PATH)/Conveyor/Init.st.o" "$(AS_CPU_PATH)/Conveyor/Exit.st.o" "$(AS_CPU_PATH)/Conveyor/_bur_pvdef.st.o"  -o "$(AS_CPU_PATH)/Conveyor/a.out"  -G V4.1.2  -T SG4  -M IA32  -specs=I386specs_brelf -nostdlib
+MES_Comm	"$(AS_CPU_PATH)/MES_Comm/Cyclic.st.o" "$(AS_CPU_PATH)/MES_Comm/Init.st.o" "$(AS_CPU_PATH)/MES_Comm/Exit.st.o" "$(AS_CPU_PATH)/MES_Comm/_bur_pvdef.st.o"  -o "$(AS_CPU_PATH)/MES_Comm/a.out"  -G V4.1.2  -T SG4  -M IA32  -specs=I386specs_brelf -nostdlib
+Camera	"$(AS_CPU_PATH)/Camera/Client.st.o" "$(AS_CPU_PATH)/Camera/_bur_pvdef.st.o"  -o "$(AS_CPU_PATH)/Camera/a.out"  -G V4.1.2  -T SG4  -M IA32  -specs=I386specs_brelf -nostdlib

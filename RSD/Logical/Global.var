@@ -1,0 +1,4 @@
+VAR
+	Enable_in : BOOL;
+	Sensor_in : BOOL;
+END_VAR

@@ -1,0 +1,3 @@
+VAR
+	Conveyor_out : BOOL := FALSE;
+END_VAR

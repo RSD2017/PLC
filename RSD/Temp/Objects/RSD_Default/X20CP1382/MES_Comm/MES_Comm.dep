@@ -1,0 +1,3 @@
+$(AS_PROJECT_PATH)/Logical/Libraries/AsHttp/AsHttp.fun
+$(AS_PROJECT_PATH)/Logical/Libraries/AsHttp/AsHttp.var
+$(AS_PROJECT_PATH)/Logical/MES_Comm/Variables.var

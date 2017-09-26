@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version="4.3.3.196"?>
+<ConfigInfo xmlns="http://br-automation.co.at/AS/BuildInfo">
+  <TaskClass
+    Name="Cyclic#1" />
+  <TaskClass
+    Name="Cyclic#2">
+    <Task
+      Name="Im_alive"
+      Disable="false"
+      Source="Im_alive"
+      Language="IEC">
+      <InternalFile
+        Path="C:\projects\RSD\Temp\Objects\RSD_Default\X20CP1382\Im_alive\Main.st.var" />
+      <File
+        Path="C:\projects\RSD\Logical\Im_alive\Types.typ" />
+      <File
+        Path="C:\projects\RSD\Logical\Im_alive\Variables.var" />
+    </Task>
+  </TaskClass>
+  <TaskClass
+    Name="Cyclic#3" />
+  <TaskClass
+    Name="Cyclic#4">
+    <Task
+      Name="Conveyor"
+      Disable="false"
+      Source="Conveyor"
+      Language="IEC">
+      <InternalFile
+        Path="C:\projects\RSD\Temp\Objects\RSD_Default\X20CP1382\Conveyor\Cyclic.st.var" />
+      <InternalFile
+        Path="C:\projects\RSD\Temp\Objects\RSD_Default\X20CP1382\Conveyor\Init.st.var" />
+      <InternalFile
+        Path="C:\projects\RSD\Temp\Objects\RSD_Default\X20CP1382\Conveyor\Exit.st.var" />
+      <File
+        Path="C:\projects\RSD\Logical\Conveyor\Types.typ" />
+      <File
+        Path="C:\projects\RSD\Logical\Conveyor\Variables.var" />
+    </Task>
+    <Task
+      Name="MES_Comm"
+      Disable="false"
+      Source="MES_Comm"
+      Language="IEC">
+      <InternalFile
+        Path="C:\projects\RSD\Temp\Objects\RSD_Default\X20CP1382\MES_Comm\Cyclic.st.var" />
+      <InternalFile
+        Path="C:\projects\RSD\Temp\Objects\RSD_Default\X20CP1382\MES_Comm\Init.st.var" />
+      <InternalFile
+        Path="C:\projects\RSD\Temp\Objects\RSD_Default\X20CP1382\MES_Comm\Exit.st.var" />
+      <File
+        Path="C:\projects\RSD\Logical\MES_Comm\Types.typ" />
+      <File
+        Path="C:\projects\RSD\Logical\MES_Comm\Variables.var" />
+    </Task>
+    <Task
+      Name="Camera"
+      Disable="false"
+      Source="Camera"
+      Language="IEC">
+      <File
+        Path="C:\projects\RSD\Logical\Camera\LibAsTCP1_ST.typ" />
+      <File
+        Path="C:\projects\RSD\Logical\Camera\LibAsTCP1_ST.var" />
+      <InternalFile
+        Path="C:\projects\RSD\Temp\Objects\RSD_Default\X20CP1382\Camera\Client.st.var" />
+      <File
+        Path="C:\projects\RSD\Logical\Camera\Client.typ" />
+      <File
+        Path="C:\projects\RSD\Logical\Camera\Client.var" />
+    </Task>
+  </TaskClass>
+  <TaskClass
+    Name="Cyclic#5" />
+  <TaskClass
+    Name="Cyclic#6" />
+  <TaskClass
+    Name="Cyclic#7" />
+  <TaskClass
+    Name="Cyclic#8" />
+</ConfigInfo>
