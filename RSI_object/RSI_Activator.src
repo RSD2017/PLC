@@ -1,0 +1,58 @@
+&ACCESS RVP
+&REL 6
+&PARAM EDITMASK = *
+&PARAM TEMPLATE = C:\KRC\Roboter\Template\vorgabe
+DEF RSIActivator()
+
+; Declaration of KRL variables
+DECL INT ret	; Return value for RSI commands
+DECL INT CONTID	; ContainerID
+
+;FOLD INI
+  ;FOLD BASISTECH INI
+    GLOBAL INTERRUPT DECL 3 WHEN $STOPMESS==TRUE DO IR_STOPM ( )
+    INTERRUPT ON 3 
+    BAS (#INITMOV,0 )
+  ;ENDFOLD (BASISTECH INI)
+  ;FOLD USER INI
+    ;Make your modifications here
+
+  ;ENDFOLD (USER INI)
+;ENDFOLD (INI)
+
+; Move to start position
+PTP {A1 0, A2 -90, A3 90, A4 0, A5 0, A6 0}
+
+; Create RSI Context 
+ret = RSI_CREATE("RSI_Activator.rsi",CONTID,TRUE)
+IF (ret <> RSIOK) THEN
+  HALT
+ENDIF
+
+; Start RSI execution
+ret = RSI_ON(#ABSOLUTE, #IPO)
+IF (ret <> RSIOK) THEN
+  HALT
+ENDIF
+
+$OUT[1200] = TRUE
+
+; Sensor guided movement
+WHILE TRUE
+	WAIT FOR $IN[1200]
+		$OUT[1200] = FALSE
+		PTP {A1 0, A2 -90, A3 90, A4 0, A5 0, A6 90}
+		PTP {A1 0, A2 -90, A3 90, A4 0, A5 0, A6 0}
+		$OUT[1200] = TRUE
+	
+ENDWHILE
+
+; Turn off RSI 
+ret = RSI_OFF()
+IF (ret <> RSIOK) THEN
+  HALT
+ENDIF
+
+PTP {A1 0, A2 -90, A3 90, A4 0, A5 0, A6 0}
+
+END
