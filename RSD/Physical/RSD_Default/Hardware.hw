@@ -25,6 +25,10 @@
       <Parameter ID="InaNodeNumber" Value="0" />
     </Connector>
     <Parameter ID="ConfigurationID" Value="RSD_RSD_Default" />
+    <Parameter ID="SystemTick" Value="1000" />
+    <Parameter ID="Cyclic1Duration" Value="2000" />
+    <Parameter ID="Cyclic1Tolerance" Value="2000" />
+    <Parameter ID="Cyclic1Stack" Value="16384" />
   </Module>
   <Module Name="X20TB1F" Type="X20TB1F" Version="1.0.0.0" />
   <Module Name="X20TB1F1" Type="X20TB1F" Version="1.0.0.0" />

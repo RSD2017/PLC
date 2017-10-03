@@ -1,5 +1,5 @@
-UnmarkedObjectFolder := C:/projects/RSD/Physical/RSD_Default/X20CP1382/AccessAndSecurity/UserRoleSystem
-MarkedObjectFolder := C:/projects/RSD/Physical/RSD_Default/X20CP1382/AccessAndSecurity/UserRoleSystem
+UnmarkedObjectFolder := C:/projects/PLC/RSD/Physical/RSD_Default/X20CP1382/AccessAndSecurity/UserRoleSystem
+MarkedObjectFolder := C:/projects/PLC/RSD/Physical/RSD_Default/X20CP1382/AccessAndSecurity/UserRoleSystem
 
 $(AS_CPU_PATH)/Role.br: \
 	$(AS_PROJECT_CPU_PATH)/AccessAndSecurity/UserRoleSystem/Role.role

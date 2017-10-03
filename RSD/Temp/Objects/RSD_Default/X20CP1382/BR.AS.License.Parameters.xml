@@ -5,10 +5,10 @@
     <ConnectionParameters>/RT=1000 /AM=* /SDT=5 /DAIP=192.168.1.80 /REPO=11159 /ANSL=1 /PT=11169</ConnectionParameters>
   </Connection>
   <AsProject>
-    <ApjFullFileName>C:\projects\RSD\RSD.apj</ApjFullFileName>
+    <ApjFullFileName>C:\projects\PLC\RSD\RSD.apj</ApjFullFileName>
     <ProjectName>RSD</ProjectName>
     <ActiveConfigurationName>RSD_Default</ActiveConfigurationName>
-    <LicenseDataFolder>C:\projects\RSD\Temp\Objects\RSD_Default\X20CP1382</LicenseDataFolder>
+    <LicenseDataFolder>C:\projects\PLC\RSD\Temp\Objects\RSD_Default\X20CP1382</LicenseDataFolder>
   </AsProject>
   <General>
     <DeleteParameterFile>false</DeleteParameterFile>

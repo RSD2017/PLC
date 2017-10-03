@@ -26,6 +26,12 @@
     UseAsStatic="false"
     Version="" />
   <Library
+    Name="AsUDP"
+    IsDeployed="true"
+    IsStatic="false"
+    UseAsStatic="false"
+    Version="" />
+  <Library
     Name="operator"
     IsDeployed="false"
     IsStatic="false"
@@ -33,6 +39,12 @@
     Version="" />
   <Library
     Name="runtime"
+    IsDeployed="true"
+    IsStatic="false"
+    UseAsStatic="false"
+    Version="" />
+  <Library
+    Name="standard"
     IsDeployed="true"
     IsStatic="false"
     UseAsStatic="false"

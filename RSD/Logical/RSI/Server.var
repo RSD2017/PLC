@@ -1,0 +1,19 @@
+(********************************************************************
+ * COPYRIGHT -- Bernecker + Rainer
+ ********************************************************************
+ * Program: Server
+ * File: Server.var
+ * Author: Bernecker + Rainer
+ * Created: June 02, 2008
+ ********************************************************************
+ * Local variables of program Server
+ ********************************************************************)
+VAR
+	Server : Server_typ := (0); (*Data for Server Task*)
+	Ready : STRING[1];
+	startPos : INT;
+	TOC : STRING[50];
+	endPos : INT;
+	Output : STRING[300];
+	Activate : BOOL := FALSE;
+END_VAR

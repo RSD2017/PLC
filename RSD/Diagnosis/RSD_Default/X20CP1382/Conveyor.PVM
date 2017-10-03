@@ -1,5 +1,0 @@
-WATCH Ver=2.00 PLCName=PLC1 CPUName=CPU TaskName=Conveyor 
-Position X=0 Y=0 Width=0 Height=0 TabWidth Name=200 Type=100 Scope=60 Force=60 Index=0 ASCIIString=0
-                                    name                                     type force                                                            value level type len format place expand specs
-                               Enable_in                                     BOOL    1 "                                                           FALSE"    0    1    1    2    0    0         
-                               Sensor_in                                     BOOL    1 "                                                           FALSE"    0    1    1    2    1    0         

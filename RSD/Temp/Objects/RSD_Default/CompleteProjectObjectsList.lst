@@ -2,470 +2,551 @@
 <?AutomationStudio Version="4.3.3.196"?>
 <Objects>
   <Object
-    Path="C:\projects\RSD\Logical\Package.pkg"
+    Path="C:\projects\PLC\RSD\Logical\Package.pkg"
     LogicalPath=""
     Type="Package"
-    LastWriteTime="131508192419950000" />
+    LastWriteTime="131514158452240000" />
   <Object
-    Path="C:\projects\RSD\Logical\Global.typ"
+    Path="C:\projects\PLC\RSD\Logical\Global.typ"
     LogicalPath="Global.typ"
     Type="File"
     LastWriteTime="131503256362992000"
     Private="false" />
   <Object
-    Path="C:\projects\RSD\Logical\Global.var"
+    Path="C:\projects\PLC\RSD\Logical\Global.var"
     LogicalPath="Global.var"
     Type="File"
     LastWriteTime="131508137510330000"
     Private="false" />
   <Object
-    Path="C:\projects\RSD\Logical\Libraries\Package.pkg"
+    Path="C:\projects\PLC\RSD\Logical\Libraries\Package.pkg"
     LogicalPath="Libraries"
     Type="Package"
-    LastWriteTime="131508123429430000" />
+    LastWriteTime="131514225180790000" />
   <Object
-    Path="C:\projects\RSD\Logical\Libraries\operator\Binary.lby"
+    Path="C:\projects\PLC\RSD\Logical\Libraries\operator\Binary.lby"
     LogicalPath="Libraries.operator"
     Type="Library"
     LastWriteTime="131503256376212000" />
   <Object
-    Path="C:\projects\RSD\Logical\Libraries\operator\operator.fun"
+    Path="C:\projects\PLC\RSD\Logical\Libraries\operator\operator.fun"
     LogicalPath="Libraries.operator.operator.fun"
     Type="File"
     LastWriteTime="131503256376162000"
     Private="false" />
   <Object
-    Path="C:\projects\RSD\Logical\Libraries\operator\operator.typ"
+    Path="C:\projects\PLC\RSD\Logical\Libraries\operator\operator.typ"
     LogicalPath="Libraries.operator.operator.typ"
     Type="File"
     LastWriteTime="131503256376192000"
     Private="false" />
   <Object
-    Path="C:\projects\RSD\Logical\Libraries\operator\operator.var"
+    Path="C:\projects\PLC\RSD\Logical\Libraries\operator\operator.var"
     LogicalPath="Libraries.operator.operator.var"
     Type="File"
     LastWriteTime="131503256376212000"
     Private="false" />
   <Object
-    Path="C:\projects\RSD\Logical\Libraries\runtime\Binary.lby"
+    Path="C:\projects\PLC\RSD\Logical\Libraries\runtime\Binary.lby"
     LogicalPath="Libraries.runtime"
     Type="Library"
     LastWriteTime="131503256381632000" />
   <Object
-    Path="C:\projects\RSD\Logical\Libraries\runtime\runtime.fun"
+    Path="C:\projects\PLC\RSD\Logical\Libraries\runtime\runtime.fun"
     LogicalPath="Libraries.runtime.runtime.fun"
     Type="File"
     LastWriteTime="131503256381592000"
     Private="false" />
   <Object
-    Path="C:\projects\RSD\Logical\Libraries\runtime\runtime.typ"
+    Path="C:\projects\PLC\RSD\Logical\Libraries\runtime\runtime.typ"
     LogicalPath="Libraries.runtime.runtime.typ"
     Type="File"
     LastWriteTime="131503256381612000"
     Private="false" />
   <Object
-    Path="C:\projects\RSD\Logical\Libraries\runtime\runtime.var"
+    Path="C:\projects\PLC\RSD\Logical\Libraries\runtime\runtime.var"
     LogicalPath="Libraries.runtime.runtime.var"
     Type="File"
     LastWriteTime="131503256381622000"
     Private="false" />
   <Object
-    Path="C:\projects\RSD\Logical\Libraries\astime\Binary.lby"
+    Path="C:\projects\PLC\RSD\Logical\Libraries\astime\Binary.lby"
     LogicalPath="Libraries.astime"
     Type="Library"
     LastWriteTime="131503256386972000" />
   <Object
-    Path="C:\projects\RSD\Logical\Libraries\astime\astime.fun"
+    Path="C:\projects\PLC\RSD\Logical\Libraries\astime\astime.fun"
     LogicalPath="Libraries.astime.astime.fun"
     Type="File"
     LastWriteTime="131503256386932000"
     Private="false" />
   <Object
-    Path="C:\projects\RSD\Logical\Libraries\astime\astime.typ"
+    Path="C:\projects\PLC\RSD\Logical\Libraries\astime\astime.typ"
     LogicalPath="Libraries.astime.astime.typ"
     Type="File"
     LastWriteTime="131503256386952000"
     Private="false" />
   <Object
-    Path="C:\projects\RSD\Logical\Libraries\astime\astime.var"
+    Path="C:\projects\PLC\RSD\Logical\Libraries\astime\astime.var"
     LogicalPath="Libraries.astime.astime.var"
     Type="File"
     LastWriteTime="131503256386972000"
     Private="false" />
   <Object
-    Path="C:\projects\RSD\Logical\Libraries\AsIecCon\Binary.lby"
+    Path="C:\projects\PLC\RSD\Logical\Libraries\AsIecCon\Binary.lby"
     LogicalPath="Libraries.AsIecCon"
     Type="Library"
     LastWriteTime="131503256392012000" />
   <Object
-    Path="C:\projects\RSD\Logical\Libraries\AsIecCon\AsIecCon.fun"
+    Path="C:\projects\PLC\RSD\Logical\Libraries\AsIecCon\AsIecCon.fun"
     LogicalPath="Libraries.AsIecCon.AsIecCon.fun"
     Type="File"
     LastWriteTime="131503256391982000"
     Private="false" />
   <Object
-    Path="C:\projects\RSD\Logical\Libraries\AsIecCon\AsIecCon.typ"
+    Path="C:\projects\PLC\RSD\Logical\Libraries\AsIecCon\AsIecCon.typ"
     LogicalPath="Libraries.AsIecCon.AsIecCon.typ"
     Type="File"
     LastWriteTime="131503256392002000"
     Private="false" />
   <Object
-    Path="C:\projects\RSD\Logical\Libraries\AsIecCon\AsIecCon.var"
+    Path="C:\projects\PLC\RSD\Logical\Libraries\AsIecCon\AsIecCon.var"
     LogicalPath="Libraries.AsIecCon.AsIecCon.var"
     Type="File"
     LastWriteTime="131503256392012000"
     Private="false" />
   <Object
-    Path="C:\projects\RSD\Logical\Libraries\AsHttp\Binary.lby"
+    Path="C:\projects\PLC\RSD\Logical\Libraries\AsHttp\Binary.lby"
     LogicalPath="Libraries.AsHttp"
     Type="Library"
     LastWriteTime="131508098234010000" />
   <Object
-    Path="C:\projects\RSD\Logical\Libraries\AsHttp\AsHttp.fun"
+    Path="C:\projects\PLC\RSD\Logical\Libraries\AsHttp\AsHttp.fun"
     LogicalPath="Libraries.AsHttp.AsHttp.fun"
     Type="File"
     LastWriteTime="131508098233900000"
     Private="false" />
   <Object
-    Path="C:\projects\RSD\Logical\Libraries\AsHttp\AsHttp.typ"
+    Path="C:\projects\PLC\RSD\Logical\Libraries\AsHttp\AsHttp.typ"
     LogicalPath="Libraries.AsHttp.AsHttp.typ"
     Type="File"
     LastWriteTime="131508098233930000"
     Private="false" />
   <Object
-    Path="C:\projects\RSD\Logical\Libraries\AsHttp\AsHttp.var"
+    Path="C:\projects\PLC\RSD\Logical\Libraries\AsHttp\AsHttp.var"
     LogicalPath="Libraries.AsHttp.AsHttp.var"
     Type="File"
     LastWriteTime="131508098233940000"
     Private="false" />
   <Object
-    Path="C:\projects\RSD\Logical\Libraries\AsTCP\Binary.lby"
+    Path="C:\projects\PLC\RSD\Logical\Libraries\AsTCP\Binary.lby"
     LogicalPath="Libraries.AsTCP"
     Type="Library"
     LastWriteTime="131508123429340000" />
   <Object
-    Path="C:\projects\RSD\Logical\Libraries\AsTCP\AsTCP.fun"
+    Path="C:\projects\PLC\RSD\Logical\Libraries\AsTCP\AsTCP.fun"
     LogicalPath="Libraries.AsTCP.AsTCP.fun"
     Type="File"
     LastWriteTime="131508123429290000"
     Private="false" />
   <Object
-    Path="C:\projects\RSD\Logical\Libraries\AsTCP\AsTCP.typ"
+    Path="C:\projects\PLC\RSD\Logical\Libraries\AsTCP\AsTCP.typ"
     LogicalPath="Libraries.AsTCP.AsTCP.typ"
     Type="File"
     LastWriteTime="131508123429310000"
     Private="false" />
   <Object
-    Path="C:\projects\RSD\Logical\Libraries\AsTCP\AsTCP.var"
+    Path="C:\projects\PLC\RSD\Logical\Libraries\AsTCP\AsTCP.var"
     LogicalPath="Libraries.AsTCP.AsTCP.var"
     Type="File"
     LastWriteTime="131508123429330000"
     Private="false" />
   <Object
-    Path="C:\projects\RSD\Logical\Im_alive\IEC.prg"
+    Path="C:\projects\PLC\RSD\Logical\Libraries\AsUDP\Binary.lby"
+    LogicalPath="Libraries.AsUDP"
+    Type="Library"
+    LastWriteTime="131514157875730000" />
+  <Object
+    Path="C:\projects\PLC\RSD\Logical\Libraries\AsUDP\AsUDP.fun"
+    LogicalPath="Libraries.AsUDP.AsUDP.fun"
+    Type="File"
+    LastWriteTime="131514157875680000"
+    Private="false" />
+  <Object
+    Path="C:\projects\PLC\RSD\Logical\Libraries\AsUDP\AsUDP.typ"
+    LogicalPath="Libraries.AsUDP.AsUDP.typ"
+    Type="File"
+    LastWriteTime="131514157875700000"
+    Private="false" />
+  <Object
+    Path="C:\projects\PLC\RSD\Logical\Libraries\AsUDP\AsUDP.var"
+    LogicalPath="Libraries.AsUDP.AsUDP.var"
+    Type="File"
+    LastWriteTime="131514157875720000"
+    Private="false" />
+  <Object
+    Path="C:\projects\PLC\RSD\Logical\Libraries\standard\Binary.lby"
+    LogicalPath="Libraries.standard"
+    Type="Library"
+    LastWriteTime="131514225180710000" />
+  <Object
+    Path="C:\projects\PLC\RSD\Logical\Libraries\standard\standard.fun"
+    LogicalPath="Libraries.standard.standard.fun"
+    Type="File"
+    LastWriteTime="131514225180670000"
+    Private="false" />
+  <Object
+    Path="C:\projects\PLC\RSD\Logical\Libraries\standard\standard.typ"
+    LogicalPath="Libraries.standard.standard.typ"
+    Type="File"
+    LastWriteTime="131514225180690000"
+    Private="false" />
+  <Object
+    Path="C:\projects\PLC\RSD\Logical\Libraries\standard\standard.var"
+    LogicalPath="Libraries.standard.standard.var"
+    Type="File"
+    LastWriteTime="131514225180700000"
+    Private="false" />
+  <Object
+    Path="C:\projects\PLC\RSD\Logical\Im_alive\IEC.prg"
     LogicalPath="Im_alive"
     Type="Program"
     LastWriteTime="131503261362302000" />
   <Object
-    Path="C:\projects\RSD\Logical\Im_alive\Main.st"
+    Path="C:\projects\PLC\RSD\Logical\Im_alive\Main.st"
     LogicalPath="Im_alive.Main.st"
     Type="File"
     LastWriteTime="131508137594000000"
     Private="false" />
   <Object
-    Path="C:\projects\RSD\Logical\Im_alive\Types.typ"
+    Path="C:\projects\PLC\RSD\Logical\Im_alive\Types.typ"
     LogicalPath="Im_alive.Types.typ"
     Type="File"
     LastWriteTime="131503261362282000"
     Private="true" />
   <Object
-    Path="C:\projects\RSD\Logical\Im_alive\Variables.var"
+    Path="C:\projects\PLC\RSD\Logical\Im_alive\Variables.var"
     LogicalPath="Im_alive.Variables.var"
     Type="File"
     LastWriteTime="131503268546302000"
     Private="true" />
   <Object
-    Path="C:\projects\RSD\Logical\Conveyor\IEC.prg"
+    Path="C:\projects\PLC\RSD\Logical\Conveyor\IEC.prg"
     LogicalPath="Conveyor"
     Type="Program"
     LastWriteTime="131503266487192000" />
   <Object
-    Path="C:\projects\RSD\Logical\Conveyor\Cyclic.st"
+    Path="C:\projects\PLC\RSD\Logical\Conveyor\Cyclic.st"
     LogicalPath="Conveyor.Cyclic.st"
     Type="File"
     LastWriteTime="131508137122290000"
     Private="false" />
   <Object
-    Path="C:\projects\RSD\Logical\Conveyor\Init.st"
+    Path="C:\projects\PLC\RSD\Logical\Conveyor\Init.st"
     LogicalPath="Conveyor.Init.st"
     Type="File"
     LastWriteTime="131503266487122000"
     Private="false" />
   <Object
-    Path="C:\projects\RSD\Logical\Conveyor\Exit.st"
+    Path="C:\projects\PLC\RSD\Logical\Conveyor\Exit.st"
     LogicalPath="Conveyor.Exit.st"
     Type="File"
     LastWriteTime="131503266487152000"
     Private="false" />
   <Object
-    Path="C:\projects\RSD\Logical\Conveyor\Types.typ"
+    Path="C:\projects\PLC\RSD\Logical\Conveyor\Types.typ"
     LogicalPath="Conveyor.Types.typ"
     Type="File"
     LastWriteTime="131503266487172000"
     Private="true" />
   <Object
-    Path="C:\projects\RSD\Logical\Conveyor\Variables.var"
+    Path="C:\projects\PLC\RSD\Logical\Conveyor\Variables.var"
     LogicalPath="Conveyor.Variables.var"
     Type="File"
     LastWriteTime="131508137378950000"
     Private="true" />
   <Object
-    Path="C:\projects\RSD\Logical\MES_Comm\IEC.prg"
+    Path="C:\projects\PLC\RSD\Logical\MES_Comm\IEC.prg"
     LogicalPath="MES_Comm"
     Type="Program"
     LastWriteTime="131508101506660000" />
   <Object
-    Path="C:\projects\RSD\Logical\MES_Comm\Cyclic.st"
+    Path="C:\projects\PLC\RSD\Logical\MES_Comm\Cyclic.st"
     LogicalPath="MES_Comm.Cyclic.st"
     Type="File"
     LastWriteTime="131508119904650000"
     Private="false" />
   <Object
-    Path="C:\projects\RSD\Logical\MES_Comm\Init.st"
+    Path="C:\projects\PLC\RSD\Logical\MES_Comm\Init.st"
     LogicalPath="MES_Comm.Init.st"
     Type="File"
     LastWriteTime="131508120209440000"
     Private="false" />
   <Object
-    Path="C:\projects\RSD\Logical\MES_Comm\Exit.st"
+    Path="C:\projects\PLC\RSD\Logical\MES_Comm\Exit.st"
     LogicalPath="MES_Comm.Exit.st"
     Type="File"
     LastWriteTime="131508101506630000"
     Private="false" />
   <Object
-    Path="C:\projects\RSD\Logical\MES_Comm\Types.typ"
+    Path="C:\projects\PLC\RSD\Logical\MES_Comm\Types.typ"
     LogicalPath="MES_Comm.Types.typ"
     Type="File"
     LastWriteTime="131508101506640000"
     Private="true" />
   <Object
-    Path="C:\projects\RSD\Logical\MES_Comm\Variables.var"
+    Path="C:\projects\PLC\RSD\Logical\MES_Comm\Variables.var"
     LogicalPath="MES_Comm.Variables.var"
     Type="File"
     LastWriteTime="131508120342800000"
     Private="true" />
   <Object
-    Path="C:\projects\RSD\Logical\Camera\IEC.prg"
+    Path="C:\projects\PLC\RSD\Logical\Camera\IEC.prg"
     LogicalPath="Camera"
     Type="Program"
     LastWriteTime="131508192356290000" />
   <Object
-    Path="C:\projects\RSD\Logical\Camera\LibAsTCP1_ST.typ"
+    Path="C:\projects\PLC\RSD\Logical\Camera\LibAsTCP1_ST.typ"
     LogicalPath="Camera.LibAsTCP1_ST.typ"
     Type="File"
     LastWriteTime="131508206856070000"
     Private="true" />
   <Object
-    Path="C:\projects\RSD\Logical\Camera\LibAsTCP1_ST.var"
+    Path="C:\projects\PLC\RSD\Logical\Camera\LibAsTCP1_ST.var"
     LogicalPath="Camera.LibAsTCP1_ST.var"
     Type="File"
     LastWriteTime="131508192356270000"
     Private="true" />
   <Object
-    Path="C:\projects\RSD\Logical\Camera\Client.st"
+    Path="C:\projects\PLC\RSD\Logical\Camera\Client.st"
     LogicalPath="Camera.Client.st"
     Type="File"
     LastWriteTime="131508210557110000"
     Private="false" />
   <Object
-    Path="C:\projects\RSD\Logical\Camera\Client.typ"
+    Path="C:\projects\PLC\RSD\Logical\Camera\Client.typ"
     LogicalPath="Camera.Client.typ"
     Type="File"
     LastWriteTime="131508191868670000"
     Private="true" />
   <Object
-    Path="C:\projects\RSD\Logical\Camera\Client.var"
+    Path="C:\projects\PLC\RSD\Logical\Camera\Client.var"
     LogicalPath="Camera.Client.var"
     Type="File"
     LastWriteTime="131508191944380000"
     Private="true" />
   <Object
-    Path="C:\projects\RSD\Physical\RSD_Default\Config.pkg"
+    Path="C:\projects\PLC\RSD\Logical\RSI\IEC.prg"
+    LogicalPath="RSI"
+    Type="Program"
+    LastWriteTime="131514166510850000" />
+  <Object
+    Path="C:\projects\PLC\RSD\Logical\RSI\Server.typ"
+    LogicalPath="RSI.Server.typ"
+    Type="File"
+    LastWriteTime="131514166399290000"
+    Private="true" />
+  <Object
+    Path="C:\projects\PLC\RSD\Logical\RSI\Server.var"
+    LogicalPath="RSI.Server.var"
+    Type="File"
+    LastWriteTime="131514258365440000"
+    Private="true" />
+  <Object
+    Path="C:\projects\PLC\RSD\Logical\RSI\Server.st"
+    LogicalPath="RSI.Server.st"
+    Type="File"
+    LastWriteTime="131514287862760000"
+    Private="false" />
+  <Object
+    Path="C:\projects\PLC\RSD\Physical\RSD_Default\Config.pkg"
     LogicalPath="RSD_Default"
     Type="Configuration"
     LastWriteTime="131503256414282000" />
   <Object
-    Path="C:\projects\RSD\Physical\RSD_Default\Hardware.hw"
+    Path="C:\projects\PLC\RSD\Physical\RSD_Default\Hardware.hw"
     LogicalPath="RSD_Default.Hardware.hw"
     Type="File"
-    LastWriteTime="131503258942172000"
+    LastWriteTime="131514281051100000"
     Private="false" />
   <Object
-    Path="C:\projects\RSD\Physical\RSD_Default\Hardware.hwl"
+    Path="C:\projects\PLC\RSD\Physical\RSD_Default\Hardware.hwl"
     LogicalPath="RSD_Default.Hardware.hwl"
     Type="File"
-    LastWriteTime="131503260709272000"
+    LastWriteTime="131508853916516000"
     Private="false" />
   <Object
-    Path="C:\projects\RSD\Physical\RSD_Default\X20CP1382\Cpu.pkg"
+    Path="C:\projects\PLC\RSD\Physical\RSD_Default\X20CP1382\Cpu.pkg"
     LogicalPath="RSD_Default.X20CP1382"
     Type="Cpu"
     LastWriteTime="131503260708232000" />
   <Object
-    Path="C:\projects\RSD\Physical\RSD_Default\X20CP1382\Cpu.sw"
+    Path="C:\projects\PLC\RSD\Physical\RSD_Default\X20CP1382\Cpu.sw"
     LogicalPath="RSD_Default.X20CP1382.Cpu.sw"
     Type="File"
-    LastWriteTime="131508139007950000"
+    LastWriteTime="131514285387580000"
     Private="false" />
   <Object
-    Path="C:\projects\RSD\Physical\RSD_Default\X20CP1382\Cpu.per"
+    Path="C:\projects\PLC\RSD\Physical\RSD_Default\X20CP1382\Cpu.per"
     LogicalPath="RSD_Default.X20CP1382.Cpu.per"
     Type="File"
     LastWriteTime="131503256395772000"
     Private="false" />
   <Object
-    Path="C:\projects\RSD\Physical\RSD_Default\X20CP1382\IoMap.iom"
+    Path="C:\projects\PLC\RSD\Physical\RSD_Default\X20CP1382\IoMap.iom"
     LogicalPath="RSD_Default.X20CP1382.IoMap.iom"
     Type="File"
     LastWriteTime="131508138169970000"
     Private="false" />
   <Object
-    Path="C:\projects\RSD\Physical\RSD_Default\X20CP1382\PvMap.vvm"
+    Path="C:\projects\PLC\RSD\Physical\RSD_Default\X20CP1382\PvMap.vvm"
     LogicalPath="RSD_Default.X20CP1382.PvMap.vvm"
     Type="File"
     LastWriteTime="131503256395792000"
     Private="false" />
   <Object
-    Path="C:\projects\RSD\Physical\RSD_Default\X20CP1382\mapp\Package.pkg"
+    Path="C:\projects\PLC\RSD\Physical\RSD_Default\X20CP1382\mapp\Package.pkg"
     LogicalPath="RSD_Default.X20CP1382.mapp"
     Type="Package"
     LastWriteTime="131503256395982000" />
   <Object
-    Path="C:\projects\RSD\Physical\RSD_Default\X20CP1382\Connectivity\Package.pkg"
+    Path="C:\projects\PLC\RSD\Physical\RSD_Default\X20CP1382\Connectivity\Package.pkg"
     LogicalPath="RSD_Default.X20CP1382.Connectivity"
     Type="Package"
     LastWriteTime="131503256396032000" />
   <Object
-    Path="C:\projects\RSD\Physical\RSD_Default\X20CP1382\Connectivity\OpcUA\Package.pkg"
+    Path="C:\projects\PLC\RSD\Physical\RSD_Default\X20CP1382\Connectivity\OpcUA\Package.pkg"
     LogicalPath="RSD_Default.X20CP1382.Connectivity.OpcUA"
     Type="Package"
     LastWriteTime="131503256396022000" />
   <Object
-    Path="C:\projects\RSD\Physical\RSD_Default\X20CP1382\TextSystem\Package.pkg"
+    Path="C:\projects\PLC\RSD\Physical\RSD_Default\X20CP1382\TextSystem\Package.pkg"
     LogicalPath="RSD_Default.X20CP1382.TextSystem"
     Type="Package"
     LastWriteTime="131503256396062000" />
   <Object
-    Path="C:\projects\RSD\Physical\RSD_Default\X20CP1382\UnitSystem\Package.pkg"
+    Path="C:\projects\PLC\RSD\Physical\RSD_Default\X20CP1382\UnitSystem\Package.pkg"
     LogicalPath="RSD_Default.X20CP1382.UnitSystem"
     Type="Package"
     LastWriteTime="131503256396092000" />
   <Object
-    Path="C:\projects\RSD\Physical\RSD_Default\X20CP1382\AccessAndSecurity\Package.pkg"
+    Path="C:\projects\PLC\RSD\Physical\RSD_Default\X20CP1382\AccessAndSecurity\Package.pkg"
     LogicalPath="RSD_Default.X20CP1382.AccessAndSecurity"
     Type="Package"
     LastWriteTime="131503256396412000" />
   <Object
-    Path="C:\projects\RSD\Physical\RSD_Default\X20CP1382\AccessAndSecurity\UserRoleSystem\Package.pkg"
+    Path="C:\projects\PLC\RSD\Physical\RSD_Default\X20CP1382\AccessAndSecurity\UserRoleSystem\Package.pkg"
     LogicalPath="RSD_Default.X20CP1382.AccessAndSecurity.UserRoleSystem"
     Type="Package"
     LastWriteTime="131503256396172000" />
   <Object
-    Path="C:\projects\RSD\Physical\RSD_Default\X20CP1382\AccessAndSecurity\UserRoleSystem\Role.role"
+    Path="C:\projects\PLC\RSD\Physical\RSD_Default\X20CP1382\AccessAndSecurity\UserRoleSystem\Role.role"
     LogicalPath="RSD_Default.X20CP1382.AccessAndSecurity.UserRoleSystem.Role.role"
     Type="File"
     LastWriteTime="131503256396152000"
     Private="false" />
   <Object
-    Path="C:\projects\RSD\Physical\RSD_Default\X20CP1382\AccessAndSecurity\UserRoleSystem\User.user"
+    Path="C:\projects\PLC\RSD\Physical\RSD_Default\X20CP1382\AccessAndSecurity\UserRoleSystem\User.user"
     LogicalPath="RSD_Default.X20CP1382.AccessAndSecurity.UserRoleSystem.User.user"
     Type="File"
     LastWriteTime="131503256396172000"
     Private="false" />
   <Object
-    Path="C:\projects\RSD\Physical\RSD_Default\X20CP1382\AccessAndSecurity\CertificateStore\Package.pkg"
+    Path="C:\projects\PLC\RSD\Physical\RSD_Default\X20CP1382\AccessAndSecurity\CertificateStore\Package.pkg"
     LogicalPath="RSD_Default.X20CP1382.AccessAndSecurity.CertificateStore"
     Type="Package"
     LastWriteTime="131503256396372000" />
   <Object
-    Path="C:\projects\RSD\Physical\RSD_Default\X20CP1382\AccessAndSecurity\CertificateStore\OwnCertificates\Package.pkg"
+    Path="C:\projects\PLC\RSD\Physical\RSD_Default\X20CP1382\AccessAndSecurity\CertificateStore\OwnCertificates\Package.pkg"
     LogicalPath="RSD_Default.X20CP1382.AccessAndSecurity.CertificateStore.OwnCertificates"
     Type="Package"
     LastWriteTime="131503256396272000" />
   <Object
-    Path="C:\projects\RSD\Physical\RSD_Default\X20CP1382\AccessAndSecurity\CertificateStore\OwnCertificates\Certificates\Package.pkg"
+    Path="C:\projects\PLC\RSD\Physical\RSD_Default\X20CP1382\AccessAndSecurity\CertificateStore\OwnCertificates\Certificates\Package.pkg"
     LogicalPath="RSD_Default.X20CP1382.AccessAndSecurity.CertificateStore.OwnCertificates.Certificates"
     Type="Package"
     LastWriteTime="131503256396242000" />
   <Object
-    Path="C:\projects\RSD\Physical\RSD_Default\X20CP1382\AccessAndSecurity\CertificateStore\OwnCertificates\PrivateKeys\Package.pkg"
+    Path="C:\projects\PLC\RSD\Physical\RSD_Default\X20CP1382\AccessAndSecurity\CertificateStore\OwnCertificates\PrivateKeys\Package.pkg"
     LogicalPath="RSD_Default.X20CP1382.AccessAndSecurity.CertificateStore.OwnCertificates.PrivateKeys"
     Type="Package"
     LastWriteTime="131503256396262000" />
   <Object
-    Path="C:\projects\RSD\Physical\RSD_Default\X20CP1382\AccessAndSecurity\CertificateStore\ThirdPartyCertificates\Package.pkg"
+    Path="C:\projects\PLC\RSD\Physical\RSD_Default\X20CP1382\AccessAndSecurity\CertificateStore\ThirdPartyCertificates\Package.pkg"
     LogicalPath="RSD_Default.X20CP1382.AccessAndSecurity.CertificateStore.ThirdPartyCertificates"
     Type="Package"
     LastWriteTime="131503256396322000" />
   <Object
-    Path="C:\projects\RSD\Physical\RSD_Default\X20CP1382\AccessAndSecurity\CertificateStore\ThirdPartyCertificates\SoftwareCertificates\Package.pkg"
+    Path="C:\projects\PLC\RSD\Physical\RSD_Default\X20CP1382\AccessAndSecurity\CertificateStore\ThirdPartyCertificates\SoftwareCertificates\Package.pkg"
     LogicalPath="RSD_Default.X20CP1382.AccessAndSecurity.CertificateStore.ThirdPartyCertificates.SoftwareCertificates"
     Type="Package"
     LastWriteTime="131503256396312000" />
   <Object
-    Path="C:\projects\RSD\Physical\RSD_Default\X20CP1382\AccessAndSecurity\CertificateStore\CertificateRevocationLists\Package.pkg"
+    Path="C:\projects\PLC\RSD\Physical\RSD_Default\X20CP1382\AccessAndSecurity\CertificateStore\CertificateRevocationLists\Package.pkg"
     LogicalPath="RSD_Default.X20CP1382.AccessAndSecurity.CertificateStore.CertificateRevocationLists"
     Type="Package"
     LastWriteTime="131503256396342000" />
   <Object
-    Path="C:\projects\RSD\Physical\RSD_Default\X20CP1382\AccessAndSecurity\CertificateStore\CertificateSigningRequests\Package.pkg"
+    Path="C:\projects\PLC\RSD\Physical\RSD_Default\X20CP1382\AccessAndSecurity\CertificateStore\CertificateSigningRequests\Package.pkg"
     LogicalPath="RSD_Default.X20CP1382.AccessAndSecurity.CertificateStore.CertificateSigningRequests"
     Type="Package"
     LastWriteTime="131503256396372000" />
   <Object
-    Path="C:\projects\RSD\Physical\RSD_Default\X20CP1382\AccessAndSecurity\TransportLayerSecurity\Package.pkg"
+    Path="C:\projects\PLC\RSD\Physical\RSD_Default\X20CP1382\AccessAndSecurity\TransportLayerSecurity\Package.pkg"
     LogicalPath="RSD_Default.X20CP1382.AccessAndSecurity.TransportLayerSecurity"
     Type="Package"
     LastWriteTime="131503256396402000" />
   <Object
-    Path="C:\projects\RSD\Physical\RSD_Default\Hardware.jpg"
+    Path="C:\projects\PLC\RSD\Physical\RSD_Default\Hardware.jpg"
     LogicalPath="RSD_Default.Hardware.jpg"
     Type="File"
-    LastWriteTime="131508210798120000"
+    LastWriteTime="131514287877250000"
     Private="false" />
   <Object
-    Path="C:\projects\RSD\Logical\Libraries\AsHttp\SG4\AsHttp.h"
+    Path="C:\projects\PLC\RSD\Logical\Libraries\AsHttp\SG4\AsHttp.h"
     LogicalPath="AsHttp.h"
     Type="File"
     LastWriteTime="131405575120000000"
     Private="false" />
   <Object
-    Path="C:\projects\RSD\Logical\Libraries\AsIecCon\SG4\AsIecCon.h"
+    Path="C:\projects\PLC\RSD\Logical\Libraries\AsIecCon\SG4\AsIecCon.h"
     LogicalPath="AsIecCon.h"
     Type="File"
     LastWriteTime="131405575140000000"
     Private="false" />
   <Object
-    Path="C:\projects\RSD\Logical\Libraries\AsTCP\SG4\AsTCP.h"
+    Path="C:\projects\PLC\RSD\Logical\Libraries\AsTCP\SG4\AsTCP.h"
     LogicalPath="AsTCP.h"
     Type="File"
     LastWriteTime="131405575180000000"
     Private="false" />
   <Object
-    Path="C:\projects\RSD\Logical\Libraries\astime\SG4\astime.h"
+    Path="C:\projects\PLC\RSD\Logical\Libraries\astime\SG4\astime.h"
     LogicalPath="astime.h"
     Type="File"
     LastWriteTime="131405575180000000"
     Private="false" />
   <Object
-    Path="C:\projects\RSD\Logical\Libraries\operator\SG4\operator.h"
+    Path="C:\projects\PLC\RSD\Logical\Libraries\AsUDP\SG4\AsUDP.h"
+    LogicalPath="AsUDP.h"
+    Type="File"
+    LastWriteTime="131405575180000000"
+    Private="false" />
+  <Object
+    Path="C:\projects\PLC\RSD\Logical\Libraries\operator\SG4\operator.h"
     LogicalPath="operator.h"
     Type="File"
     LastWriteTime="131405575220000000"
     Private="false" />
   <Object
-    Path="C:\projects\RSD\Logical\Libraries\runtime\SG4\runtime.h"
+    Path="C:\projects\PLC\RSD\Logical\Libraries\runtime\SG4\runtime.h"
     LogicalPath="runtime.h"
+    Type="File"
+    LastWriteTime="131405575220000000"
+    Private="false" />
+  <Object
+    Path="C:\projects\PLC\RSD\Logical\Libraries\standard\SG4\standard.h"
+    LogicalPath="standard.h"
     Type="File"
     LastWriteTime="131405575220000000"
     Private="false" />

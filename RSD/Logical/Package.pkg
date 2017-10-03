@@ -9,5 +9,6 @@
     <Object Type="Program" Language="IEC">Conveyor</Object>
     <Object Type="Program" Language="IEC">MES_Comm</Object>
     <Object Type="Program" Language="IEC">Camera</Object>
+    <Object Type="Program" Language="IEC">RSI</Object>
   </Objects>
 </Package>

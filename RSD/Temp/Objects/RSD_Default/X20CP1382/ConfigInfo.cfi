@@ -2,7 +2,20 @@
 <?AutomationStudio Version="4.3.3.196"?>
 <ConfigInfo xmlns="http://br-automation.co.at/AS/BuildInfo">
   <TaskClass
-    Name="Cyclic#1" />
+    Name="Cyclic#1">
+    <Task
+      Name="RSI"
+      Disable="false"
+      Source="RSI"
+      Language="IEC">
+      <File
+        Path="C:\projects\PLC\RSD\Logical\RSI\Server.typ" />
+      <File
+        Path="C:\projects\PLC\RSD\Logical\RSI\Server.var" />
+      <InternalFile
+        Path="C:\projects\PLC\RSD\Temp\Objects\RSD_Default\X20CP1382\RSI\Server.st.var" />
+    </Task>
+  </TaskClass>
   <TaskClass
     Name="Cyclic#2">
     <Task
@@ -11,11 +24,11 @@
       Source="Im_alive"
       Language="IEC">
       <InternalFile
-        Path="C:\projects\RSD\Temp\Objects\RSD_Default\X20CP1382\Im_alive\Main.st.var" />
+        Path="C:\projects\PLC\RSD\Temp\Objects\RSD_Default\X20CP1382\Im_alive\Main.st.var" />
       <File
-        Path="C:\projects\RSD\Logical\Im_alive\Types.typ" />
+        Path="C:\projects\PLC\RSD\Logical\Im_alive\Types.typ" />
       <File
-        Path="C:\projects\RSD\Logical\Im_alive\Variables.var" />
+        Path="C:\projects\PLC\RSD\Logical\Im_alive\Variables.var" />
     </Task>
   </TaskClass>
   <TaskClass
@@ -28,15 +41,15 @@
       Source="Conveyor"
       Language="IEC">
       <InternalFile
-        Path="C:\projects\RSD\Temp\Objects\RSD_Default\X20CP1382\Conveyor\Cyclic.st.var" />
+        Path="C:\projects\PLC\RSD\Temp\Objects\RSD_Default\X20CP1382\Conveyor\Cyclic.st.var" />
       <InternalFile
-        Path="C:\projects\RSD\Temp\Objects\RSD_Default\X20CP1382\Conveyor\Init.st.var" />
+        Path="C:\projects\PLC\RSD\Temp\Objects\RSD_Default\X20CP1382\Conveyor\Init.st.var" />
       <InternalFile
-        Path="C:\projects\RSD\Temp\Objects\RSD_Default\X20CP1382\Conveyor\Exit.st.var" />
+        Path="C:\projects\PLC\RSD\Temp\Objects\RSD_Default\X20CP1382\Conveyor\Exit.st.var" />
       <File
-        Path="C:\projects\RSD\Logical\Conveyor\Types.typ" />
+        Path="C:\projects\PLC\RSD\Logical\Conveyor\Types.typ" />
       <File
-        Path="C:\projects\RSD\Logical\Conveyor\Variables.var" />
+        Path="C:\projects\PLC\RSD\Logical\Conveyor\Variables.var" />
     </Task>
     <Task
       Name="MES_Comm"
@@ -44,15 +57,15 @@
       Source="MES_Comm"
       Language="IEC">
       <InternalFile
-        Path="C:\projects\RSD\Temp\Objects\RSD_Default\X20CP1382\MES_Comm\Cyclic.st.var" />
+        Path="C:\projects\PLC\RSD\Temp\Objects\RSD_Default\X20CP1382\MES_Comm\Cyclic.st.var" />
       <InternalFile
-        Path="C:\projects\RSD\Temp\Objects\RSD_Default\X20CP1382\MES_Comm\Init.st.var" />
+        Path="C:\projects\PLC\RSD\Temp\Objects\RSD_Default\X20CP1382\MES_Comm\Init.st.var" />
       <InternalFile
-        Path="C:\projects\RSD\Temp\Objects\RSD_Default\X20CP1382\MES_Comm\Exit.st.var" />
+        Path="C:\projects\PLC\RSD\Temp\Objects\RSD_Default\X20CP1382\MES_Comm\Exit.st.var" />
       <File
-        Path="C:\projects\RSD\Logical\MES_Comm\Types.typ" />
+        Path="C:\projects\PLC\RSD\Logical\MES_Comm\Types.typ" />
       <File
-        Path="C:\projects\RSD\Logical\MES_Comm\Variables.var" />
+        Path="C:\projects\PLC\RSD\Logical\MES_Comm\Variables.var" />
     </Task>
     <Task
       Name="Camera"
@@ -60,15 +73,15 @@
       Source="Camera"
       Language="IEC">
       <File
-        Path="C:\projects\RSD\Logical\Camera\LibAsTCP1_ST.typ" />
+        Path="C:\projects\PLC\RSD\Logical\Camera\LibAsTCP1_ST.typ" />
       <File
-        Path="C:\projects\RSD\Logical\Camera\LibAsTCP1_ST.var" />
+        Path="C:\projects\PLC\RSD\Logical\Camera\LibAsTCP1_ST.var" />
       <InternalFile
-        Path="C:\projects\RSD\Temp\Objects\RSD_Default\X20CP1382\Camera\Client.st.var" />
+        Path="C:\projects\PLC\RSD\Temp\Objects\RSD_Default\X20CP1382\Camera\Client.st.var" />
       <File
-        Path="C:\projects\RSD\Logical\Camera\Client.typ" />
+        Path="C:\projects\PLC\RSD\Logical\Camera\Client.typ" />
       <File
-        Path="C:\projects\RSD\Logical\Camera\Client.var" />
+        Path="C:\projects\PLC\RSD\Logical\Camera\Client.var" />
     </Task>
   </TaskClass>
   <TaskClass
