@@ -356,7 +356,7 @@
     Path="C:\projects\PLC\RSD\Logical\RSI\Server.st"
     LogicalPath="RSI.Server.st"
     Type="File"
-    LastWriteTime="131514287862760000"
+    LastWriteTime="131516808133628000"
     Private="false" />
   <Object
     Path="C:\projects\PLC\RSD\Physical\RSD_Default\Config.pkg"
@@ -500,7 +500,7 @@
     Path="C:\projects\PLC\RSD\Physical\RSD_Default\Hardware.jpg"
     LogicalPath="RSD_Default.Hardware.jpg"
     Type="File"
-    LastWriteTime="131514287877250000"
+    LastWriteTime="131516808164258000"
     Private="false" />
   <Object
     Path="C:\projects\PLC\RSD\Logical\Libraries\AsHttp\SG4\AsHttp.h"

@@ -105,6 +105,9 @@
     </SelectedNodes>
     <ZoomIndices />
   </TreeView>
+  <TextEdit ID="C:\projects\PLC\RSD\Logical\RSI\Server.st" CaretLine="69" CaretColumn="15" FirstVisibleLine="46">
+    <Bookmarks />
+  </TextEdit>
   <TextEdit ID="C:\projects\PLC\RSD\Logical\Im_alive\Main.st" CaretLine="1" CaretColumn="1" FirstVisibleLine="1">
     <Bookmarks />
   </TextEdit>
@@ -175,9 +178,6 @@
     <Bookmarks />
   </TextEdit>
   <TextEdit ID="C:\projects\PLC\RSD\Logical\MES_Comm\Cyclic.st" CaretLine="1" CaretColumn="1" FirstVisibleLine="1">
-    <Bookmarks />
-  </TextEdit>
-  <TextEdit ID="C:\projects\PLC\RSD\Logical\RSI\Server.st" CaretLine="60" CaretColumn="28" FirstVisibleLine="53">
     <Bookmarks />
   </TextEdit>
   <TreeView ID="C:\projects\PLC\RSD\Logical\Camera\LibAsTCP1_ST.var" EditColumn="6" TopRow="0" HorizontalScrollOffset="10" SortedColumn="0">

@@ -56,8 +56,8 @@ PROGRAM _CYCLIC
 				TOC:=MID(Server.data_buffer,endPos-startPos,startPos);
 		
 			Output:='<Sen Type="ImFree"><Activate>';
-			//IF Ready = '1' AND Activate = TRUE THEN
-				IF Activate = TRUE THEN
+				IF Ready = '1' AND Activate = TRUE THEN
+				//IF Activate = TRUE THEN
 				Output:=CONCAT(Output, '1');
 				ELSE
 				Output:=CONCAT(Output, '0');
@@ -66,6 +66,7 @@ PROGRAM _CYCLIC
 				Output:=CONCAT(Output, TOC);
 				Output:=CONCAT(Output,'</Sen>');
 			
+				Activate := FALSE;
 			
 			
 			Server.UdpSend_0.enable := 1;

@@ -7,6 +7,8 @@ DEF RSIActivator()
 ; Declaration of KRL variables
 DECL INT ret	; Return value for RSI commands
 DECL INT CONTID	; ContainerID
+DECL INT speed
+
 
 ;FOLD INI
   ;FOLD BASISTECH INI
@@ -20,8 +22,20 @@ DECL INT CONTID	; ContainerID
   ;ENDFOLD (USER INI)
 ;ENDFOLD (INI)
 
+speed=20
+
+$VEL_AXIS[1]=speed
+$VEL_AXIS[2]=speed
+$VEL_AXIS[3]=speed
+$VEL_AXIS[4]=speed
+$VEL_AXIS[5]=speed
+$VEL_AXIS[6]=speed
+
+
 ; Move to start position
-PTP {A1 0, A2 -90, A3 90, A4 0, A5 0, A6 0}
+PTP {A1 -60, A2 -30, A3 90, A4 0, A5 30, A6 -60}
+
+$OUT[100] = FALSE
 
 ; Create RSI Context 
 ret = RSI_CREATE("RSI_Activator.rsi",CONTID,TRUE)
@@ -35,15 +49,24 @@ IF (ret <> RSIOK) THEN
   HALT
 ENDIF
 
-$OUT[1200] = TRUE
+$VEL_AXIS[1]=speed
+$VEL_AXIS[2]=speed
+$VEL_AXIS[3]=speed
+$VEL_AXIS[4]=speed
+$VEL_AXIS[5]=speed
+$VEL_AXIS[6]=speed
+
+$OUT[100] = TRUE
+$OUT[101] = FALSE
 
 ; Sensor guided movement
 WHILE TRUE
-	WAIT FOR $IN[1200]
-		$OUT[1200] = FALSE
-		PTP {A1 0, A2 -90, A3 90, A4 0, A5 0, A6 90}
-		PTP {A1 0, A2 -90, A3 90, A4 0, A5 0, A6 0}
-		$OUT[1200] = TRUE
+	WAIT FOR $OUT[101]
+		$OUT[100] = FALSE
+		$OUT[101] = FALSE
+		PTP {A1 -80, A2 -30, A3 90, A4 0, A5 30, A6 -60}
+		PTP {A1 -60, A2 -30, A3 90, A4 0, A5 30, A6 -60}
+		$OUT[100] = TRUE
 	
 ENDWHILE
 
