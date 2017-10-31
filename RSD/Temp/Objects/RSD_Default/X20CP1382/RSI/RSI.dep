@@ -1,5 +1,8 @@
 $(AS_PROJECT_PATH)/Logical/Libraries/standard/standard.fun
+$(AS_PROJECT_PATH)/Logical/Libraries/MTBasics/MTBasics.fun
+$(AS_PROJECT_PATH)/Logical/Libraries/MTBasics/MTBasics.typ
 $(AS_PROJECT_PATH)/Logical/Libraries/AsUDP/AsUDP.fun
+$(AS_PROJECT_PATH)/Logical/Global.var
 $(AS_PROJECT_PATH)/Logical/RSI/Server.var
 $(AS_PROJECT_PATH)/Logical/Libraries/runtime/runtime.var
 $(AS_PROJECT_PATH)/Logical/RSI/Server.typ

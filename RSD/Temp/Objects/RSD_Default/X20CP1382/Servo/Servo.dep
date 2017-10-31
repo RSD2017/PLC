@@ -1,0 +1,4 @@
+$(AS_PROJECT_PATH)/Logical/Libraries/MTBasics/MTBasics.fun
+$(AS_PROJECT_PATH)/Logical/Libraries/MTBasics/MTBasics.typ
+$(AS_PROJECT_PATH)/Logical/Servo/Variables.var
+$(AS_PROJECT_PATH)/Logical/Global.var

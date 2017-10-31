@@ -79,7 +79,9 @@ PROGRAM _CYCLIC
 				Client.sStep := 30;
 				IF LibAsTCP1_ST.receive_data = '     0.0000$r' THEN
 					LibAsTCP1_ST.Good := LibAsTCP1_ST.Good +1;
+					Camera_good := TRUE;
 				ELSIF LibAsTCP1_ST.receive_data = '    -1.0000$r' THEN
+					Camera_bad := TRUE;
 					LibAsTCP1_ST.Bad := LibAsTCP1_ST.Bad + 1;
 				END_IF;
 				

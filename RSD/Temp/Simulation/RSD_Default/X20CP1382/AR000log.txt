@@ -1,0 +1,35 @@
+
+
+Thu Oct 05 20:55:49 2017
+No ARsim registration found!
+  Bernecker & Rainer 
+
+
+
+Thu Oct 05 20:55:49 2017
+COMMAND_COLDSTART
+InstanceName : 01d33e0b8f997e80
+
+WorkingPath :
+C:\projects\PLC\RSD\Temp\Simulation\RSD_Default\X20CP1382\
+
+
+
+Thu Oct 05 20:55:49 2017
+COMMAND_COLDSTART
+Version : I4.33
+
+
+
+Thu Oct 05 20:56:55 2017
+COMMAND_TERMINATE
+
+
+Thu Oct 05 20:56:56 2017
+
+
+Thu Oct 05 20:56:56 2017
+COMMAND_TERMINATE
+
+
+Thu Oct 05 20:56:56 2017

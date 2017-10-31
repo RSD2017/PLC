@@ -1,6 +1,10 @@
 VAR_CONFIG
-	::Im_alive:alive_led AT %QX."X3".DigitalOutput01;
+	::Camera_A:Camera_trigger AT %QX."X3".DigitalOutput01;
 	::Conveyor:Conveyor_out AT %QX."X3".DigitalOutput02;
 	::Enable_in AT %IX."X2".DigitalInput01;
 	::Sensor_in AT %IX."X2".DigitalInput02;
+	::Servo:Period AT %QW."X3".PWMPeriod09;
+	::Servo:Pulse AT %QW."X3".PWMOutput09;
+	::Feeder:Output_signal AT %QX."X3".DigitalOutput03;
+	::Feeder:Enable_feeder AT %IX."X2".DigitalInput09;
 END_VAR

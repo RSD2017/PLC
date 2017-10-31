@@ -18,10 +18,12 @@ $(AS_CPU_PATH)/sysconf.br \
 $(AS_CPU_PATH)/arconfig.br \
 $(AS_CPU_PATH)/ashwac.br \
 $(AS_CPU_PATH)/RSI.br \
-$(AS_CPU_PATH)/Im_alive.br \
-$(AS_CPU_PATH)/Conveyor.br \
-$(AS_CPU_PATH)/MES_Comm.br \
 $(AS_CPU_PATH)/Camera.br \
+$(AS_CPU_PATH)/Servo.br \
+$(AS_CPU_PATH)/MES_Comm.br \
+$(AS_CPU_PATH)/Camera_A.br \
+$(AS_CPU_PATH)/Feeder.br \
+$(AS_CPU_PATH)/Conveyor.br \
 $(AS_CPU_PATH)/iomap.br \
 $(AS_CPU_PATH)/Role.br \
 $(AS_CPU_PATH)/User.br \
@@ -36,10 +38,12 @@ $(AS_BINARIES_PATH)/$(AS_CONFIGURATION)/$(AS_PLC)/Transfer.lst: \
 	$(AS_CPU_PATH)/arconfig.br \
 	$(AS_CPU_PATH)/ashwac.br \
 	$(AS_CPU_PATH)/RSI.br \
-	$(AS_CPU_PATH)/Im_alive.br \
-	$(AS_CPU_PATH)/Conveyor.br \
-	$(AS_CPU_PATH)/MES_Comm.br \
 	$(AS_CPU_PATH)/Camera.br \
+	$(AS_CPU_PATH)/Servo.br \
+	$(AS_CPU_PATH)/MES_Comm.br \
+	$(AS_CPU_PATH)/Camera_A.br \
+	$(AS_CPU_PATH)/Feeder.br \
+	$(AS_CPU_PATH)/Conveyor.br \
 	$(AS_CPU_PATH)/iomap.br \
 	$(AS_CPU_PATH)/Role.br \
 	$(AS_CPU_PATH)/User.br \
@@ -53,10 +57,12 @@ include $(AS_CPU_PATH)/TCData/TCData.mak
 include $(AS_CPU_PATH)/User/User.mak
 include $(AS_CPU_PATH)/Role/Role.mak
 include $(AS_CPU_PATH)/iomap/iomap.mak
-include $(AS_CPU_PATH)/Camera/Camera.mak
-include $(AS_CPU_PATH)/MES_Comm/MES_Comm.mak
 include $(AS_CPU_PATH)/Conveyor/Conveyor.mak
-include $(AS_CPU_PATH)/Im_alive/Im_alive.mak
+include $(AS_CPU_PATH)/Feeder/Feeder.mak
+include $(AS_CPU_PATH)/Camera_A/Camera_A.mak
+include $(AS_CPU_PATH)/MES_Comm/MES_Comm.mak
+include $(AS_CPU_PATH)/Servo/Servo.mak
+include $(AS_CPU_PATH)/Camera/Camera.mak
 include $(AS_CPU_PATH)/RSI/RSI.mak
 include $(AS_CPU_PATH)/ashwac/ashwac.mak
 include $(AS_CPU_PATH)/arconfig/arconfig.mak

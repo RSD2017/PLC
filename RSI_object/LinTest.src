@@ -1,0 +1,43 @@
+&ACCESS RVP
+&REL 6
+&PARAM EDITMASK = *
+&PARAM TEMPLATE = C:\KRC\Roboter\Template\vorgabe
+DEF LinTest()
+
+DECL INT speed
+
+;FOLD INI
+  ;FOLD BASISTECH INI
+    GLOBAL INTERRUPT DECL 3 WHEN $STOPMESS==TRUE DO IR_STOPM ( )
+    INTERRUPT ON 3 
+    BAS (#INITMOV,0 )
+  ;ENDFOLD (BASISTECH INI)
+  ;FOLD USER INI
+    ;Make your modifications here
+
+  ;ENDFOLD (USER INI)
+;ENDFOLD (INI)
+
+
+speed=30
+
+$VEL_AXIS[1]=speed
+$VEL_AXIS[2]=speed
+$VEL_AXIS[3]=speed
+$VEL_AXIS[4]=speed
+$VEL_AXIS[5]=speed
+$VEL_AXIS[6]=speed
+
+$APO.CDIS=10
+$VEL.CP=0.1
+
+PTP {A1 -15, A2 -70, A3 90, A4 0, A5 70, A6 -12}
+
+LIN {X 473, Y 300, Z 520, A -180, B 0, C 180}
+
+LIN {X 250, Y 300, Z 520, A -180, B 0, C 180}
+
+PTP {A1 -15, A2 -70, A3 90, A4 0, A5 70, A6 -12}
+
+
+END

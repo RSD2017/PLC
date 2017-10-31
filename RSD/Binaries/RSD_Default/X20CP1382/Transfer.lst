@@ -3,16 +3,21 @@
 <Transfer xmlns="http://br-automation.co.at/AS/Transfer">
   <OperatingSystem Version="I4.33"/>
   <Hardware Target="SG4"/>
-  <Operation Delete="Camera.br"/>
-  <Operation Delete="MES_Comm.br"/>
   <Operation Delete="Conveyor.br"/>
-  <Operation Delete="Im_alive.br"/>
+  <Operation Delete="Feeder.br"/>
+  <Operation Delete="Camera_A.br"/>
+  <Operation Delete="MES_Comm.br"/>
+  <Operation Delete="Servo.br"/>
+  <Operation Delete="Camera.br"/>
   <Operation Delete="RSI.br"/>
-  <Operation Delete="AsTCP.br"/>
   <Operation Delete="AsHttp.br"/>
+  <Operation Delete="AsTCP.br"/>
+  <Operation Delete="MTBasics.br"/>
   <Operation Delete="AsUDP.br"/>
   <Operation Delete="asieccon.br"/>
   <Operation Delete="astime.br"/>
+  <Operation Delete="brsystem.br"/>
+  <Operation Delete="sys_lib.br"/>
   <Operation Download="ashwd.br" Memory="SystemROM"/>
   <Operation Download="asfw.br" Memory="SystemROM"/>
   <Operation Download="arconfig.br" Memory="SystemROM"/>
@@ -26,14 +31,20 @@
   <Operation Download="Role.br" Memory="UserROM"/>
   <Operation Download="runtime.br" Memory="UserROM"/>
   <Operation Download="standard.br" Memory="UserROM"/>
+  <Operation Download="MTTypes.br" Memory="UserROM"/>
+  <Operation Download="sys_lib.br" Memory="UserROM"/>
+  <Operation Download="brsystem.br" Memory="UserROM"/>
   <Operation Download="astime.br" Memory="UserROM"/>
   <Operation Download="asieccon.br" Memory="UserROM"/>
   <Operation Download="AsUDP.br" Memory="UserROM"/>
-  <Operation Download="AsHttp.br" Memory="UserROM"/>
+  <Operation Download="MTBasics.br" Memory="UserROM"/>
   <Operation Download="AsTCP.br" Memory="UserROM"/>
+  <Operation Download="AsHttp.br" Memory="UserROM"/>
   <Operation Download="RSI.br" Memory="UserROM"/>
-  <Operation Download="Im_alive.br" Memory="UserROM"/>
-  <Operation Download="Conveyor.br" Memory="UserROM"/>
-  <Operation Download="MES_Comm.br" Memory="UserROM"/>
   <Operation Download="Camera.br" Memory="UserROM"/>
+  <Operation Download="Servo.br" Memory="UserROM"/>
+  <Operation Download="MES_Comm.br" Memory="UserROM"/>
+  <Operation Download="Camera_A.br" Memory="UserROM"/>
+  <Operation Download="Feeder.br" Memory="UserROM"/>
+  <Operation Download="Conveyor.br" Memory="UserROM"/>
 </Transfer>

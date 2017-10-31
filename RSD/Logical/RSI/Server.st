@@ -11,6 +11,36 @@
 
 PROGRAM _CYCLIC
 
+	
+	IF Enable_in = TRUE THEN
+		IF Camera_good OR Camera_bad THEN
+			Delay.In := 1.0;
+			IF Camera_good THEN
+				Good_brick := TRUE;
+			END_IF
+		
+			IF Camera_bad THEN
+				Good_brick := FALSE;
+			END_IF;
+		ELSE
+			Delay.In := 0.0;
+		END_IF	
+
+		Delay();
+		
+		IF Delay.Out = 1.0 AND Old_delay = 0.0 THEN
+			Old_delay := 1.0;
+			Activate := TRUE;
+			Camera_good := FALSE;
+			Camera_bad := FALSE;
+		ELSIF Delay.Out = 0.0 THEN
+			Old_delay := 0.0;
+		END_IF
+		
+	ELSE
+		Activate := FALSE;
+	END_IF
+	 
 
 	CASE Server.sStep OF
 		
@@ -41,13 +71,19 @@ PROGRAM _CYCLIC
 			IF Server.UdpRecv_0.status = 0 THEN  (* Data received *)
 				Server.sStep := 2;
 				Ready:=MID(Server.data_buffer,1,25);
+				
+			
+				
 			ELSIF Server.UdpRecv_0.status = udpERR_NO_DATA THEN  (* No data received - wait *)
-			  (* No Data received *)
+				(* No Data received *)
 			ELSIF Server.UdpRecv_0.status = ERR_FUB_BUSY THEN  (* UdpRecv not finished -> redo *)					
-			  (* Busy *)
+				(* Busy *)
 			ELSE  (* Goto Error Step *)
 				Server.sStep := 10;
 			END_IF	
+		
+		
+
 		
 		2:	(* Send Data back to Client *)
 			startPos:=FIND(Server.data_buffer,'<IPOC>');
@@ -56,17 +92,47 @@ PROGRAM _CYCLIC
 				TOC:=MID(Server.data_buffer,endPos-startPos,startPos);
 		
 			Output:='<Sen Type="ImFree"><Activate>';
-				IF Ready = '1' AND Activate = TRUE THEN
+			IF Enable_in = TRUE AND Ready = '1' AND Activate = TRUE THEN
+				
 				//IF Activate = TRUE THEN
 				Output:=CONCAT(Output, '1');
 				ELSE
 				Output:=CONCAT(Output, '0');
-				END_IF
-				Output:=CONCAT(Output,'</Activate>');
-				Output:=CONCAT(Output, TOC);
-				Output:=CONCAT(Output,'</Sen>');
+			END_IF
 			
-				Activate := FALSE;
+			Output:=CONCAT(Output,'</Activate>');
+			Output:=CONCAT(Output,'<Buf>');
+			Output:=CONCAT(Output,Buffer_use);
+			Output:=CONCAT(Output,'</Buf>');
+			Output:=CONCAT(Output,'<Index>');
+			IF Good_brick AND Activate THEN
+				Output:=CONCAT(Output,Buffer_good[index_good]);
+				index_good := index_good +1;
+				Activate:=FALSE;
+			ELSIF Good_brick = FALSE AND Activate THEN
+				Output:=CONCAT(Output,Buffer_bad[index_bad]);
+				index_bad := index_bad +1;
+				Activate:=FALSE;
+			ELSE
+				Output:=CONCAT(Output,'0');
+			END_IF
+			
+			//test
+			//IF Activate THEN
+			//	Output:=CONCAT(Output, Buffer_test);
+			//	Activate := FALSE;
+			//END_IF;
+			
+			Output:=CONCAT(Output,'</Index>');
+			Output:=CONCAT(Output, TOC);
+			Output:=CONCAT(Output,'</Sen>');
+			
+			// 100 -> robot ready -> to PLC
+			// 101 -> Activate -> to Robot
+			// 102 -> Buf -> to Robot
+			// 113-128 -> Index (word 16 bit) -> to Robot 
+			
+				
 			
 			
 			Server.UdpSend_0.enable := 1;

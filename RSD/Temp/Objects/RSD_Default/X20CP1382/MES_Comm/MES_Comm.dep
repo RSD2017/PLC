@@ -1,3 +1,7 @@
-$(AS_PROJECT_PATH)/Logical/Libraries/AsHttp/AsHttp.fun
-$(AS_PROJECT_PATH)/Logical/Libraries/AsHttp/AsHttp.var
-$(AS_PROJECT_PATH)/Logical/MES_Comm/Variables.var
+$(AS_PROJECT_PATH)/Logical/Libraries/AsTCP/AsTCP.fun
+$(AS_PROJECT_PATH)/Logical/Global.var
+$(AS_PROJECT_PATH)/Logical/Libraries/AsTCP/AsTCP.var
+$(AS_PROJECT_PATH)/Logical/Libraries/runtime/runtime.var
+$(AS_PROJECT_PATH)/Logical/MES_Comm/Client.var
+$(AS_PROJECT_PATH)/Logical/Libraries/AsTCP/AsTCP.typ
+$(AS_PROJECT_PATH)/Logical/MES_Comm/Client.typ

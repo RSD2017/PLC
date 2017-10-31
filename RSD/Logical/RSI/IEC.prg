@@ -5,5 +5,6 @@
     <File Description="UDP Server Variables" Private="true">Server.typ</File>
     <File Description="Data for Server Task" Private="true">Server.var</File>
     <File Description="Cyclic code">Server.st</File>
+    <File>Init.st</File>
   </Files>
 </Program>

@@ -179,7 +179,7 @@
 </LN>
 <LN ID="%IX.X2.DigitalInput02" Type="BOOL">
 <Prod Device="X2" DPName="DigitalInput02" Kind="io"/>
-<Cons Device="TC#2-CPYDEV" DPName="::Sensor_in" Kind="pv"/>
+<Cons Device="TC#3-CPYDEV" DPName="::Sensor_in" Kind="pv"/>
 </LN>
 <LN ID="%IX.X2.DigitalInput03" Type="BOOL">
 <Prod Device="X2" DPName="DigitalInput03" Kind="io"/>
@@ -201,6 +201,7 @@
 </LN>
 <LN ID="%IX.X2.DigitalInput09" Type="BOOL">
 <Prod Device="X2" DPName="DigitalInput09" Kind="io"/>
+<Cons Device="TC#4-CPYDEV" DPName="::Feeder:Enable_feeder" Kind="pv"/>
 </LN>
 <LN ID="%IX.X2.DigitalInput10" Type="BOOL">
 <Prod Device="X2" DPName="DigitalInput10" Kind="io"/>
@@ -218,7 +219,7 @@
 <Prod Device="X2" DPName="DigitalInput14" Kind="io"/>
 </LN>
 <LN ID="%QX.X3.DigitalOutput01" Type="BOOL">
-<Prod Device="TC#2-CPYDEV" DPName="::Im_alive:alive_led" Kind="pv"/>
+<Prod Device="TC#3-CPYDEV" DPName="::Camera_A:Camera_trigger" Kind="pv"/>
 <Cons Device="X3" DPName="DigitalOutput01" Kind="io"/>
 </LN>
 <LN ID="%QX.X3.DigitalOutput02" Type="BOOL">
@@ -226,6 +227,7 @@
 <Cons Device="X3" DPName="DigitalOutput02" Kind="io"/>
 </LN>
 <LN ID="%QX.X3.DigitalOutput03" Type="BOOL">
+<Prod Device="TC#4-CPYDEV" DPName="::Feeder:Output_signal" Kind="pv"/>
 <Cons Device="X3" DPName="DigitalOutput03" Kind="io"/>
 </LN>
 <LN ID="%QX.X3.DigitalOutput04" Type="BOOL">
@@ -242,9 +244,6 @@
 </LN>
 <LN ID="%QX.X3.DigitalOutput08" Type="BOOL">
 <Cons Device="X3" DPName="DigitalOutput08" Kind="io"/>
-</LN>
-<LN ID="%QX.X3.DigitalOutput09" Type="BOOL">
-<Cons Device="X3" DPName="DigitalOutput09" Kind="io"/>
 </LN>
 <LN ID="%QX.X3.DigitalOutput10" Type="BOOL">
 <Cons Device="X3" DPName="DigitalOutput10" Kind="io"/>
@@ -279,9 +278,6 @@
 <LN ID="%IX.X3.StatusDigitalOutput08" Type="BOOL">
 <Prod Device="X3" DPName="StatusDigitalOutput08" Kind="io"/>
 </LN>
-<LN ID="%IX.X3.StatusDigitalOutput09" Type="BOOL">
-<Prod Device="X3" DPName="StatusDigitalOutput09" Kind="io"/>
-</LN>
 <LN ID="%IX.X3.StatusDigitalOutput10" Type="BOOL">
 <Prod Device="X3" DPName="StatusDigitalOutput10" Kind="io"/>
 </LN>
@@ -290,6 +286,14 @@
 </LN>
 <LN ID="%IX.X3.StatusDigitalOutput12" Type="BOOL">
 <Prod Device="X3" DPName="StatusDigitalOutput12" Kind="io"/>
+</LN>
+<LN ID="%QW.X3.PWMPeriod09" Type="UINT">
+<Prod Device="TC#2-CPYDEV" DPName="::Servo:Period" Kind="pv"/>
+<Cons Device="X3" DPName="PWMPeriod09" Kind="io"/>
+</LN>
+<LN ID="%QW.X3.PWMOutput09" Type="INT">
+<Prod Device="TC#2-CPYDEV" DPName="::Servo:Pulse" Kind="pv"/>
+<Cons Device="X3" DPName="PWMOutput09" Kind="io"/>
 </LN>
 <LN ID="%IX.X3.StatusInput01" Type="BOOL">
 <Prod Device="X3" DPName="StatusInput01" Kind="io"/>

@@ -87,7 +87,6 @@
     <Channel ID="DigitalOutput06" Description="24 VDC / 0.5 A, source" Address="0x2010" BitOffset="5" Direction="OUT" Type="BOOL" Sig_Dig_05A_24VDC="1" />
     <Channel ID="DigitalOutput07" Description="24 VDC / 0.5 A, source" Address="0x2010" BitOffset="6" Direction="OUT" Type="BOOL" Sig_Dig_05A_24VDC="1" />
     <Channel ID="DigitalOutput08" Description="24 VDC / 0.5 A, source" Address="0x2010" BitOffset="7" Direction="OUT" Type="BOOL" Sig_Dig_05A_24VDC="1" />
-    <Channel ID="DigitalOutput09" Description="24 VDC / 0.5 A, source" Address="0x2011" BitOffset="0" Direction="OUT" Type="BOOL" Sig_Dig_02A_24VDC="1" />
     <Channel ID="DigitalOutput10" Description="24 VDC / 0.5 A, source" Address="0x2011" BitOffset="1" Direction="OUT" Type="BOOL" Sig_Dig_02A_24VDC="1" />
     <Channel ID="DigitalOutput11" Description="24 VDC / 0.5 A, source" Address="0x2011" BitOffset="2" Direction="OUT" Type="BOOL" Sig_Dig_02A_24VDC="1" />
     <Channel ID="DigitalOutput12" Description="24 VDC / 0.5 A, source" Address="0x2011" BitOffset="3" Direction="OUT" Type="BOOL" Sig_Dig_02A_24VDC="1" />
@@ -99,10 +98,11 @@
     <Channel ID="StatusDigitalOutput06" Description="Status digital output 06" Address="0x2001" BitOffset="5" Direction="IN" Type="BOOL" Sig_St_Bool="1" />
     <Channel ID="StatusDigitalOutput07" Description="Status digital output 07" Address="0x2001" BitOffset="6" Direction="IN" Type="BOOL" Sig_St_Bool="1" />
     <Channel ID="StatusDigitalOutput08" Description="Status digital output 08" Address="0x2001" BitOffset="7" Direction="IN" Type="BOOL" Sig_St_Bool="1" />
-    <Channel ID="StatusDigitalOutput09" Description="Status digital output 09" Address="0x2002" BitOffset="0" Direction="IN" Type="BOOL" Sig_St_Bool="1" />
     <Channel ID="StatusDigitalOutput10" Description="Status digital output 10" Address="0x2002" BitOffset="1" Direction="IN" Type="BOOL" Sig_St_Bool="1" />
     <Channel ID="StatusDigitalOutput11" Description="Status digital output 11" Address="0x2002" BitOffset="2" Direction="IN" Type="BOOL" Sig_St_Bool="1" />
     <Channel ID="StatusDigitalOutput12" Description="Status digital output 12" Address="0x2002" BitOffset="3" Direction="IN" Type="BOOL" Sig_St_Bool="1" />
+    <Channel ID="PWMPeriod09" Description="Period duration setting from 5 µs (200 kHz) to 65535 µs (15 Hz) [µs]" Address="0x1300" Direction="OUT" Type="UINT" Sig_St_Uint="1" />
+    <Channel ID="PWMOutput09" Description="Pulse width modulation, 24 VDC / 0.5 A [0 to 100.0 %]" Address="0x1302" Direction="OUT" Type="INT" Sig_Ana_0percent_100percent_1_10_genuine="1" />
     <Channel ID="StatusInput01" Description="I/O power supply warning (0 = DC OK)" Address="0x2004" Direction="IN" Type="BOOL" Sig_St_Bool="1" />
   </Module>
 </ChannelConfiguration>

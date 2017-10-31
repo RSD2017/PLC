@@ -2,10 +2,8 @@
 <?AutomationStudio Version=4.3.3.196?>
 <Program xmlns="http://br-automation.co.at/AS/Program">
   <Files>
-    <File Description="Cyclic code">Cyclic.st</File>
-    <File Description="Init code">Init.st</File>
-    <File Description="Exit code">Exit.st</File>
-    <File Description="Local data types" Private="true">Types.typ</File>
-    <File Description="Local variables" Private="true">Variables.var</File>
+    <File Description="Cyclic code">Client.st</File>
+    <File Description="TCP Client Variables" Private="true">Client.typ</File>
+    <File Description="Data for Client Task" Private="true">Client.var</File>
   </Files>
 </Program>

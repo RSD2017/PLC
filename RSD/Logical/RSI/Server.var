@@ -14,6 +14,17 @@ VAR
 	startPos : INT;
 	TOC : STRING[50];
 	endPos : INT;
-	Output : STRING[300];
+	Output : STRING[500];
 	Activate : BOOL := FALSE;
+	Delay : MTBasicsTimeDelay;
+	Old_delay : REAL := 0.0;
+	Counting : USINT := 0;
+	Old_Ready : STRING[1] := '1';
+	Buffer_test : STRING[5] := '0';
+	Buffer_use : STRING[1] := '0';
+	Buffer_bad : ARRAY[0..3] OF STRING[2];
+	Buffer_good : ARRAY[0..9] OF STRING[2];
+	index_good : USINT := 0;
+	Good_brick : BOOL := FALSE;
+	index_bad : USINT := 0;
 END_VAR

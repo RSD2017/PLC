@@ -13,10 +13,10 @@
       <Column Index="7" Width="172" Position="7" />
       <Column Index="8" Width="0" Position="8" />
       <Column Index="9" Width="108" Position="9" />
-      <Column Index="10" Width="114" Position="10" />
-      <Column Index="11" Width="78" Position="11" />
-      <Column Index="12" Width="92" Position="12" />
-      <Column Index="13" Width="118" Position="13" />
+      <Column Index="10" Width="0" Position="10" />
+      <Column Index="11" Width="0" Position="11" />
+      <Column Index="12" Width="0" Position="12" />
+      <Column Index="13" Width="0" Position="13" />
       <Column Index="14" Width="146" Position="14" />
       <Column Index="15" Width="0" Position="15" />
       <Column Index="16" Width="0" Position="16" />
@@ -27,88 +27,16 @@
     </SelectedNodes>
     <ZoomIndices />
   </TreeView>
-  <TreeView ID="X2-RSD_Default-X20CP1382" EditColumn="0" TopRow="0" HorizontalScrollOffset="0" SortedColumn="0">
-    <Columns>
-      <Column Index="0" Width="0" Position="0" />
-      <Column Index="1" Width="0" Position="1" />
-      <Column Index="2" Width="0" Position="2" />
-      <Column Index="3" Width="152" Position="3" />
-      <Column Index="4" Width="0" Position="4" />
-      <Column Index="5" Width="0" Position="5" />
-      <Column Index="6" Width="0" Position="6" />
-      <Column Index="7" Width="172" Position="7" />
-      <Column Index="8" Width="0" Position="8" />
-      <Column Index="9" Width="108" Position="9" />
-      <Column Index="10" Width="114" Position="10" />
-      <Column Index="11" Width="78" Position="11" />
-      <Column Index="12" Width="92" Position="12" />
-      <Column Index="13" Width="118" Position="13" />
-      <Column Index="14" Width="146" Position="14" />
-      <Column Index="15" Width="0" Position="15" />
-      <Column Index="16" Width="0" Position="16" />
-    </Columns>
-    <ExpandedNodes />
-    <SelectedNodes>
-      <SelectedNode Row="0" />
-    </SelectedNodes>
-    <ZoomIndices />
-  </TreeView>
-  <TreeView ID="X1-RSD_Default-X20CP1382" EditColumn="0" TopRow="0" HorizontalScrollOffset="0" SortedColumn="0">
-    <Columns>
-      <Column Index="0" Width="0" Position="0" />
-      <Column Index="1" Width="0" Position="1" />
-      <Column Index="2" Width="0" Position="2" />
-      <Column Index="3" Width="152" Position="3" />
-      <Column Index="4" Width="0" Position="4" />
-      <Column Index="5" Width="0" Position="5" />
-      <Column Index="6" Width="0" Position="6" />
-      <Column Index="7" Width="172" Position="7" />
-      <Column Index="8" Width="0" Position="8" />
-      <Column Index="9" Width="108" Position="9" />
-      <Column Index="10" Width="114" Position="10" />
-      <Column Index="11" Width="78" Position="11" />
-      <Column Index="12" Width="92" Position="12" />
-      <Column Index="13" Width="118" Position="13" />
-      <Column Index="14" Width="146" Position="14" />
-      <Column Index="15" Width="0" Position="15" />
-      <Column Index="16" Width="0" Position="16" />
-    </Columns>
-    <ExpandedNodes />
-    <SelectedNodes>
-      <SelectedNode Row="0" />
-    </SelectedNodes>
-    <ZoomIndices />
-  </TreeView>
-  <TreeView ID="X20CP1382.IF2-RSD_Default-X20CP1382" EditColumn="0" TopRow="0" HorizontalScrollOffset="0" SortedColumn="0">
-    <Columns>
-      <Column Index="0" Width="0" Position="0" />
-      <Column Index="1" Width="0" Position="1" />
-      <Column Index="2" Width="0" Position="2" />
-      <Column Index="3" Width="152" Position="3" />
-      <Column Index="4" Width="0" Position="4" />
-      <Column Index="5" Width="0" Position="5" />
-      <Column Index="6" Width="0" Position="6" />
-      <Column Index="7" Width="172" Position="7" />
-      <Column Index="8" Width="0" Position="8" />
-      <Column Index="9" Width="108" Position="9" />
-      <Column Index="10" Width="114" Position="10" />
-      <Column Index="11" Width="78" Position="11" />
-      <Column Index="12" Width="92" Position="12" />
-      <Column Index="13" Width="118" Position="13" />
-      <Column Index="14" Width="146" Position="14" />
-      <Column Index="15" Width="0" Position="15" />
-      <Column Index="16" Width="0" Position="16" />
-    </Columns>
-    <ExpandedNodes />
-    <SelectedNodes>
-      <SelectedNode Row="0" />
-    </SelectedNodes>
-    <ZoomIndices />
-  </TreeView>
-  <TextEdit ID="C:\projects\PLC\RSD\Logical\RSI\Server.st" CaretLine="69" CaretColumn="15" FirstVisibleLine="46">
+  <TextEdit ID="C:\projects\PLC\RSD\Logical\Camera_A\Main.st" CaretLine="5" CaretColumn="26" FirstVisibleLine="1">
     <Bookmarks />
   </TextEdit>
-  <TextEdit ID="C:\projects\PLC\RSD\Logical\Im_alive\Main.st" CaretLine="1" CaretColumn="1" FirstVisibleLine="1">
+  <TextEdit ID="C:\projects\PLC\RSD\Logical\RSI\Server.st" CaretLine="75" CaretColumn="4" FirstVisibleLine="57">
+    <Bookmarks />
+  </TextEdit>
+  <TextEdit ID="C:\projects\PLC\RSD\Logical\Servo\Cyclic.st" CaretLine="1" CaretColumn="1" FirstVisibleLine="1">
+    <Bookmarks />
+  </TextEdit>
+  <TextEdit ID="C:\projects\PLC\RSD\Logical\MES_Comm\Client.st" CaretLine="28" CaretColumn="53" FirstVisibleLine="13">
     <Bookmarks />
   </TextEdit>
   <TreeView ID="SwConfiguration-ProjectTree" EditColumn="0" TopRow="0" HorizontalScrollOffset="0" SortedColumn="0">
@@ -126,11 +54,12 @@
     <ExpandedNodes>
       <ExpandedNode Row="0" />
       <ExpandedNode Row="1" />
-      <ExpandedNode Row="3" />
-      <ExpandedNode Row="6" />
-      <ExpandedNode Row="17" />
-      <ExpandedNode Row="20" />
-      <ExpandedNode Row="30" />
+      <ExpandedNode Row="4" />
+      <ExpandedNode Row="7" />
+      <ExpandedNode Row="9" />
+      <ExpandedNode Row="19" />
+      <ExpandedNode Row="22" />
+      <ExpandedNode Row="36" />
     </ExpandedNodes>
     <SelectedNodes>
       <SelectedNode Row="0" />
@@ -168,19 +97,10 @@
     <SelectedNodes />
     <ZoomIndices />
   </TreeView>
-  <TextEdit ID="C:\projects\PLC\RSD\Logical\Conveyor\Cyclic.st" CaretLine="1" CaretColumn="1" FirstVisibleLine="1">
+  <TextEdit ID="C:\projects\PLC\RSD\Logical\Camera\Client.st" CaretLine="1" CaretColumn="1" FirstVisibleLine="69">
     <Bookmarks />
   </TextEdit>
-  <TextEdit ID="C:\projects\PLC\RSD\Logical\Conveyor\Init.st" CaretLine="1" CaretColumn="1" FirstVisibleLine="1">
-    <Bookmarks />
-  </TextEdit>
-  <TextEdit ID="C:\projects\PLC\RSD\Logical\MES_Comm\Init.st" CaretLine="1" CaretColumn="1" FirstVisibleLine="1">
-    <Bookmarks />
-  </TextEdit>
-  <TextEdit ID="C:\projects\PLC\RSD\Logical\MES_Comm\Cyclic.st" CaretLine="1" CaretColumn="1" FirstVisibleLine="1">
-    <Bookmarks />
-  </TextEdit>
-  <TreeView ID="C:\projects\PLC\RSD\Logical\Camera\LibAsTCP1_ST.var" EditColumn="6" TopRow="0" HorizontalScrollOffset="10" SortedColumn="0">
+  <TreeView ID="C:\projects\PLC\RSD\Logical\MES_Comm\Client.var" EditColumn="0" TopRow="0" HorizontalScrollOffset="0" SortedColumn="0">
     <Columns>
       <Column Index="0" Width="200" Position="0" />
       <Column Index="1" Width="100" Position="1" />
@@ -195,32 +115,10 @@
       <Column Index="10" Width="0" Position="10" />
     </Columns>
     <ExpandedNodes />
-    <SelectedNodes>
-      <SelectedNode Row="1" />
-    </SelectedNodes>
+    <SelectedNodes />
     <ZoomIndices />
   </TreeView>
-  <TreeView ID="C:\projects\PLC\RSD\Logical\Im_alive\Variables.var" EditColumn="6" TopRow="0" HorizontalScrollOffset="0" SortedColumn="0">
-    <Columns>
-      <Column Index="0" Width="200" Position="0" />
-      <Column Index="1" Width="100" Position="1" />
-      <Column Index="2" Width="110" Position="2" />
-      <Column Index="3" Width="98" Position="3" />
-      <Column Index="4" Width="72" Position="4" />
-      <Column Index="5" Width="112" Position="5" />
-      <Column Index="6" Width="100" Position="6" />
-      <Column Index="7" Width="200" Position="7" />
-      <Column Index="8" Width="0" Position="8" />
-      <Column Index="9" Width="0" Position="9" />
-      <Column Index="10" Width="0" Position="10" />
-    </Columns>
-    <ExpandedNodes />
-    <SelectedNodes>
-      <SelectedNode Row="0" />
-    </SelectedNodes>
-    <ZoomIndices />
-  </TreeView>
-  <TreeView ID="C:\projects\PLC\RSD\Logical\Global.var" EditColumn="1" TopRow="0" HorizontalScrollOffset="0" SortedColumn="0">
+  <TreeView ID="C:\projects\PLC\RSD\Logical\Global.var" EditColumn="6" TopRow="0" HorizontalScrollOffset="0" SortedColumn="0">
     <Columns>
       <Column Index="0" Width="200" Position="0" />
       <Column Index="1" Width="100" Position="1" />
@@ -236,107 +134,7 @@
     </Columns>
     <ExpandedNodes />
     <SelectedNodes>
-      <SelectedNode Row="0" />
-    </SelectedNodes>
-    <ZoomIndices />
-  </TreeView>
-  <TreeView ID="C:\projects\PLC\RSD\Logical\Conveyor\Variables.var" EditColumn="6" TopRow="0" HorizontalScrollOffset="0" SortedColumn="0">
-    <Columns>
-      <Column Index="0" Width="200" Position="0" />
-      <Column Index="1" Width="100" Position="1" />
-      <Column Index="2" Width="110" Position="2" />
-      <Column Index="3" Width="98" Position="3" />
-      <Column Index="4" Width="72" Position="4" />
-      <Column Index="5" Width="112" Position="5" />
-      <Column Index="6" Width="100" Position="6" />
-      <Column Index="7" Width="200" Position="7" />
-      <Column Index="8" Width="0" Position="8" />
-      <Column Index="9" Width="0" Position="9" />
-      <Column Index="10" Width="0" Position="10" />
-    </Columns>
-    <ExpandedNodes />
-    <SelectedNodes>
-      <SelectedNode Row="0" />
-    </SelectedNodes>
-    <ZoomIndices />
-  </TreeView>
-  <TreeView ID="C:\projects\PLC\RSD\Logical\Libraries\AsHttp\AsHttp.var" EditColumn="1" TopRow="0" HorizontalScrollOffset="0" SortedColumn="0">
-    <Columns>
-      <Column Index="0" Width="200" Position="0" />
-      <Column Index="1" Width="100" Position="1" />
-      <Column Index="2" Width="0" Position="2" />
-      <Column Index="3" Width="98" Position="3" />
-      <Column Index="4" Width="0" Position="4" />
-      <Column Index="5" Width="112" Position="5" />
-      <Column Index="6" Width="100" Position="6" />
-      <Column Index="7" Width="200" Position="7" />
-      <Column Index="8" Width="0" Position="8" />
-      <Column Index="9" Width="0" Position="9" />
-      <Column Index="10" Width="0" Position="10" />
-    </Columns>
-    <ExpandedNodes />
-    <SelectedNodes>
-      <SelectedNode Row="1" />
-    </SelectedNodes>
-    <ZoomIndices />
-  </TreeView>
-  <TreeView ID="C:\projects\PLC\RSD\Logical\MES_Comm\Variables.var" EditColumn="6" TopRow="0" HorizontalScrollOffset="0" SortedColumn="0">
-    <Columns>
-      <Column Index="0" Width="200" Position="0" />
-      <Column Index="1" Width="100" Position="1" />
-      <Column Index="2" Width="110" Position="2" />
-      <Column Index="3" Width="98" Position="3" />
-      <Column Index="4" Width="72" Position="4" />
-      <Column Index="5" Width="112" Position="5" />
-      <Column Index="6" Width="100" Position="6" />
-      <Column Index="7" Width="200" Position="7" />
-      <Column Index="8" Width="0" Position="8" />
-      <Column Index="9" Width="0" Position="9" />
-      <Column Index="10" Width="0" Position="10" />
-    </Columns>
-    <ExpandedNodes />
-    <SelectedNodes>
-      <SelectedNode Row="0" />
-    </SelectedNodes>
-    <ZoomIndices />
-  </TreeView>
-  <TreeView ID="C:\projects\PLC\RSD\Logical\Camera\Client.var" EditColumn="6" TopRow="0" HorizontalScrollOffset="10" SortedColumn="0">
-    <Columns>
-      <Column Index="0" Width="200" Position="0" />
-      <Column Index="1" Width="100" Position="1" />
-      <Column Index="2" Width="110" Position="2" />
-      <Column Index="3" Width="98" Position="3" />
-      <Column Index="4" Width="72" Position="4" />
-      <Column Index="5" Width="112" Position="5" />
-      <Column Index="6" Width="100" Position="6" />
-      <Column Index="7" Width="200" Position="7" />
-      <Column Index="8" Width="0" Position="8" />
-      <Column Index="9" Width="0" Position="9" />
-      <Column Index="10" Width="0" Position="10" />
-    </Columns>
-    <ExpandedNodes />
-    <SelectedNodes>
-      <SelectedNode Row="1" />
-    </SelectedNodes>
-    <ZoomIndices />
-  </TreeView>
-  <TreeView ID="C:\projects\PLC\RSD\Logical\RSI\Server.var" EditColumn="6" TopRow="0" HorizontalScrollOffset="0" SortedColumn="0">
-    <Columns>
-      <Column Index="0" Width="200" Position="0" />
-      <Column Index="1" Width="100" Position="1" />
-      <Column Index="2" Width="110" Position="2" />
-      <Column Index="3" Width="98" Position="3" />
-      <Column Index="4" Width="72" Position="4" />
-      <Column Index="5" Width="112" Position="5" />
-      <Column Index="6" Width="100" Position="6" />
-      <Column Index="7" Width="200" Position="7" />
-      <Column Index="8" Width="0" Position="8" />
-      <Column Index="9" Width="0" Position="9" />
-      <Column Index="10" Width="0" Position="10" />
-    </Columns>
-    <ExpandedNodes />
-    <SelectedNodes>
-      <SelectedNode Row="2" />
+      <SelectedNode Row="6" />
     </SelectedNodes>
     <ZoomIndices />
   </TreeView>

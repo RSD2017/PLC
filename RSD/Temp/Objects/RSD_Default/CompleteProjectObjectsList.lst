@@ -5,7 +5,7 @@
     Path="C:\projects\PLC\RSD\Logical\Package.pkg"
     LogicalPath=""
     Type="Package"
-    LastWriteTime="131514158452240000" />
+    LastWriteTime="131539181813630000" />
   <Object
     Path="C:\projects\PLC\RSD\Logical\Global.typ"
     LogicalPath="Global.typ"
@@ -16,13 +16,13 @@
     Path="C:\projects\PLC\RSD\Logical\Global.var"
     LogicalPath="Global.var"
     Type="File"
-    LastWriteTime="131508137510330000"
+    LastWriteTime="131539201593780000"
     Private="false" />
   <Object
     Path="C:\projects\PLC\RSD\Logical\Libraries\Package.pkg"
     LogicalPath="Libraries"
     Type="Package"
-    LastWriteTime="131514225180790000" />
+    LastWriteTime="131520089927170000" />
   <Object
     Path="C:\projects\PLC\RSD\Logical\Libraries\operator\Binary.lby"
     LogicalPath="Libraries.operator"
@@ -208,27 +208,119 @@
     LastWriteTime="131514225180700000"
     Private="false" />
   <Object
-    Path="C:\projects\PLC\RSD\Logical\Im_alive\IEC.prg"
-    LogicalPath="Im_alive"
+    Path="C:\projects\PLC\RSD\Logical\Libraries\MTBasics\Binary.lby"
+    LogicalPath="Libraries.MTBasics"
+    Type="Library"
+    LastWriteTime="131520089925720000" />
+  <Object
+    Path="C:\projects\PLC\RSD\Logical\Libraries\MTBasics\MTBasics.fun"
+    LogicalPath="Libraries.MTBasics.MTBasics.fun"
+    Type="File"
+    LastWriteTime="131520089925690000"
+    Private="false" />
+  <Object
+    Path="C:\projects\PLC\RSD\Logical\Libraries\MTBasics\MTBasics.typ"
+    LogicalPath="Libraries.MTBasics.MTBasics.typ"
+    Type="File"
+    LastWriteTime="131520089925700000"
+    Private="false" />
+  <Object
+    Path="C:\projects\PLC\RSD\Logical\Libraries\MTBasics\MTBasics.var"
+    LogicalPath="Libraries.MTBasics.MTBasics.var"
+    Type="File"
+    LastWriteTime="131520089925720000"
+    Private="false" />
+  <Object
+    Path="C:\projects\PLC\RSD\Logical\Libraries\brsystem\Binary.lby"
+    LogicalPath="Libraries.brsystem"
+    Type="Library"
+    LastWriteTime="131520089926190000" />
+  <Object
+    Path="C:\projects\PLC\RSD\Logical\Libraries\brsystem\brsystem.fun"
+    LogicalPath="Libraries.brsystem.brsystem.fun"
+    Type="File"
+    LastWriteTime="131520089926160000"
+    Private="false" />
+  <Object
+    Path="C:\projects\PLC\RSD\Logical\Libraries\brsystem\brsystem.typ"
+    LogicalPath="Libraries.brsystem.brsystem.typ"
+    Type="File"
+    LastWriteTime="131520089926170000"
+    Private="false" />
+  <Object
+    Path="C:\projects\PLC\RSD\Logical\Libraries\brsystem\brsystem.var"
+    LogicalPath="Libraries.brsystem.brsystem.var"
+    Type="File"
+    LastWriteTime="131520089926190000"
+    Private="false" />
+  <Object
+    Path="C:\projects\PLC\RSD\Logical\Libraries\MTTypes\Binary.lby"
+    LogicalPath="Libraries.MTTypes"
+    Type="Library"
+    LastWriteTime="131520089926690000" />
+  <Object
+    Path="C:\projects\PLC\RSD\Logical\Libraries\MTTypes\MTTypes.fun"
+    LogicalPath="Libraries.MTTypes.MTTypes.fun"
+    Type="File"
+    LastWriteTime="131520089926660000"
+    Private="false" />
+  <Object
+    Path="C:\projects\PLC\RSD\Logical\Libraries\MTTypes\MTTypes.typ"
+    LogicalPath="Libraries.MTTypes.MTTypes.typ"
+    Type="File"
+    LastWriteTime="131520089926670000"
+    Private="false" />
+  <Object
+    Path="C:\projects\PLC\RSD\Logical\Libraries\MTTypes\MTTypes.var"
+    LogicalPath="Libraries.MTTypes.MTTypes.var"
+    Type="File"
+    LastWriteTime="131520089926690000"
+    Private="false" />
+  <Object
+    Path="C:\projects\PLC\RSD\Logical\Libraries\sys_lib\Binary.lby"
+    LogicalPath="Libraries.sys_lib"
+    Type="Library"
+    LastWriteTime="131520089927090000" />
+  <Object
+    Path="C:\projects\PLC\RSD\Logical\Libraries\sys_lib\sys_lib.fun"
+    LogicalPath="Libraries.sys_lib.sys_lib.fun"
+    Type="File"
+    LastWriteTime="131520089927050000"
+    Private="false" />
+  <Object
+    Path="C:\projects\PLC\RSD\Logical\Libraries\sys_lib\sys_lib.typ"
+    LogicalPath="Libraries.sys_lib.sys_lib.typ"
+    Type="File"
+    LastWriteTime="131520089927070000"
+    Private="false" />
+  <Object
+    Path="C:\projects\PLC\RSD\Logical\Libraries\sys_lib\sys_lib.var"
+    LogicalPath="Libraries.sys_lib.sys_lib.var"
+    Type="File"
+    LastWriteTime="131520089927080000"
+    Private="false" />
+  <Object
+    Path="C:\projects\PLC\RSD\Logical\Camera_A\IEC.prg"
+    LogicalPath="Camera_A"
     Type="Program"
     LastWriteTime="131503261362302000" />
   <Object
-    Path="C:\projects\PLC\RSD\Logical\Im_alive\Main.st"
-    LogicalPath="Im_alive.Main.st"
+    Path="C:\projects\PLC\RSD\Logical\Camera_A\Main.st"
+    LogicalPath="Camera_A.Main.st"
     Type="File"
-    LastWriteTime="131508137594000000"
+    LastWriteTime="131538466605510000"
     Private="false" />
   <Object
-    Path="C:\projects\PLC\RSD\Logical\Im_alive\Types.typ"
-    LogicalPath="Im_alive.Types.typ"
+    Path="C:\projects\PLC\RSD\Logical\Camera_A\Types.typ"
+    LogicalPath="Camera_A.Types.typ"
     Type="File"
     LastWriteTime="131503261362282000"
     Private="true" />
   <Object
-    Path="C:\projects\PLC\RSD\Logical\Im_alive\Variables.var"
-    LogicalPath="Im_alive.Variables.var"
+    Path="C:\projects\PLC\RSD\Logical\Camera_A\Variables.var"
+    LogicalPath="Camera_A.Variables.var"
     Type="File"
-    LastWriteTime="131503268546302000"
+    LastWriteTime="131520091150660000"
     Private="true" />
   <Object
     Path="C:\projects\PLC\RSD\Logical\Conveyor\IEC.prg"
@@ -239,13 +331,13 @@
     Path="C:\projects\PLC\RSD\Logical\Conveyor\Cyclic.st"
     LogicalPath="Conveyor.Cyclic.st"
     Type="File"
-    LastWriteTime="131508137122290000"
+    LastWriteTime="131520101087920000"
     Private="false" />
   <Object
     Path="C:\projects\PLC\RSD\Logical\Conveyor\Init.st"
     LogicalPath="Conveyor.Init.st"
     Type="File"
-    LastWriteTime="131503266487122000"
+    LastWriteTime="131520100817440000"
     Private="false" />
   <Object
     Path="C:\projects\PLC\RSD\Logical\Conveyor\Exit.st"
@@ -269,36 +361,24 @@
     Path="C:\projects\PLC\RSD\Logical\MES_Comm\IEC.prg"
     LogicalPath="MES_Comm"
     Type="Program"
-    LastWriteTime="131508101506660000" />
+    LastWriteTime="131539182858140000" />
   <Object
-    Path="C:\projects\PLC\RSD\Logical\MES_Comm\Cyclic.st"
-    LogicalPath="MES_Comm.Cyclic.st"
+    Path="C:\projects\PLC\RSD\Logical\MES_Comm\Client.st"
+    LogicalPath="MES_Comm.Client.st"
     Type="File"
-    LastWriteTime="131508119904650000"
+    LastWriteTime="131539272515790000"
     Private="false" />
   <Object
-    Path="C:\projects\PLC\RSD\Logical\MES_Comm\Init.st"
-    LogicalPath="MES_Comm.Init.st"
+    Path="C:\projects\PLC\RSD\Logical\MES_Comm\Client.typ"
+    LogicalPath="MES_Comm.Client.typ"
     Type="File"
-    LastWriteTime="131508120209440000"
-    Private="false" />
-  <Object
-    Path="C:\projects\PLC\RSD\Logical\MES_Comm\Exit.st"
-    LogicalPath="MES_Comm.Exit.st"
-    Type="File"
-    LastWriteTime="131508101506630000"
-    Private="false" />
-  <Object
-    Path="C:\projects\PLC\RSD\Logical\MES_Comm\Types.typ"
-    LogicalPath="MES_Comm.Types.typ"
-    Type="File"
-    LastWriteTime="131508101506640000"
+    LastWriteTime="131539181796010000"
     Private="true" />
   <Object
-    Path="C:\projects\PLC\RSD\Logical\MES_Comm\Variables.var"
-    LogicalPath="MES_Comm.Variables.var"
+    Path="C:\projects\PLC\RSD\Logical\MES_Comm\Client.var"
+    LogicalPath="MES_Comm.Client.var"
     Type="File"
-    LastWriteTime="131508120342800000"
+    LastWriteTime="131539190842880000"
     Private="true" />
   <Object
     Path="C:\projects\PLC\RSD\Logical\Camera\IEC.prg"
@@ -321,7 +401,7 @@
     Path="C:\projects\PLC\RSD\Logical\Camera\Client.st"
     LogicalPath="Camera.Client.st"
     Type="File"
-    LastWriteTime="131508210557110000"
+    LastWriteTime="131538314650100000"
     Private="false" />
   <Object
     Path="C:\projects\PLC\RSD\Logical\Camera\Client.typ"
@@ -339,7 +419,7 @@
     Path="C:\projects\PLC\RSD\Logical\RSI\IEC.prg"
     LogicalPath="RSI"
     Type="Program"
-    LastWriteTime="131514166510850000" />
+    LastWriteTime="131520107382440000" />
   <Object
     Path="C:\projects\PLC\RSD\Logical\RSI\Server.typ"
     LogicalPath="RSI.Server.typ"
@@ -350,14 +430,78 @@
     Path="C:\projects\PLC\RSD\Logical\RSI\Server.var"
     LogicalPath="RSI.Server.var"
     Type="File"
-    LastWriteTime="131514258365440000"
+    LastWriteTime="131538322675110000"
     Private="true" />
   <Object
     Path="C:\projects\PLC\RSD\Logical\RSI\Server.st"
     LogicalPath="RSI.Server.st"
     Type="File"
-    LastWriteTime="131516808133628000"
+    LastWriteTime="131539180599990000"
     Private="false" />
+  <Object
+    Path="C:\projects\PLC\RSD\Logical\RSI\Init.st"
+    LogicalPath="RSI.Init.st"
+    Type="File"
+    LastWriteTime="131538468582100000"
+    Private="false" />
+  <Object
+    Path="C:\projects\PLC\RSD\Logical\Servo\IEC.prg"
+    LogicalPath="Servo"
+    Type="Program"
+    LastWriteTime="131520134139630000" />
+  <Object
+    Path="C:\projects\PLC\RSD\Logical\Servo\Cyclic.st"
+    LogicalPath="Servo.Cyclic.st"
+    Type="File"
+    LastWriteTime="131520245344780000"
+    Private="false" />
+  <Object
+    Path="C:\projects\PLC\RSD\Logical\Servo\Init.st"
+    LogicalPath="Servo.Init.st"
+    Type="File"
+    LastWriteTime="131520248337390000"
+    Private="false" />
+  <Object
+    Path="C:\projects\PLC\RSD\Logical\Servo\Exit.st"
+    LogicalPath="Servo.Exit.st"
+    Type="File"
+    LastWriteTime="131520134139610000"
+    Private="false" />
+  <Object
+    Path="C:\projects\PLC\RSD\Logical\Servo\Types.typ"
+    LogicalPath="Servo.Types.typ"
+    Type="File"
+    LastWriteTime="131520134139620000"
+    Private="true" />
+  <Object
+    Path="C:\projects\PLC\RSD\Logical\Servo\Variables.var"
+    LogicalPath="Servo.Variables.var"
+    Type="File"
+    LastWriteTime="131520248493380000"
+    Private="true" />
+  <Object
+    Path="C:\projects\PLC\RSD\Logical\Feeder\IEC.prg"
+    LogicalPath="Feeder"
+    Type="Program"
+    LastWriteTime="131538374175410000" />
+  <Object
+    Path="C:\projects\PLC\RSD\Logical\Feeder\Main.st"
+    LogicalPath="Feeder.Main.st"
+    Type="File"
+    LastWriteTime="131538394572500000"
+    Private="false" />
+  <Object
+    Path="C:\projects\PLC\RSD\Logical\Feeder\Types.typ"
+    LogicalPath="Feeder.Types.typ"
+    Type="File"
+    LastWriteTime="131538374175390000"
+    Private="true" />
+  <Object
+    Path="C:\projects\PLC\RSD\Logical\Feeder\Variables.var"
+    LogicalPath="Feeder.Variables.var"
+    Type="File"
+    LastWriteTime="131538393048980000"
+    Private="true" />
   <Object
     Path="C:\projects\PLC\RSD\Physical\RSD_Default\Config.pkg"
     LogicalPath="RSD_Default"
@@ -367,13 +511,13 @@
     Path="C:\projects\PLC\RSD\Physical\RSD_Default\Hardware.hw"
     LogicalPath="RSD_Default.Hardware.hw"
     Type="File"
-    LastWriteTime="131514281051100000"
+    LastWriteTime="131520231561100000"
     Private="false" />
   <Object
     Path="C:\projects\PLC\RSD\Physical\RSD_Default\Hardware.hwl"
     LogicalPath="RSD_Default.Hardware.hwl"
     Type="File"
-    LastWriteTime="131508853916516000"
+    LastWriteTime="131520090430640000"
     Private="false" />
   <Object
     Path="C:\projects\PLC\RSD\Physical\RSD_Default\X20CP1382\Cpu.pkg"
@@ -384,7 +528,7 @@
     Path="C:\projects\PLC\RSD\Physical\RSD_Default\X20CP1382\Cpu.sw"
     LogicalPath="RSD_Default.X20CP1382.Cpu.sw"
     Type="File"
-    LastWriteTime="131514285387580000"
+    LastWriteTime="131539191744160000"
     Private="false" />
   <Object
     Path="C:\projects\PLC\RSD\Physical\RSD_Default\X20CP1382\Cpu.per"
@@ -396,7 +540,7 @@
     Path="C:\projects\PLC\RSD\Physical\RSD_Default\X20CP1382\IoMap.iom"
     LogicalPath="RSD_Default.X20CP1382.IoMap.iom"
     Type="File"
-    LastWriteTime="131508138169970000"
+    LastWriteTime="131538386936050000"
     Private="false" />
   <Object
     Path="C:\projects\PLC\RSD\Physical\RSD_Default\X20CP1382\PvMap.vvm"
@@ -500,7 +644,7 @@
     Path="C:\projects\PLC\RSD\Physical\RSD_Default\Hardware.jpg"
     LogicalPath="RSD_Default.Hardware.jpg"
     Type="File"
-    LastWriteTime="131516808164258000"
+    LastWriteTime="131520199560670000"
     Private="false" />
   <Object
     Path="C:\projects\PLC\RSD\Logical\Libraries\AsHttp\SG4\AsHttp.h"
@@ -533,6 +677,24 @@
     LastWriteTime="131405575180000000"
     Private="false" />
   <Object
+    Path="C:\projects\PLC\RSD\Logical\Libraries\brsystem\SG4\brsystem.h"
+    LogicalPath="brsystem.h"
+    Type="File"
+    LastWriteTime="131405575200000000"
+    Private="false" />
+  <Object
+    Path="C:\projects\PLC\RSD\Logical\Libraries\MTBasics\SG4\MTBasics.h"
+    LogicalPath="MTBasics.h"
+    Type="File"
+    LastWriteTime="131127775580000000"
+    Private="false" />
+  <Object
+    Path="C:\projects\PLC\RSD\Logical\Libraries\MTTypes\SG4\MTTypes.h"
+    LogicalPath="MTTypes.h"
+    Type="File"
+    LastWriteTime="131321452940000000"
+    Private="false" />
+  <Object
     Path="C:\projects\PLC\RSD\Logical\Libraries\operator\SG4\operator.h"
     LogicalPath="operator.h"
     Type="File"
@@ -547,6 +709,12 @@
   <Object
     Path="C:\projects\PLC\RSD\Logical\Libraries\standard\SG4\standard.h"
     LogicalPath="standard.h"
+    Type="File"
+    LastWriteTime="131405575220000000"
+    Private="false" />
+  <Object
+    Path="C:\projects\PLC\RSD\Logical\Libraries\sys_lib\SG4\sys_lib.h"
+    LogicalPath="sys_lib.h"
     Type="File"
     LastWriteTime="131405575220000000"
     Private="false" />

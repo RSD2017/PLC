@@ -14,58 +14,8 @@
         Path="C:\projects\PLC\RSD\Logical\RSI\Server.var" />
       <InternalFile
         Path="C:\projects\PLC\RSD\Temp\Objects\RSD_Default\X20CP1382\RSI\Server.st.var" />
-    </Task>
-  </TaskClass>
-  <TaskClass
-    Name="Cyclic#2">
-    <Task
-      Name="Im_alive"
-      Disable="false"
-      Source="Im_alive"
-      Language="IEC">
       <InternalFile
-        Path="C:\projects\PLC\RSD\Temp\Objects\RSD_Default\X20CP1382\Im_alive\Main.st.var" />
-      <File
-        Path="C:\projects\PLC\RSD\Logical\Im_alive\Types.typ" />
-      <File
-        Path="C:\projects\PLC\RSD\Logical\Im_alive\Variables.var" />
-    </Task>
-  </TaskClass>
-  <TaskClass
-    Name="Cyclic#3" />
-  <TaskClass
-    Name="Cyclic#4">
-    <Task
-      Name="Conveyor"
-      Disable="false"
-      Source="Conveyor"
-      Language="IEC">
-      <InternalFile
-        Path="C:\projects\PLC\RSD\Temp\Objects\RSD_Default\X20CP1382\Conveyor\Cyclic.st.var" />
-      <InternalFile
-        Path="C:\projects\PLC\RSD\Temp\Objects\RSD_Default\X20CP1382\Conveyor\Init.st.var" />
-      <InternalFile
-        Path="C:\projects\PLC\RSD\Temp\Objects\RSD_Default\X20CP1382\Conveyor\Exit.st.var" />
-      <File
-        Path="C:\projects\PLC\RSD\Logical\Conveyor\Types.typ" />
-      <File
-        Path="C:\projects\PLC\RSD\Logical\Conveyor\Variables.var" />
-    </Task>
-    <Task
-      Name="MES_Comm"
-      Disable="false"
-      Source="MES_Comm"
-      Language="IEC">
-      <InternalFile
-        Path="C:\projects\PLC\RSD\Temp\Objects\RSD_Default\X20CP1382\MES_Comm\Cyclic.st.var" />
-      <InternalFile
-        Path="C:\projects\PLC\RSD\Temp\Objects\RSD_Default\X20CP1382\MES_Comm\Init.st.var" />
-      <InternalFile
-        Path="C:\projects\PLC\RSD\Temp\Objects\RSD_Default\X20CP1382\MES_Comm\Exit.st.var" />
-      <File
-        Path="C:\projects\PLC\RSD\Logical\MES_Comm\Types.typ" />
-      <File
-        Path="C:\projects\PLC\RSD\Logical\MES_Comm\Variables.var" />
+        Path="C:\projects\PLC\RSD\Temp\Objects\RSD_Default\X20CP1382\RSI\Init.st.var" />
     </Task>
     <Task
       Name="Camera"
@@ -82,6 +32,83 @@
         Path="C:\projects\PLC\RSD\Logical\Camera\Client.typ" />
       <File
         Path="C:\projects\PLC\RSD\Logical\Camera\Client.var" />
+    </Task>
+  </TaskClass>
+  <TaskClass
+    Name="Cyclic#2">
+    <Task
+      Name="Servo"
+      Disable="false"
+      Source="Servo"
+      Language="IEC">
+      <InternalFile
+        Path="C:\projects\PLC\RSD\Temp\Objects\RSD_Default\X20CP1382\Servo\Cyclic.st.var" />
+      <InternalFile
+        Path="C:\projects\PLC\RSD\Temp\Objects\RSD_Default\X20CP1382\Servo\Init.st.var" />
+      <InternalFile
+        Path="C:\projects\PLC\RSD\Temp\Objects\RSD_Default\X20CP1382\Servo\Exit.st.var" />
+      <File
+        Path="C:\projects\PLC\RSD\Logical\Servo\Types.typ" />
+      <File
+        Path="C:\projects\PLC\RSD\Logical\Servo\Variables.var" />
+    </Task>
+    <Task
+      Name="MES_Comm"
+      Disable="false"
+      Source="MES_Comm"
+      Language="IEC">
+      <InternalFile
+        Path="C:\projects\PLC\RSD\Temp\Objects\RSD_Default\X20CP1382\MES_Comm\Client.st.var" />
+      <File
+        Path="C:\projects\PLC\RSD\Logical\MES_Comm\Client.typ" />
+      <File
+        Path="C:\projects\PLC\RSD\Logical\MES_Comm\Client.var" />
+    </Task>
+  </TaskClass>
+  <TaskClass
+    Name="Cyclic#3">
+    <Task
+      Name="Camera_A"
+      Disable="false"
+      Source="Camera_A"
+      Language="IEC">
+      <InternalFile
+        Path="C:\projects\PLC\RSD\Temp\Objects\RSD_Default\X20CP1382\Camera_A\Main.st.var" />
+      <File
+        Path="C:\projects\PLC\RSD\Logical\Camera_A\Types.typ" />
+      <File
+        Path="C:\projects\PLC\RSD\Logical\Camera_A\Variables.var" />
+    </Task>
+  </TaskClass>
+  <TaskClass
+    Name="Cyclic#4">
+    <Task
+      Name="Feeder"
+      Disable="false"
+      Source="Feeder"
+      Language="IEC">
+      <InternalFile
+        Path="C:\projects\PLC\RSD\Temp\Objects\RSD_Default\X20CP1382\Feeder\Main.st.var" />
+      <File
+        Path="C:\projects\PLC\RSD\Logical\Feeder\Types.typ" />
+      <File
+        Path="C:\projects\PLC\RSD\Logical\Feeder\Variables.var" />
+    </Task>
+    <Task
+      Name="Conveyor"
+      Disable="false"
+      Source="Conveyor"
+      Language="IEC">
+      <InternalFile
+        Path="C:\projects\PLC\RSD\Temp\Objects\RSD_Default\X20CP1382\Conveyor\Cyclic.st.var" />
+      <InternalFile
+        Path="C:\projects\PLC\RSD\Temp\Objects\RSD_Default\X20CP1382\Conveyor\Init.st.var" />
+      <InternalFile
+        Path="C:\projects\PLC\RSD\Temp\Objects\RSD_Default\X20CP1382\Conveyor\Exit.st.var" />
+      <File
+        Path="C:\projects\PLC\RSD\Logical\Conveyor\Types.typ" />
+      <File
+        Path="C:\projects\PLC\RSD\Logical\Conveyor\Variables.var" />
     </Task>
   </TaskClass>
   <TaskClass

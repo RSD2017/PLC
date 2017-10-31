@@ -1,0 +1,4 @@
+VAR
+	Delay : MTBasicsTimeDelay;
+	Camera_trigger : BOOL := TRUE;
+END_VAR

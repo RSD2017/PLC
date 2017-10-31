@@ -1,0 +1,5 @@
+VAR
+	Counter : USINT := 0;
+	Output_signal : BOOL := FALSE;
+	Enable_feeder : BOOL := FALSE;
+END_VAR

@@ -88,7 +88,7 @@
     <Parameter ID="X3Channel07Source" Value="DirectIO" />
     <Parameter ID="X3Channel08Config" Value="outputPushPull" />
     <Parameter ID="X3Channel08Source" Value="DirectIO" />
-    <Parameter ID="X3Channel09Source" Value="DirectIO" />
+    <Parameter ID="X3Channel09Source" Value="PWMout" />
     <Parameter ID="X3Channel10Source" Value="DirectIO" />
     <Parameter ID="X3Channel11Source" Value="DirectIO" />
     <Parameter ID="X3Channel12Source" Value="DirectIO" />

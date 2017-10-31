@@ -20,6 +20,8 @@
    <RECEIVE>
       <ELEMENTS>
          <ELEMENT TAG="Activate" TYPE="BOOL" INDX="1" HOLDON="1" />
+		  <ELEMENT TAG="Buf" TYPE="BOOL" INDX="2" HOLDON="1" />
+		  <ELEMENT TAG="Index" TYPE="LONG" INDX="3" HOLDON="1" />
       </ELEMENTS>
    </RECEIVE>
 </ROOT>

@@ -1,4 +1,11 @@
 VAR
+	Camera_bad : BOOL := FALSE;
 	Enable_in : BOOL;
 	Sensor_in : BOOL;
+	Camera_good : BOOL := FALSE;
+	Tilt : BOOL := FALSE;
+	Data_send : STRING[200] := '';
+	Data_recv : STRING[200];
+	data_received : BOOL := FALSE;
+	New_data : BOOL := FALSE;
 END_VAR
