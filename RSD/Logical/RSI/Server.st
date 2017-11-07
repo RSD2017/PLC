@@ -15,13 +15,6 @@ PROGRAM _CYCLIC
 	IF Enable_in = TRUE THEN
 		IF Camera_good OR Camera_bad THEN
 			Delay.In := 1.0;
-			IF Camera_good THEN
-				Good_brick := TRUE;
-			END_IF
-		
-			IF Camera_bad THEN
-				Good_brick := FALSE;
-			END_IF;
 		ELSE
 			Delay.In := 0.0;
 		END_IF	
@@ -40,6 +33,11 @@ PROGRAM _CYCLIC
 	ELSE
 		Activate := FALSE;
 	END_IF
+	
+	IF Ready = '0' THEN
+		Activate := FALSE;
+	END_IF
+	
 	 
 
 	CASE Server.sStep OF
@@ -92,11 +90,12 @@ PROGRAM _CYCLIC
 				TOC:=MID(Server.data_buffer,endPos-startPos,startPos);
 		
 			Output:='<Sen Type="ImFree"><Activate>';
-			IF Enable_in = TRUE AND Ready = '1' AND Activate = TRUE THEN
+			
+			IF Enable_in = TRUE AND Ready = '1' AND Activate = TRUE AND Activate_override THEN
 				
 				//IF Activate = TRUE THEN
 				Output:=CONCAT(Output, '1');
-				ELSE
+			ELSE
 				Output:=CONCAT(Output, '0');
 			END_IF
 			
@@ -105,17 +104,21 @@ PROGRAM _CYCLIC
 			Output:=CONCAT(Output,Buffer_use);
 			Output:=CONCAT(Output,'</Buf>');
 			Output:=CONCAT(Output,'<Index>');
-			IF Good_brick AND Activate THEN
-				Output:=CONCAT(Output,Buffer_good[index_good]);
-				index_good := index_good +1;
-				Activate:=FALSE;
-			ELSIF Good_brick = FALSE AND Activate THEN
-				Output:=CONCAT(Output,Buffer_bad[index_bad]);
-				index_bad := index_bad +1;
-				Activate:=FALSE;
-			ELSE
-				Output:=CONCAT(Output,'0');
-			END_IF
+			Output:=CONCAT(Output, Robot_index);
+
+			
+			
+			//IF Good_brick AND Activate THEN
+			//	Output:=CONCAT(Output,Buffer_good[index_good]);
+			//	index_good := index_good +1;
+			//	Activate:=FALSE;
+			//ELSIF Good_brick = FALSE AND Activate THEN
+			//	Output:=CONCAT(Output,Buffer_bad[index_bad]);
+			//	index_bad := index_bad +1;
+			//	Activate:=FALSE;
+			//ELSE
+			//	Output:=CONCAT(Output,'0');
+			//END_IF
 			
 			//test
 			//IF Activate THEN

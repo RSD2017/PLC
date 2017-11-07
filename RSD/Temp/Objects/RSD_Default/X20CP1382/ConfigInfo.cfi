@@ -4,6 +4,38 @@
   <TaskClass
     Name="Cyclic#1">
     <Task
+      Name="MES_machin"
+      Disable="false"
+      Source="MES_machine"
+      Language="IEC">
+      <InternalFile
+        Path="C:\projects\PLC\RSD\Temp\Objects\RSD_Default\X20CP1382\MES_machin\Main.st.var" />
+      <File
+        Path="C:\projects\PLC\RSD\Logical\MES_machine\Types2.typ" />
+      <File
+        Path="C:\projects\PLC\RSD\Logical\MES_machine\Variables2.var" />
+      <InternalFile
+        Path="C:\projects\PLC\RSD\Temp\Objects\RSD_Default\X20CP1382\MES_machin\buffer_free.st.var" />
+      <InternalFile
+        Path="C:\projects\PLC\RSD\Temp\Objects\RSD_Default\X20CP1382\MES_machin\fetch_brick.st.var" />
+      <InternalFile
+        Path="C:\projects\PLC\RSD\Temp\Objects\RSD_Default\X20CP1382\MES_machin\fetch_brick_decimal.st.var" />
+      <InternalFile
+        Path="C:\projects\PLC\RSD\Temp\Objects\RSD_Default\X20CP1382\MES_machin\get_partid.st.var" />
+      <InternalFile
+        Path="C:\projects\PLC\RSD\Temp\Objects\RSD_Default\X20CP1382\MES_machin\in_buffer.st.var" />
+      <File
+        Path="C:\projects\PLC\RSD\Logical\MES_machine\LocalFunctions.fun" />
+      <InternalFile
+        Path="C:\projects\PLC\RSD\Temp\Objects\RSD_Default\X20CP1382\MES_machin\save_brick.st.var" />
+      <InternalFile
+        Path="C:\projects\PLC\RSD\Temp\Objects\RSD_Default\X20CP1382\MES_machin\save_brick_decimal.st.var" />
+      <File
+        Path="C:\projects\PLC\RSD\Logical\MES_machine\Types.typ" />
+      <File
+        Path="C:\projects\PLC\RSD\Logical\MES_machine\Variables.var" />
+    </Task>
+    <Task
       Name="RSI"
       Disable="false"
       Source="RSI"
@@ -17,6 +49,21 @@
       <InternalFile
         Path="C:\projects\PLC\RSD\Temp\Objects\RSD_Default\X20CP1382\RSI\Init.st.var" />
     </Task>
+    <Task
+      Name="MES_Comm"
+      Disable="false"
+      Source="MES_Comm"
+      Language="IEC">
+      <InternalFile
+        Path="C:\projects\PLC\RSD\Temp\Objects\RSD_Default\X20CP1382\MES_Comm\Client.st.var" />
+      <File
+        Path="C:\projects\PLC\RSD\Logical\MES_Comm\Client.typ" />
+      <File
+        Path="C:\projects\PLC\RSD\Logical\MES_Comm\Client.var" />
+    </Task>
+  </TaskClass>
+  <TaskClass
+    Name="Cyclic#2">
     <Task
       Name="Camera"
       Disable="false"
@@ -32,37 +79,6 @@
         Path="C:\projects\PLC\RSD\Logical\Camera\Client.typ" />
       <File
         Path="C:\projects\PLC\RSD\Logical\Camera\Client.var" />
-    </Task>
-  </TaskClass>
-  <TaskClass
-    Name="Cyclic#2">
-    <Task
-      Name="Servo"
-      Disable="false"
-      Source="Servo"
-      Language="IEC">
-      <InternalFile
-        Path="C:\projects\PLC\RSD\Temp\Objects\RSD_Default\X20CP1382\Servo\Cyclic.st.var" />
-      <InternalFile
-        Path="C:\projects\PLC\RSD\Temp\Objects\RSD_Default\X20CP1382\Servo\Init.st.var" />
-      <InternalFile
-        Path="C:\projects\PLC\RSD\Temp\Objects\RSD_Default\X20CP1382\Servo\Exit.st.var" />
-      <File
-        Path="C:\projects\PLC\RSD\Logical\Servo\Types.typ" />
-      <File
-        Path="C:\projects\PLC\RSD\Logical\Servo\Variables.var" />
-    </Task>
-    <Task
-      Name="MES_Comm"
-      Disable="false"
-      Source="MES_Comm"
-      Language="IEC">
-      <InternalFile
-        Path="C:\projects\PLC\RSD\Temp\Objects\RSD_Default\X20CP1382\MES_Comm\Client.st.var" />
-      <File
-        Path="C:\projects\PLC\RSD\Logical\MES_Comm\Client.typ" />
-      <File
-        Path="C:\projects\PLC\RSD\Logical\MES_Comm\Client.var" />
     </Task>
   </TaskClass>
   <TaskClass
@@ -110,13 +126,21 @@
       <File
         Path="C:\projects\PLC\RSD\Logical\Conveyor\Variables.var" />
     </Task>
+    <Task
+      Name="Servo"
+      Disable="false"
+      Source="Servo"
+      Language="IEC">
+      <InternalFile
+        Path="C:\projects\PLC\RSD\Temp\Objects\RSD_Default\X20CP1382\Servo\Cyclic.st.var" />
+      <InternalFile
+        Path="C:\projects\PLC\RSD\Temp\Objects\RSD_Default\X20CP1382\Servo\Init.st.var" />
+      <InternalFile
+        Path="C:\projects\PLC\RSD\Temp\Objects\RSD_Default\X20CP1382\Servo\Exit.st.var" />
+      <File
+        Path="C:\projects\PLC\RSD\Logical\Servo\Types.typ" />
+      <File
+        Path="C:\projects\PLC\RSD\Logical\Servo\Variables.var" />
+    </Task>
   </TaskClass>
-  <TaskClass
-    Name="Cyclic#5" />
-  <TaskClass
-    Name="Cyclic#6" />
-  <TaskClass
-    Name="Cyclic#7" />
-  <TaskClass
-    Name="Cyclic#8" />
 </ConfigInfo>

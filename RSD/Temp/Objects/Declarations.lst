@@ -1,5 +1,6 @@
 C:\projects\PLC\RSD\Logical\Global.typ
 C:\projects\PLC\RSD\Logical\Global.var
+C:\projects\PLC\RSD\Logical\Global2.typ
 C:\projects\PLC\RSD\Logical\Libraries\operator\operator.fun
 C:\projects\PLC\RSD\Logical\Libraries\operator\operator.typ
 C:\projects\PLC\RSD\Logical\Libraries\operator\operator.var
@@ -36,3 +37,6 @@ C:\projects\PLC\RSD\Logical\Libraries\MTTypes\MTTypes.var
 C:\projects\PLC\RSD\Logical\Libraries\sys_lib\sys_lib.fun
 C:\projects\PLC\RSD\Logical\Libraries\sys_lib\sys_lib.typ
 C:\projects\PLC\RSD\Logical\Libraries\sys_lib\sys_lib.var
+C:\projects\PLC\RSD\Logical\Libraries\asstring\asstring.fun
+C:\projects\PLC\RSD\Logical\Libraries\asstring\asstring.typ
+C:\projects\PLC\RSD\Logical\Libraries\asstring\asstring.var

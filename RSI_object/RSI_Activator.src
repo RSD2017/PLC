@@ -23,7 +23,7 @@ DECL BOOL Array[6]
   ;ENDFOLD (USER INI)
 ;ENDFOLD (INI)
 
-speed=75
+speed=100
 
 $VEL_AXIS[1]=speed
 $VEL_AXIS[2]=speed
@@ -33,9 +33,9 @@ $VEL_AXIS[5]=speed
 $VEL_AXIS[6]=speed
 
 $APO.CDIS=10
-$VEL.CP=0.1
-$VEL.ORI1 = 180
-$VEL.ORI2 = 180
+$VEL.CP=1.0
+$VEL.ORI1=300
+$VEL.ORI2=300
 
 ; Move to start position
 PTP {A1 -123, A2 -50, A3 120, A4 4, A5 20, A6 -16}
@@ -64,9 +64,10 @@ $VEL_AXIS[5]=speed
 $VEL_AXIS[6]=speed
 
 $APO.CDIS=10
-$VEL.CP=0.1
-$VEL.ORI1 = 180
-$VEL.ORI2 = 180
+$VEL.CP=1.0
+$VEL.ORI1=300
+$VEL.ORI2=300
+
 
 $OUT[100] = TRUE
 $OUT[101] = FALSE
@@ -91,7 +92,7 @@ WHILE TRUE
 			; Put directly in box
 			IF (Array[6] == FALSE) AND (Array[5] == FALSE) THEN
 				; Move down to conveyor
-				LIN {X -211, Y 342, Z 195, A -68, B 0, C -180} C_DIS
+				LIN {X -211, Y 342, Z 195, A -157, B 0, C -180} C_DIS
 				
 			ENDIF
 
@@ -208,8 +209,8 @@ WHILE TRUE
 
 			; Put in box
 			LIN {X -211, Y 418, Z 195, A -68, B 0, C -180} C_DIS
-			LIN {X -365, Y 418, Z 195, A -68, B 0, C -180} C_DIS
-			LIN {X -365, Y 418, Z 240, A -68, B 0, C -180} C_DIS
+			LIN {X -375, Y 418, Z 195, A -68, B 0, C -180} C_DIS
+			LIN {X -375, Y 418, Z 240, A -68, B 0, C -180} C_DIS
 
 		
 		; Buffer
@@ -330,6 +331,7 @@ WHILE TRUE
 
 		; Move back to grib_sliske pos
 		LIN {X -211, Y 342, Z 215, A -157, B 0, C -180} C_DIS
+		$OUT[101] = FALSE
 		$OUT[100] = TRUE
 	
 ENDWHILE

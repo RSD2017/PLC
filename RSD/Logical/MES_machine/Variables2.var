@@ -1,0 +1,17 @@
+VAR
+	MES_step : USINT := 0;
+	Number : UDINT;
+	Pos_find : INT;
+	String_tmp : STRING[200];
+	Current_order_id : UDINT;
+	Order_selected : BOOL := FALSE;
+	Current_order_parts : UDINT;
+	Order_index : UDINT;
+	Parts_vector : ARRAY[0..4] OF UDINT;
+	Order_good : UDINT;
+	Order_bad : UDINT;
+	Part_status_posted : BOOL := FALSE;
+	Current_order_ids : STRING[200];
+	Part_moved : BOOL := FALSE;
+	Buffer_part_id : UDINT;
+END_VAR

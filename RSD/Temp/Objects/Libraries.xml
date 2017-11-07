@@ -14,6 +14,12 @@
     UseAsStatic="false"
     Version="" />
   <Library
+    Name="asstring"
+    IsDeployed="true"
+    IsStatic="false"
+    UseAsStatic="false"
+    Version="" />
+  <Library
     Name="AsTCP"
     IsDeployed="true"
     IsStatic="false"

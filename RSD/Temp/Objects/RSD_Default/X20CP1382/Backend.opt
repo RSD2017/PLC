@@ -1,7 +1,8 @@
 RSI	"$(AS_CPU_PATH)/RSI/a.out" -o "$(AS_CPU_PATH)/RSI/RSI.ox" -T SG4 -r Cyclic1   -G V4.1.2  -B I4.33
-Camera	"$(AS_CPU_PATH)/Camera/a.out" -o "$(AS_CPU_PATH)/Camera/Camera.ox" -T SG4 -r Cyclic1   -G V4.1.2  -B I4.33
-Servo	"$(AS_CPU_PATH)/Servo/a.out" -o "$(AS_CPU_PATH)/Servo/Servo.ox" -T SG4 -r Cyclic2   -G V4.1.2  -B I4.33
-MES_Comm	"$(AS_CPU_PATH)/MES_Comm/a.out" -o "$(AS_CPU_PATH)/MES_Comm/MES_Comm.ox" -T SG4 -r Cyclic2   -G V4.1.2  -B I4.33
+MES_Comm	"$(AS_CPU_PATH)/MES_Comm/a.out" -o "$(AS_CPU_PATH)/MES_Comm/MES_Comm.ox" -T SG4 -r Cyclic1   -G V4.1.2  -B I4.33
+MES_machin	"$(AS_CPU_PATH)/MES_machin/a.out" -o "$(AS_CPU_PATH)/MES_machin/MES_machin.ox" -T SG4 -r Cyclic1   -G V4.1.2  -B I4.33
+Camera	"$(AS_CPU_PATH)/Camera/a.out" -o "$(AS_CPU_PATH)/Camera/Camera.ox" -T SG4 -r Cyclic2   -G V4.1.2  -B I4.33
 Camera_A	"$(AS_CPU_PATH)/Camera_A/a.out" -o "$(AS_CPU_PATH)/Camera_A/Camera_A.ox" -T SG4 -r Cyclic3   -G V4.1.2  -B I4.33
 Feeder	"$(AS_CPU_PATH)/Feeder/a.out" -o "$(AS_CPU_PATH)/Feeder/Feeder.ox" -T SG4 -r Cyclic4   -G V4.1.2  -B I4.33
 Conveyor	"$(AS_CPU_PATH)/Conveyor/a.out" -o "$(AS_CPU_PATH)/Conveyor/Conveyor.ox" -T SG4 -r Cyclic4   -G V4.1.2  -B I4.33
+Servo	"$(AS_CPU_PATH)/Servo/a.out" -o "$(AS_CPU_PATH)/Servo/Servo.ox" -T SG4 -r Cyclic4   -G V4.1.2  -B I4.33

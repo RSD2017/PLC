@@ -19,14 +19,14 @@ PROGRAM _CYCLIC
 		
 		 3: (* IDLE state - waits here until there is something to send *)
 			IF New_data <> FALSE THEN
-				Client.sStep:=0;
+				Client.sStep:=20;
 			END_IF;
  	
 		 0: (* Open Ethernet Interface *)
 			Client.TcpOpen_0.enable := 1;	
 			Client.TcpOpen_0.pIfAddr := 0;  (* Which Interface to open *)
 			Client.TcpOpen_0.port := 13001;  (* Port on client side to use *)
-			Client.TcpOpen_0.options :=  tcpOPT_REUSEADDR;
+			Client.TcpOpen_0.options :=  0;
 			Client.TcpOpen_0;  (* Call the Function *)
 						
 			IF Client.TcpOpen_0.status = 0 THEN  (* TcpOpen successfull *)
@@ -49,7 +49,7 @@ PROGRAM _CYCLIC
    			Client.TcpIoctl_0;	    
 		
 			IF Client.TcpIoctl_0.status = 0 THEN  (* TcpIoctl successfull *)
-				Client.sStep := 3;											
+				Client.sStep := 10;											
 			ELSIF Client.TcpIoctl_0.status = ERR_FUB_BUSY THEN  (* TcpIoctl not finished -> redo *)				
 			  (* Busy *)
 			ELSE  (* Goto Error Step *)
@@ -65,7 +65,7 @@ PROGRAM _CYCLIC
 			Client.TcpClient_0;  (* Call the Function*)
 			
 			IF Client.TcpClient_0.status = 0 THEN  (* Open ok -> Send Data *)
-				Client.sStep := 20;	
+				Client.sStep := 3;	
 			ELSIF Client.TcpClient_0.status = ERR_FUB_BUSY THEN  (* TcpClient not finished -> redo *)	
 			  (* Busy *)
 			ELSIF Client.TcpClient_0.status = tcpERR_INVALID THEN  (* Port error -> Close actual connection, and reopen a new one *)
@@ -78,13 +78,23 @@ PROGRAM _CYCLIC
 			Client.TcpSend_0.enable := 1;				
 			Client.TcpSend_0.ident := Client.TcpOpen_0.ident;  (* Connection Ident from AsTCP.TCP_Open *)
 			Client.TcpSend_0.pData := ADR(Data_send);  (* Which data to send *)
-			Client.TcpSend_0.datalen := SIZEOF(Data_send);  (* Lenght of data to send *)											
+			Client.TcpSend_0.datalen := Data_length; //SIZEOF(Data_send);  (* Lenght of data to send *)											
 			Client.TcpSend_0.flags := 0;
 			Client.TcpSend_0;  (* Call the Function*)
+			Data_recv_index := 0;
+			FOR counter:=0 TO 9 BY 1 DO
+				Data_recv_vector[counter] := '';
+			END_FOR
+			
 				
 			IF Client.TcpSend_0.status = 0 THEN  (* Data was sent sucessfully -> receive data *)
 				New_data:=FALSE;
-				Client.sStep := 30;
+				IF Should_recv THEN
+					Client.sStep := 30;
+				ELSE
+					Client.sStep := 3;
+				END_IF
+				
 			ELSIF Client.TcpSend_0.status = ERR_FUB_BUSY THEN  (* TcpSend not finished -> redo *)	
 			  (* Busy *)
 			ELSIF (Client.TcpSend_0.status = tcpERR_SENTLEN) OR (Client.TcpSend_0.status = tcpERR_NOT_CONNECTED) THEN (* Connection Lost *)
@@ -96,17 +106,25 @@ PROGRAM _CYCLIC
 	    30: (* Receive Data from the Server *)
 			Client.TcpRecv_0.enable := 1;
 			Client.TcpRecv_0.ident := Client.TcpOpen_0.ident;  (* Connection Ident from AsTCP.TCP_Open *)
-			Client.TcpRecv_0.pData	:= ADR(Data_recv);  (* Where to store the incoming data *)
-			Client.TcpRecv_0.datamax := SIZEOF(Data_recv);  (* Lenght of data buffer *)
+			Client.TcpRecv_0.pData	:= ADR(Data_recv_vector[Data_recv_index]);  (* Where to store the incoming data *)
+			Client.TcpRecv_0.datamax := SIZEOF(Data_recv_vector[Data_recv_index]);  (* Lenght of data buffer *)
 			Client.TcpRecv_0.flags := 0;
 			Client.TcpRecv_0;  (* Call the Function*)
 		
 			IF Client.TcpRecv_0.status = 0 THEN  (* Data was received sucessfully -> Send next packet *)
-				Client.sStep := 40;
+				Client.sStep := 30;
 				Client.recv_timeout := 0;
-				data_received := TRUE;
+				
+				//Data_recv_vector[Data_recv_index] := Data_recv;
+				Data_recv_index := Data_recv_index +1;
 			ELSIF Client.TcpRecv_0.status = tcpERR_NO_DATA THEN  (* No data received - wait *)
-			 	
+				Client.recv_timeout := Client.recv_timeout + 1;
+				IF Client.recv_timeout > 10 THEN
+					Client.sStep := 3;
+					Client.recv_timeout := 0;
+					data_received := TRUE;
+				END_IF
+
 				(* No Data received *)
 			ELSIF Client.TcpRecv_0.status = ERR_FUB_BUSY THEN  (* TcpRecv not finished -> redo *)		
 				(* Busy *)

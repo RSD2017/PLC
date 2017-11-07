@@ -1,6 +1,6 @@
 SHELL := cmd.exe
 CYGWIN=nontsec
-export PATH := C:\Windows;C:\Windows;C:\Windows;C:\Windows;C:\Windows;C:\Windows;C:\Windows;C:\Windows;C:\Windows;C:\Windows;C:\Windows;C:\Windows;C:\Windows;C:\Windows;C:\Windows;C:\Windows;C:\Windows;C:\Windows;C:\Windows;C:\Windows;C:\Windows;C:\Program Files (x86)\Parallels\Parallels Tools\Applications;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Common Files\Hilscher GmbH\TLRDecode;C:\Users\Nikolaj\AppData\Local\GitHubDesktop\bin;C:\Program Files (x86)\Common Files\Hilscher GmbH\TLRDecode;C:\Users\Nikolaj\AppData\Local\GitHubDesktop\bin
+export PATH := C:\Program Files (x86)\Parallels\Parallels Tools\Applications;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\CMake\bin;C:\Program Files (x86)\Common Files\Hilscher GmbH\TLRDecode;C:\Users\Nikolaj\AppData\Local\GitHubDesktop\bin;C:\Program Files (x86)\Common Files\Hilscher GmbH\TLRDecode;C:\Users\Nikolaj\AppData\Local\GitHubDesktop\bin
 export AS_BUILD_MODE := Build
 export AS_VERSION := 4.3.3.196
 export AS_COMPANY_NAME :=  

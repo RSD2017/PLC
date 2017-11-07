@@ -1,0 +1,6 @@
+$(AS_PROJECT_PATH)/Logical/Libraries/standard/standard.fun
+$(AS_PROJECT_PATH)/Logical/MES_machine/LocalFunctions.fun
+$(AS_PROJECT_PATH)/Logical/Global.var
+$(AS_PROJECT_PATH)/Logical/MES_machine/Variables2.var
+$(AS_PROJECT_PATH)/Logical/MES_machine/Variables.var
+$(AS_PROJECT_PATH)/Logical/Global2.typ

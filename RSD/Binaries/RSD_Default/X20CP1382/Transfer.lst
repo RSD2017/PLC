@@ -3,13 +3,14 @@
 <Transfer xmlns="http://br-automation.co.at/AS/Transfer">
   <OperatingSystem Version="I4.33"/>
   <Hardware Target="SG4"/>
+  <Operation Delete="Servo.br"/>
   <Operation Delete="Conveyor.br"/>
   <Operation Delete="Feeder.br"/>
   <Operation Delete="Camera_A.br"/>
-  <Operation Delete="MES_Comm.br"/>
-  <Operation Delete="Servo.br"/>
   <Operation Delete="Camera.br"/>
+  <Operation Delete="MES_Comm.br"/>
   <Operation Delete="RSI.br"/>
+  <Operation Delete="MES_machin.br"/>
   <Operation Delete="AsHttp.br"/>
   <Operation Delete="AsTCP.br"/>
   <Operation Delete="MTBasics.br"/>
@@ -32,6 +33,7 @@
   <Operation Download="runtime.br" Memory="UserROM"/>
   <Operation Download="standard.br" Memory="UserROM"/>
   <Operation Download="MTTypes.br" Memory="UserROM"/>
+  <Operation Download="asstring.br" Memory="UserROM"/>
   <Operation Download="sys_lib.br" Memory="UserROM"/>
   <Operation Download="brsystem.br" Memory="UserROM"/>
   <Operation Download="astime.br" Memory="UserROM"/>
@@ -40,11 +42,12 @@
   <Operation Download="MTBasics.br" Memory="UserROM"/>
   <Operation Download="AsTCP.br" Memory="UserROM"/>
   <Operation Download="AsHttp.br" Memory="UserROM"/>
+  <Operation Download="MES_machin.br" Memory="UserROM"/>
   <Operation Download="RSI.br" Memory="UserROM"/>
-  <Operation Download="Camera.br" Memory="UserROM"/>
-  <Operation Download="Servo.br" Memory="UserROM"/>
   <Operation Download="MES_Comm.br" Memory="UserROM"/>
+  <Operation Download="Camera.br" Memory="UserROM"/>
   <Operation Download="Camera_A.br" Memory="UserROM"/>
   <Operation Download="Feeder.br" Memory="UserROM"/>
   <Operation Download="Conveyor.br" Memory="UserROM"/>
+  <Operation Download="Servo.br" Memory="UserROM"/>
 </Transfer>

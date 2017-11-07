@@ -4,10 +4,12 @@
   <Objects>
     <Object Type="File" Description="Global data types">Global.typ</Object>
     <Object Type="File" Description="Global variables">Global.var</Object>
+    <Object Type="File">Global2.typ</Object>
     <Object Type="Package" Description="Global libraries">Libraries</Object>
     <Object Type="Program" Language="IEC">Camera_A</Object>
     <Object Type="Program" Language="IEC">Conveyor</Object>
     <Object Type="Program" Language="IEC">MES_Comm</Object>
+    <Object Type="Program" Language="IEC">MES_machine</Object>
     <Object Type="Program" Language="IEC">Camera</Object>
     <Object Type="Program" Language="IEC">RSI</Object>
     <Object Type="Program" Language="IEC">Servo</Object>
