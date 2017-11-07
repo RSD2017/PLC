@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OpcUaConfig FileVersion="3">
+  <DefaultView>
+    <Module>
+      <GlobalVariables Name="Global PV">
+        <Variable Name="Activate" />
+        <Variable Name="Activate_override" />
+        <Variable Name="Buffer_use" />
+        <Variable Name="Camera_bad" />
+        <Variable Name="Camera_good" />
+        <Variable Name="Current_part_id" />
+        <Variable Name="Current_part_post" />
+        <Variable Name="Data_recv_vector" />
+        <Variable Name="Data_send" />
+        <Variable Name="Enable_in" />
+        <Variable Name="Ready" />
+        <Variable Name="Robot_index" />
+        <Variable Name="Sensor_in" />
+        <Variable Name="Tilt" />
+      </GlobalVariables>
+      <Task Name="MES_machin">
+        <Variable Name="Buffer_part_id" />
+        <Variable Name="Current_order_id" />
+        <Variable Name="Current_order_ids" />
+        <Variable Name="Current_order_parts" />
+        <Variable Name="MES_step" />
+        <Variable Name="Number" />
+        <Variable Name="Order_bad" />
+        <Variable Name="Order_good" />
+        <Variable Name="Order_index" />
+        <Variable Name="Order_selected" />
+        <Variable Name="Part_status_posted" />
+        <Variable Name="Parts_vector" />
+        <Variable Name="Pos_find" />
+        <Variable Name="String_tmp" />
+        <Variable Name="variables">
+          <Variable Name="isGoodCounter" />
+          <Variable Name="isBadCounter" />
+          <Variable Name="position" />
+          <Variable Name="sliske" />
+          <Variable Name="buffer_bad" />
+          <Variable Name="buffer_good" />
+        </Variable>
+      </Task>
+      <Task Name="MES_Comm">
+        <Variable Name="Client" />
+      </Task>
+      <Task Name="Camera_A">
+        <Variable Name="Camera_trigger" />
+      </Task>
+      <Task Name="Feeder">
+        <Variable Name="Counter" />
+        <Variable Name="Enable_feeder" />
+        <Variable Name="Output_signal" />
+      </Task>
+      <Task Name="Conveyor">
+        <Variable Name="Conveyor_out" />
+      </Task>
+    </Module>
+  </DefaultView>
+</OpcUaConfig>

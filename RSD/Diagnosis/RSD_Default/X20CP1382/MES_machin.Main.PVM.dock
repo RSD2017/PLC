@@ -1,11 +1,11 @@
 WATCH Ver=2.00 PLCName=PLC1 CPUName=CPU TaskName=MES_machin 
 Position X=0 Y=0 Width=0 Height=0 TabWidth Name=150 Type=0 Scope=0 Force=0 Index=24 ASCIIString=0
                                     name                                     type force                                                            value level type len format place expand specs
-                          Order_selected                                     BOOL    0 "                                                               *"    0    1    1    2    1    0         
+                          Order_selected                                     BOOL    0 "                                                            TRUE"    0    1    1    2    1    0         
                        Activate_override                                     BOOL    0 "                                                            TRUE"    0    1    1    2    0    0         
-                       Current_order_ids                              STRING[200]    0 "                                                              ''"    0    9  201    1    1    0         
+                       Current_order_ids                              STRING[200]    0 "                                                          '8 5 '"    0    9  201    1    1    0         
                         Data_recv_vector                          STRING[4][0..9]    0 "                                                               *"    0    9    5    0    0    1         
-                     Data_recv_vector[0]                                STRING[4]    0 "                                                              ''"    1    9    5    1    0    0         
+                     Data_recv_vector[0]                                STRING[4]    0 "                                                          'ÿÿÿÿ'"    1    9    5    1    0    0         
                      Data_recv_vector[1]                                STRING[4]    0 "                                                              ''"    1    9    5    1    0    0         
                      Data_recv_vector[2]                                STRING[4]    0 "                                                              ''"    1    9    5    1    0    0         
                      Data_recv_vector[3]                                STRING[4]    0 "                                                              ''"    1    9    5    1    0    0         
@@ -15,7 +15,7 @@ Position X=0 Y=0 Width=0 Height=0 TabWidth Name=150 Type=0 Scope=0 Force=0 Index
                      Data_recv_vector[7]                                STRING[4]    0 "                                                              ''"    1    9    5    1    0    0         
                      Data_recv_vector[8]                                STRING[4]    0 "                                                              ''"    1    9    5    1    0    0         
                      Data_recv_vector[9]                                STRING[4]    0 "                                                              ''"    1    9    5    1    0    0         
-                         Current_part_id                                    UDINT    0 "                                                              10"    0    7    1   10    0    0         
+                         Current_part_id                                    UDINT    0 "                                                               2"    0    7    1   10    0    0         
                            Part_selected                                     BOOL    0 "                                                           FALSE"    0    1    1    2    0    0         
                                Data_send                              STRING[200]    0 "                                                 'GET ORDER 1$n'"    0    9  201    1    0    0         
                             Parts_vector                              UDINT[0..4]    0 "                                                               *"    0    7    5    0    1    1         

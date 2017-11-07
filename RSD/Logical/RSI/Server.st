@@ -34,7 +34,7 @@ PROGRAM _CYCLIC
 		Activate := FALSE;
 	END_IF
 	
-	IF Ready = '0' THEN
+	IF Ready = '0' OR Activate_override = FALSE THEN
 		Activate := FALSE;
 	END_IF
 	

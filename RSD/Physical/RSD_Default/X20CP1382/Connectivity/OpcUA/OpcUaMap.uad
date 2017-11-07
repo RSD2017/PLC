@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OpcUaSource FileVersion="3">
+  <DefaultView>
+    <Module>
+      <GlobalVariables Name="Global PV">
+        <Variable Name="Activate" Enable="True" />
+        <Variable Name="Activate_override" Enable="True" />
+        <Variable Name="Buffer_use" Enable="True" />
+        <Variable Name="Camera_bad" Enable="True" />
+        <Variable Name="Camera_good" Enable="True" />
+        <Variable Name="Current_part_id" Enable="True" />
+        <Variable Name="Current_part_post" Enable="True" />
+        <Variable Name="Data_recv_vector" Enable="True" />
+        <Variable Name="Data_send" Enable="True" />
+        <Variable Name="Enable_in" Enable="True" />
+        <Variable Name="Ready" Enable="True" />
+        <Variable Name="Robot_index" Enable="True" />
+        <Variable Name="Sensor_in" Enable="True" />
+        <Variable Name="Tilt" Enable="True" />
+      </GlobalVariables>
+      <Task Name="MES_machin" Enable="True">
+        <Variable Name="Buffer_part_id" Enable="True" />
+        <Variable Name="Current_order_id" Enable="True" />
+        <Variable Name="Current_order_ids" Enable="True" />
+        <Variable Name="Current_order_parts" Enable="True" />
+        <Variable Name="MES_step" Enable="True" />
+        <Variable Name="Number" Enable="True" />
+        <Variable Name="Order_bad" Enable="True" />
+        <Variable Name="Order_good" Enable="True" />
+        <Variable Name="Order_index" Enable="True" />
+        <Variable Name="Order_selected" Enable="True" />
+        <Variable Name="Part_status_posted" Enable="True" />
+        <Variable Name="Parts_vector" Enable="True" />
+        <Variable Name="Pos_find" Enable="True" />
+        <Variable Name="String_tmp" Enable="True" />
+        <Variable Name="variables" Enable="True">
+          <Variable Name="isGoodCounter" Enable="True" />
+          <Variable Name="isBadCounter" Enable="True" />
+          <Variable Name="position" Enable="True" />
+          <Variable Name="sliske" Enable="True" />
+          <Variable Name="buffer_bad" Enable="True" />
+          <Variable Name="buffer_good" Enable="True" />
+        </Variable>
+      </Task>
+      <Task Name="MES_Comm" Enable="True">
+        <Variable Name="Client" Enable="True" />
+      </Task>
+      <Task Name="Camera_A" Enable="True">
+        <Variable Name="Camera_trigger" Enable="True" />
+      </Task>
+      <Task Name="Feeder" Enable="True">
+        <Variable Name="Counter" Enable="True" />
+        <Variable Name="Enable_feeder" Enable="True" />
+        <Variable Name="Output_signal" Enable="True" />
+      </Task>
+      <Task Name="Conveyor" Enable="True">
+        <Variable Name="Conveyor_out" Enable="True" />
+      </Task>
+    </Module>
+  </DefaultView>
+</OpcUaSource>

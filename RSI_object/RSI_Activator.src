@@ -8,7 +8,7 @@ DEF RSIActivator()
 DECL INT ret	; Return value for RSI commands
 DECL INT CONTID	; ContainerID
 DECL INT speed
-DECL BOOL Array[6]
+DECL BOOL Array[7]
 
 
 ;FOLD INI
@@ -23,7 +23,7 @@ DECL BOOL Array[6]
   ;ENDFOLD (USER INI)
 ;ENDFOLD (INI)
 
-speed=100
+speed=80
 
 $VEL_AXIS[1]=speed
 $VEL_AXIS[2]=speed
@@ -34,11 +34,15 @@ $VEL_AXIS[6]=speed
 
 $APO.CDIS=10
 $VEL.CP=1.0
-$VEL.ORI1=300
-$VEL.ORI2=300
+$VEL.ORI1=400
+$VEL.ORI2=400
 
 ; Move to start position
+
+
+
 PTP {A1 -123, A2 -50, A3 120, A4 4, A5 20, A6 -16}
+
 LIN {X -211, Y 342, Z 215, A -157, B 0, C -180}
 
 
@@ -65,8 +69,8 @@ $VEL_AXIS[6]=speed
 
 $APO.CDIS=10
 $VEL.CP=1.0
-$VEL.ORI1=300
-$VEL.ORI2=300
+$VEL.ORI1=400
+$VEL.ORI2=400
 
 
 $OUT[100] = TRUE
@@ -84,21 +88,35 @@ WHILE TRUE
 		Array[4] = $OUT[115]
 		Array[5] = $OUT[116]
 		Array[6] = $OUT[117]
+		Array[7] = $OUT[118]
 		
 
 		; If false from conveyor or buf to box
 		IF (Array[1] == FALSE) THEN
 
 			; Put directly in box
-			IF (Array[6] == FALSE) AND (Array[5] == FALSE) THEN
+			IF (Array[7] == FALSE) AND (Array[6] == FALSE) AND (Array[5] == FALSE) THEN
 				; Move down to conveyor
-				LIN {X -211, Y 342, Z 195, A -157, B 0, C -180} C_DIS
+				PTP{A6 -10}
+				LIN {X -211, Y 342, Z 195, A -68, B 0, C -180} C_DIS
 				
+			ENDIF
+			
+			IF (ARRAY[7] == TRUE) THEN
+				PTP{A6 -10}
+				LIN {X -211, Y 342, Z 195, A -68, B 0, C -180} C_DIS
+				LIN {X -211, Y 418, Z 195, A -68, B 0, C -180} C_DIS
+				LIN {X -375, Y 418, Z 195, A -68, B 0, C -180} C_DIS
+				LIN {X -375, Y 418, Z 240, A -68, B 0, C -180} C_DIS
+
 			ENDIF
 
 			; Sliske 1
 			IF (Array[6] == FALSE) AND (Array[5] == TRUE) THEN
-				LIN {X -211, Y 342, Z 240, A -157, B 0, C -180} C_DIS
+				IF (ARRAY[7] == FALSE) THEN
+					PTP{A6 -10}
+					LIN {X -211, Y 342, Z 240, A -68, B 0, C -180} C_DIS
+				ENDIF
 			
 				; Move to 1. pos
 				IF (Array[4] == TRUE) THEN
@@ -137,7 +155,10 @@ WHILE TRUE
 
 			; Sliske 2
 			IF (Array[6] == TRUE) AND (Array[5] == FALSE) THEN
-				LIN {X -211, Y 342, Z 240, A -157, B 0, C -180} C_DIS
+				IF (ARRAY[7] == FALSE) THEN
+					PTP{A6 -10}
+					LIN {X -211, Y 342, Z 240, A -68, B 0, C -180} C_DIS
+				ENDIF
 			
 
 				; Move to 1. pos
@@ -170,7 +191,10 @@ WHILE TRUE
 
 			; Sliske 3
 			IF (Array[6] == TRUE) AND (Array[5] == TRUE) THEN
-				LIN {X -211, Y 342, Z 240, A -157, B 0, C -180} C_DIS
+				IF (ARRAY[7] == FALSE) THEN
+					PTP{A6 -10}
+					LIN {X -211, Y 342, Z 240, A -68, B 0, C -180} C_DIS
+				ENDIF
 			
 				; Move to 1. pos
 				IF (Array[4] == TRUE) THEN
@@ -211,13 +235,14 @@ WHILE TRUE
 			LIN {X -211, Y 418, Z 195, A -68, B 0, C -180} C_DIS
 			LIN {X -375, Y 418, Z 195, A -68, B 0, C -180} C_DIS
 			LIN {X -375, Y 418, Z 240, A -68, B 0, C -180} C_DIS
+			PTP{A6 -109}
 
 		
 		; Buffer
 		ELSE
 		; Move down to conveyor
 		LIN {X -211, Y 342, Z 195, A -157, B 0, C -180}
-
+		WAIT SEC 0.5
 
 
 			; Sliske 1

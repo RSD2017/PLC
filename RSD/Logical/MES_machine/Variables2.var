@@ -1,5 +1,7 @@
 VAR
 	MES_step : USINT := 0;
+END_VAR
+VAR RETAIN
 	Number : UDINT;
 	Pos_find : INT;
 	String_tmp : STRING[200];
@@ -12,6 +14,5 @@ VAR
 	Order_bad : UDINT;
 	Part_status_posted : BOOL := FALSE;
 	Current_order_ids : STRING[200];
-	Part_moved : BOOL := FALSE;
 	Buffer_part_id : UDINT;
 END_VAR

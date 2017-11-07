@@ -8,7 +8,7 @@ PROGRAM _CYCLIC
 	(* Insert code here *)
 	
 	IF Enable_feeder AND Enable_in THEN
-		IF Counter = 60 THEN
+		IF Counter = 30 THEN
 			Output_signal := NOT Output_signal;
 			Counter := 0;
 		END_IF

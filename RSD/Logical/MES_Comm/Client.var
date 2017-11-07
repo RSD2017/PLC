@@ -10,6 +10,5 @@
  ********************************************************************)
 VAR
 	Client : Client_typ := (0); (*Data for Client Task*)
-	State_send : USINT := 0;
 	counter : USINT;
 END_VAR

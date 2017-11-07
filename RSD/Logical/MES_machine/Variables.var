@@ -1,5 +1,3 @@
-VAR
-	test : UDINT := 0;
+VAR RETAIN
 	variables : Variables;
-	isgood : BOOL;
 END_VAR

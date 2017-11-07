@@ -81,4 +81,4 @@ Position X=0 Y=0 Width=0 Height=0 TabWidth Name=150 Type=0 Scope=0 Force=0 Index
                                  lLinger                                    UDINT    0 "                                                               *"    2    7    1   10    0    0         
                             recv_timeout                                    UDINT    0 "                                                               0"    1    7    1   10    0    0         
                                 New_data                                     BOOL    0 "                                                           FALSE"    0    1    1    2    0    0         
-                           data_received                                     BOOL    0 "                                                               *"    0    1    1    2    0    0         
+                           data_received                                     BOOL    0 "                                                           FALSE"    0    1    1    2    0    0         

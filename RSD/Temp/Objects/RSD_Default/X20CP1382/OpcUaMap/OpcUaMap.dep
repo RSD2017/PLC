@@ -1,0 +1,9 @@
+$(AS_PROJECT_PATH)/Logical/Global.var
+$(AS_PROJECT_PATH)/Logical/MES_machine/Variables2.var
+$(AS_PROJECT_PATH)/Physical/RSD_Default/X20CP1382/Cpu.sw
+$(AS_PROJECT_PATH)/Logical/MES_machine/Variables.var
+$(AS_PROJECT_PATH)/Logical/Global2.typ
+$(AS_PROJECT_PATH)/Logical/MES_Comm/Client.var
+$(AS_PROJECT_PATH)/Logical/Camera_A/Variables.var
+$(AS_PROJECT_PATH)/Logical/Feeder/Variables.var
+$(AS_PROJECT_PATH)/Logical/Conveyor/Variables.var

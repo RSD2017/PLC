@@ -22,7 +22,7 @@
     Path="C:\projects\PLC\RSD\Logical\Global2.typ"
     LogicalPath="Global2.typ"
     Type="File"
-    LastWriteTime="131544457333890000"
+    LastWriteTime="131545338630850000"
     Private="false" />
   <Object
     Path="C:\projects\PLC\RSD\Logical\Libraries\Package.pkg"
@@ -337,7 +337,7 @@
     Path="C:\projects\PLC\RSD\Logical\Camera_A\Main.st"
     LogicalPath="Camera_A.Main.st"
     Type="File"
-    LastWriteTime="131540403207890000"
+    LastWriteTime="131545368219570000"
     Private="false" />
   <Object
     Path="C:\projects\PLC\RSD\Logical\Camera_A\Types.typ"
@@ -407,7 +407,7 @@
     Path="C:\projects\PLC\RSD\Logical\MES_Comm\Client.var"
     LogicalPath="MES_Comm.Client.var"
     Type="File"
-    LastWriteTime="131544286937670000"
+    LastWriteTime="131545207339544000"
     Private="true" />
   <Object
     Path="C:\projects\PLC\RSD\Logical\MES_machine\IEC.prg"
@@ -418,7 +418,7 @@
     Path="C:\projects\PLC\RSD\Logical\MES_machine\Main.st"
     LogicalPath="MES_machine.Main.st"
     Type="File"
-    LastWriteTime="131545181572666000"
+    LastWriteTime="131545282043200000"
     Private="false" />
   <Object
     Path="C:\projects\PLC\RSD\Logical\MES_machine\Types2.typ"
@@ -430,7 +430,7 @@
     Path="C:\projects\PLC\RSD\Logical\MES_machine\Variables2.var"
     LogicalPath="MES_machine.Variables2.var"
     Type="File"
-    LastWriteTime="131544458166450000"
+    LastWriteTime="131545338175330000"
     Private="true" />
   <Object
     Path="C:\projects\PLC\RSD\Logical\MES_machine\buffer_free.st"
@@ -490,7 +490,7 @@
     Path="C:\projects\PLC\RSD\Logical\MES_machine\Variables.var"
     LogicalPath="MES_machine.Variables.var"
     Type="File"
-    LastWriteTime="131544481031310000"
+    LastWriteTime="131545336557540000"
     Private="true" />
   <Object
     Path="C:\projects\PLC\RSD\Logical\Camera\IEC.prg"
@@ -542,19 +542,19 @@
     Path="C:\projects\PLC\RSD\Logical\RSI\Server.var"
     LogicalPath="RSI.Server.var"
     Type="File"
-    LastWriteTime="131544499832350000"
+    LastWriteTime="131545207340234000"
     Private="true" />
   <Object
     Path="C:\projects\PLC\RSD\Logical\RSI\Server.st"
     LogicalPath="RSI.Server.st"
     Type="File"
-    LastWriteTime="131545183955246000"
+    LastWriteTime="131545327997520000"
     Private="false" />
   <Object
     Path="C:\projects\PLC\RSD\Logical\RSI\Init.st"
     LogicalPath="RSI.Init.st"
     Type="File"
-    LastWriteTime="131540403208400000"
+    LastWriteTime="131545282800810000"
     Private="false" />
   <Object
     Path="C:\projects\PLC\RSD\Logical\Servo\IEC.prg"
@@ -589,7 +589,7 @@
     Path="C:\projects\PLC\RSD\Logical\Servo\Variables.var"
     LogicalPath="Servo.Variables.var"
     Type="File"
-    LastWriteTime="131540403208430000"
+    LastWriteTime="131545207600294000"
     Private="true" />
   <Object
     Path="C:\projects\PLC\RSD\Logical\Feeder\IEC.prg"
@@ -600,7 +600,7 @@
     Path="C:\projects\PLC\RSD\Logical\Feeder\Main.st"
     LogicalPath="Feeder.Main.st"
     Type="File"
-    LastWriteTime="131544516947720000"
+    LastWriteTime="131545307739570000"
     Private="false" />
   <Object
     Path="C:\projects\PLC\RSD\Logical\Feeder\Types.typ"
@@ -623,7 +623,7 @@
     Path="C:\projects\PLC\RSD\Physical\RSD_Default\Hardware.hw"
     LogicalPath="RSD_Default.Hardware.hw"
     Type="File"
-    LastWriteTime="131544546747910000"
+    LastWriteTime="131545229324964000"
     Private="false" />
   <Object
     Path="C:\projects\PLC\RSD\Physical\RSD_Default\Hardware.hwl"
@@ -674,7 +674,13 @@
     Path="C:\projects\PLC\RSD\Physical\RSD_Default\X20CP1382\Connectivity\OpcUA\Package.pkg"
     LogicalPath="RSD_Default.X20CP1382.Connectivity.OpcUA"
     Type="Package"
-    LastWriteTime="131540403208540000" />
+    LastWriteTime="131545223905914000" />
+  <Object
+    Path="C:\projects\PLC\RSD\Physical\RSD_Default\X20CP1382\Connectivity\OpcUA\OpcUaMap.uad"
+    LogicalPath="RSD_Default.X20CP1382.Connectivity.OpcUA.OpcUaMap.uad"
+    Type="File"
+    LastWriteTime="131545232848644000"
+    Private="false" />
   <Object
     Path="C:\projects\PLC\RSD\Physical\RSD_Default\X20CP1382\TextSystem\Package.pkg"
     LogicalPath="RSD_Default.X20CP1382.TextSystem"
@@ -705,7 +711,7 @@
     Path="C:\projects\PLC\RSD\Physical\RSD_Default\X20CP1382\AccessAndSecurity\UserRoleSystem\User.user"
     LogicalPath="RSD_Default.X20CP1382.AccessAndSecurity.UserRoleSystem.User.user"
     Type="File"
-    LastWriteTime="131540403208530000"
+    LastWriteTime="131545225087164000"
     Private="false" />
   <Object
     Path="C:\projects\PLC\RSD\Physical\RSD_Default\X20CP1382\AccessAndSecurity\CertificateStore\Package.pkg"

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?AutomationStudio Version=4.3.3.196?>
 <State Top="0" Left="0" Width="0" Height="0" WindowState="Normal" xmlns="http://br-automation.co.at/AS/State">
-  <TextEdit ID="C:\projects\PLC\RSD\Logical\MES_Comm\Client.st" CaretLine="115" CaretColumn="24" FirstVisibleLine="122">
+  <TextEdit ID="C:\projects\PLC\RSD\Logical\MES_Comm\Client.st" CaretLine="115" CaretColumn="24" FirstVisibleLine="111">
     <Bookmarks />
   </TextEdit>
   <TreeView ID="SwConfiguration-ProjectTree" EditColumn="0" TopRow="0" HorizontalScrollOffset="0" SortedColumn="0">
@@ -65,19 +65,17 @@
   <TextEdit ID="C:\projects\PLC\RSD\Logical\Camera\Client.st" CaretLine="1" CaretColumn="70" FirstVisibleLine="73">
     <Bookmarks />
   </TextEdit>
-  <TextEdit ID="C:\projects\PLC\RSD\Logical\MES_machine\Main.st" CaretLine="288" CaretColumn="31" FirstVisibleLine="271">
+  <TextEdit ID="C:\projects\PLC\RSD\Logical\MES_machine\Main.st" CaretLine="275" CaretColumn="33" FirstVisibleLine="275">
     <Bookmarks>
-      <Bookmark Line="188" />
-      <Bookmark Line="190" />
-      <Bookmark Line="201" />
-      <Bookmark Line="205" />
-      <Bookmark Line="253" />
+      <Bookmark Line="204" />
+      <Bookmark Line="208" />
+      <Bookmark Line="256" />
     </Bookmarks>
   </TextEdit>
-  <TextEdit ID="C:\projects\PLC\RSD\Logical\RSI\Server.st" CaretLine="134" CaretColumn="34" FirstVisibleLine="121">
+  <TextEdit ID="C:\projects\PLC\RSD\Logical\RSI\Server.st" CaretLine="37" CaretColumn="45" FirstVisibleLine="25">
     <Bookmarks />
   </TextEdit>
-  <TextEdit ID="C:\projects\PLC\RSD\Logical\RSI\Init.st" CaretLine="1" CaretColumn="1" FirstVisibleLine="1">
+  <TextEdit ID="C:\projects\PLC\RSD\Logical\RSI\Init.st" CaretLine="23" CaretColumn="24" FirstVisibleLine="1">
     <Bookmarks />
   </TextEdit>
   <TextEdit ID="C:\projects\PLC\RSD\Logical\Servo\Cyclic.st" CaretLine="1" CaretColumn="1" FirstVisibleLine="1">
@@ -86,10 +84,16 @@
   <TextEdit ID="C:\projects\PLC\RSD\Logical\Servo\Init.st" CaretLine="1" CaretColumn="1" FirstVisibleLine="1">
     <Bookmarks />
   </TextEdit>
-  <TextEdit ID="C:\projects\PLC\RSD\Logical\Camera_A\Main.st" CaretLine="1" CaretColumn="1" FirstVisibleLine="3">
+  <TextEdit ID="C:\projects\PLC\RSD\Logical\Camera_A\Main.st" CaretLine="5" CaretColumn="28" FirstVisibleLine="1">
     <Bookmarks />
   </TextEdit>
-  <TextEdit ID="C:\projects\PLC\RSD\Logical\MES_machine\Variables.var" CaretLine="4" CaretColumn="16" FirstVisibleLine="1">
+  <TextEdit ID="C:\projects\PLC\RSD\Logical\RSI\Server.var" CaretLine="20" CaretColumn="41" FirstVisibleLine="1">
+    <Bookmarks />
+  </TextEdit>
+  <TextEdit ID="C:\projects\PLC\RSD\Logical\Servo\Variables.var" CaretLine="2" CaretColumn="47" FirstVisibleLine="1">
+    <Bookmarks />
+  </TextEdit>
+  <TextEdit ID="C:\projects\PLC\RSD\Logical\Feeder\Main.st" CaretLine="11" CaretColumn="17" FirstVisibleLine="1">
     <Bookmarks />
   </TextEdit>
   <TreeView ID="C:\projects\PLC\RSD\Logical\MES_Comm\Client.var" EditColumn="0" TopRow="0" HorizontalScrollOffset="0" SortedColumn="0">
@@ -108,7 +112,7 @@
     </Columns>
     <ExpandedNodes />
     <SelectedNodes>
-      <SelectedNode Row="3" />
+      <SelectedNode Row="2" />
     </SelectedNodes>
     <ZoomIndices />
   </TreeView>
@@ -130,6 +134,42 @@
     <SelectedNodes>
       <SelectedNode Row="0" />
     </SelectedNodes>
+    <ZoomIndices />
+  </TreeView>
+  <TreeView ID="C:\projects\PLC\RSD\Logical\MES_machine\Variables2.var" EditColumn="4" TopRow="0" HorizontalScrollOffset="0" SortedColumn="0">
+    <Columns>
+      <Column Index="0" Width="200" Position="0" />
+      <Column Index="1" Width="100" Position="1" />
+      <Column Index="2" Width="110" Position="2" />
+      <Column Index="3" Width="98" Position="3" />
+      <Column Index="4" Width="72" Position="4" />
+      <Column Index="5" Width="112" Position="5" />
+      <Column Index="6" Width="100" Position="6" />
+      <Column Index="7" Width="200" Position="7" />
+      <Column Index="8" Width="0" Position="8" />
+      <Column Index="9" Width="0" Position="9" />
+      <Column Index="10" Width="0" Position="10" />
+    </Columns>
+    <ExpandedNodes />
+    <SelectedNodes />
+    <ZoomIndices />
+  </TreeView>
+  <TreeView ID="C:\projects\PLC\RSD\Logical\MES_machine\Variables.var" EditColumn="4" TopRow="0" HorizontalScrollOffset="0" SortedColumn="0">
+    <Columns>
+      <Column Index="0" Width="200" Position="0" />
+      <Column Index="1" Width="100" Position="1" />
+      <Column Index="2" Width="110" Position="2" />
+      <Column Index="3" Width="98" Position="3" />
+      <Column Index="4" Width="72" Position="4" />
+      <Column Index="5" Width="112" Position="5" />
+      <Column Index="6" Width="100" Position="6" />
+      <Column Index="7" Width="200" Position="7" />
+      <Column Index="8" Width="0" Position="8" />
+      <Column Index="9" Width="0" Position="9" />
+      <Column Index="10" Width="0" Position="10" />
+    </Columns>
+    <ExpandedNodes />
+    <SelectedNodes />
     <ZoomIndices />
   </TreeView>
 </State>

@@ -2,7 +2,7 @@
 PROGRAM _INIT
 	(* Insert code here *)
 	Delay.Enable := TRUE;
-	Delay.DelayTime := 0.225; // 1 at 10hz, 0.4 at 20hz
+	Delay.DelayTime := 0.227; // 1 at 10hz, 0.4 at 20hz
 	 
 END_PROGRAM
 

@@ -174,7 +174,14 @@ PROGRAM _CYCLIC
 			ELSIF Camera_bad THEN
 				Order_bad := Order_bad -1;
 			END_IF;
-			MES_step := 31;
+			
+			IF Order_good > 0 AND in_buffer(ADR(variables),TRUE) THEN
+				MES_step := 35;
+			ELSIF Order_bad > 0 AND in_buffer(ADR(variables), FALSE) THEN
+				MES_step := 35;
+			ELSE
+				MES_step := 31;
+			END_IF;
 		
 		31:
 			IF Ready = '0' THEN
@@ -186,10 +193,6 @@ PROGRAM _CYCLIC
 				IF Order_good = 0 AND Order_bad = 0 THEN
 					Tilt := TRUE;
 					MES_step := 25;			
-				ELSIF Order_good > 0 AND in_buffer(ADR(variables),TRUE) THEN
-					MES_step := 35;
-				ELSIF Order_bad > 0 AND in_buffer(ADR(variables), FALSE) THEN
-					MES_step := 35;
 				ELSE
 					MES_step := 5;
 				END_IF
@@ -200,16 +203,16 @@ PROGRAM _CYCLIC
 		35:		// ST- Tak Buf
 			Buffer_use := '0';
 			IF Order_good > 0 AND in_buffer(ADR(variables), TRUE) THEN
-				Robot_index := UDINT_TO_STRING(fetch_brick_decimal(ADR(variables), TRUE));
+				Robot_index := UDINT_TO_STRING(fetch_brick_decimal(ADR(variables), TRUE) +32);
 				Buffer_part_id := get_partid(ADR(variables), TRUE, variables.isGoodCounter);
 				Order_good := Order_good - 1;
 			ELSIF Order_bad > 0 AND in_buffer(ADR(variables), FALSE) THEN
-				Robot_index := UDINT_TO_STRING(fetch_brick_decimal(ADR(variables), FALSE));
+				Robot_index := UDINT_TO_STRING(fetch_brick_decimal(ADR(variables), FALSE) +32);
 				Buffer_part_id := get_partid(ADR(variables), FALSE, variables.isBadCounter);
 				Order_bad := Order_bad - 1;
 			END_IF
 			
-			Activate := TRUE;
+			//Activate := TRUE;
 		
 			String_tmp := UDINT_TO_STRING(Buffer_part_id);
 			Current_order_ids := CONCAT(Current_order_ids, String_tmp);

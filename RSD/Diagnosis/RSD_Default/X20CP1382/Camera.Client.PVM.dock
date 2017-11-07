@@ -3,8 +3,8 @@ Position X=0 Y=0 Width=0 Height=0 TabWidth Name=150 Type=0 Scope=0 Force=0 Index
                                     name                                     type force                                                            value level type len format place expand specs
                             LibAsTCP1_ST                         LibAsTCP1_ST_typ    0 "                                                               *"    0   24    1    0    1    1         
                             receive_data                               STRING[80]    0 "                                                 '     0.0000$r'"    1    9   81    1    0    0         
-                                     Bad                                    UDINT    0 "                                                               6"    1    7    1   10    0    0         
-                                    Good                                    UDINT    0 "                                                               7"    1    7    1   10    0    0         
+                                     Bad                                    UDINT    0 "                                                              32"    1    7    1   10    0    0         
+                                    Good                                    UDINT    0 "                                                              64"    1    7    1   10    0    0         
                                   Client                               Client_typ    0 "                                                               *"    0   24    1    0    1    0         
                                    sStep                                     UINT    0 "                                                               *"    1    6    1   10    0    0         
                                TcpOpen_0                                  TcpOpen    0 "                                                               *"    1   24    1    0    0    0         

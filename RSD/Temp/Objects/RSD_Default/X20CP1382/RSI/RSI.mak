@@ -18,7 +18,15 @@ $(AS_CPU_PATH)/RSI/a.out: \
 
 $(AS_CPU_PATH)/RSI/Server.st.o: \
 	$(AS_PROJECT_PATH)/Logical/RSI/Server.st \
-	FORCE 
+	$(AS_PROJECT_PATH)/Logical/Libraries/standard/standard.fun \
+	$(AS_PROJECT_PATH)/Logical/Libraries/MTBasics/MTBasics.fun \
+	$(AS_PROJECT_PATH)/Logical/Libraries/MTBasics/MTBasics.typ \
+	$(AS_PROJECT_PATH)/Logical/Libraries/AsUDP/AsUDP.fun \
+	$(AS_PROJECT_PATH)/Logical/Global.var \
+	$(AS_PROJECT_PATH)/Logical/Libraries/runtime/runtime.var \
+	$(AS_PROJECT_PATH)/Logical/RSI/Server.var \
+	$(AS_PROJECT_PATH)/Logical/RSI/Server.typ \
+	$(AS_PROJECT_PATH)/Logical/Libraries/AsUDP/AsUDP.var
 	@'$(AS_BIN_PATH)/BR.AS.IecCompiler.exe' '$(AS_PROJECT_PATH)/Logical/RSI/Server.st' -o '$(AS_CPU_PATH)/RSI/Server.st.o'  -O '$(AS_CPU_PATH)//RSI/Server.st.o.opt' -secret '$(AS_PROJECT_PATH)_br.as.ieccompiler.exe'
 
 $(AS_CPU_PATH)/RSI/Init.st.o: \
@@ -28,21 +36,20 @@ $(AS_CPU_PATH)/RSI/Init.st.o: \
 	$(AS_PROJECT_PATH)/Logical/Libraries/MTBasics/MTBasics.typ \
 	$(AS_PROJECT_PATH)/Logical/Libraries/AsUDP/AsUDP.fun \
 	$(AS_PROJECT_PATH)/Logical/Global.var \
-	$(AS_PROJECT_PATH)/Logical/RSI/Server.var \
 	$(AS_PROJECT_PATH)/Logical/Libraries/runtime/runtime.var \
+	$(AS_PROJECT_PATH)/Logical/RSI/Server.var \
 	$(AS_PROJECT_PATH)/Logical/RSI/Server.typ \
 	$(AS_PROJECT_PATH)/Logical/Libraries/AsUDP/AsUDP.var
 	@'$(AS_BIN_PATH)/BR.AS.IecCompiler.exe' '$(AS_PROJECT_PATH)/Logical/RSI/Init.st' -o '$(AS_CPU_PATH)/RSI/Init.st.o'  -O '$(AS_CPU_PATH)//RSI/Init.st.o.opt' -secret '$(AS_PROJECT_PATH)_br.as.ieccompiler.exe'
 
 $(AS_CPU_PATH)/RSI/_bur_pvdef.st.o: \
-	FORCE  \
 	$(AS_PROJECT_PATH)/Logical/Libraries/standard/standard.fun \
 	$(AS_PROJECT_PATH)/Logical/Libraries/MTBasics/MTBasics.fun \
 	$(AS_PROJECT_PATH)/Logical/Libraries/MTBasics/MTBasics.typ \
 	$(AS_PROJECT_PATH)/Logical/Libraries/AsUDP/AsUDP.fun \
 	$(AS_PROJECT_PATH)/Logical/Global.var \
-	$(AS_PROJECT_PATH)/Logical/RSI/Server.var \
 	$(AS_PROJECT_PATH)/Logical/Libraries/runtime/runtime.var \
+	$(AS_PROJECT_PATH)/Logical/RSI/Server.var \
 	$(AS_PROJECT_PATH)/Logical/RSI/Server.typ \
 	$(AS_PROJECT_PATH)/Logical/Libraries/AsUDP/AsUDP.var
 	@'$(AS_BIN_PATH)/BR.AS.IecCompiler.exe' '$(AS_PATH)/AS/GnuInst/V4.1.2/i386-elf/include/bur/_bur_pvdef.st' -o '$(AS_CPU_PATH)/RSI/_bur_pvdef.st.o'  -O '$(AS_CPU_PATH)//RSI/_bur_pvdef.st.opt' -secret '$(AS_PROJECT_PATH)_br.as.ieccompiler.exe'

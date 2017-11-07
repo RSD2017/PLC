@@ -26,6 +26,7 @@ $(AS_CPU_PATH)/Feeder.br \
 $(AS_CPU_PATH)/Conveyor.br \
 $(AS_CPU_PATH)/Servo.br \
 $(AS_CPU_PATH)/iomap.br \
+$(AS_CPU_PATH)/OpcUaMap.br \
 $(AS_CPU_PATH)/Role.br \
 $(AS_CPU_PATH)/User.br \
 $(AS_CPU_PATH)/TCData.br \
@@ -47,6 +48,7 @@ $(AS_BINARIES_PATH)/$(AS_CONFIGURATION)/$(AS_PLC)/Transfer.lst: \
 	$(AS_CPU_PATH)/Conveyor.br \
 	$(AS_CPU_PATH)/Servo.br \
 	$(AS_CPU_PATH)/iomap.br \
+	$(AS_CPU_PATH)/OpcUaMap.br \
 	$(AS_CPU_PATH)/Role.br \
 	$(AS_CPU_PATH)/User.br \
 	$(AS_CPU_PATH)/TCData.br \
@@ -58,6 +60,7 @@ $(AS_BINARIES_PATH)/$(AS_CONFIGURATION)/$(AS_PLC)/Transfer.lst: \
 include $(AS_CPU_PATH)/TCData/TCData.mak
 include $(AS_CPU_PATH)/User/User.mak
 include $(AS_CPU_PATH)/Role/Role.mak
+include $(AS_CPU_PATH)/OpcUaMap/OpcUaMap.mak
 include $(AS_CPU_PATH)/iomap/iomap.mak
 include $(AS_CPU_PATH)/Servo/Servo.mak
 include $(AS_CPU_PATH)/Conveyor/Conveyor.mak

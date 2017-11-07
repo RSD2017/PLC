@@ -4,7 +4,7 @@ PROGRAM _INIT
 	(* Insert code here *)
 	 
 	Delay.Enable := TRUE;
-	Delay.DelayTime := 0.6; // 2.25 at 10hz, 1.125 at 20hz
+	Delay.DelayTime := 0.2; // 2.25 at 10hz, 1.125 at 20hz
 	
 	Buffer_good[0] := '8';
 	Buffer_good[1] := '9';

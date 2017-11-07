@@ -34,6 +34,7 @@
   <Operation Download="standard.br" Memory="UserROM"/>
   <Operation Download="MTTypes.br" Memory="UserROM"/>
   <Operation Download="asstring.br" Memory="UserROM"/>
+  <Operation Download="OpcUaMap.br" Memory="UserROM"/>
   <Operation Download="sys_lib.br" Memory="UserROM"/>
   <Operation Download="brsystem.br" Memory="UserROM"/>
   <Operation Download="astime.br" Memory="UserROM"/>
