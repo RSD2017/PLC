@@ -2,8 +2,8 @@ VAR
 	Period : {REDUND_UNREPLICABLE} UINT := 20000;
 END_VAR
 VAR CONSTANT
-	Duty_cycle_pos2 : INT := 35;
-	Duty_cycle_pos1 : INT := 100;
+	Duty_cycle_pos2 : INT := 37;
+	Duty_cycle_pos1 : INT := 130;
 END_VAR
 VAR
 	Pulse : INT;

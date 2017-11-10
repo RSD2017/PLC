@@ -16,6 +16,10 @@ PROGRAM _CYCLIC
 		5:		// ST-Idle
 			IF Order_selected = FALSE THEN
 				MES_step := 20;
+				
+			ELSIF Order_selected = TRUE THEN
+				MES_step := 25;
+				
 			
 			ELSIF Part_selected = FALSE AND Sensor_in THEN
 				MES_step := 10;
@@ -116,15 +120,20 @@ PROGRAM _CYCLIC
 					Order_good := 0;
 					Order_bad := 0;
 					memcpy(ADR(Current_order_parts), ADR(Data_recv_vector[1]),4);
-					FOR Order_index:=0 TO Current_order_parts-1 BY 1 DO
-						memcpy(ADR(Parts_vector[Order_index]), ADR(Data_recv_vector[Order_index+2]),4);
-						IF Parts_vector[Order_index] = 1 THEN
-							Order_good := Order_good +1;
-						ELSIF Parts_vector[Order_index] = 0 THEN
-							Order_bad := Order_bad +1;
-						END_IF
-						
-					END_FOR
+					IF Current_order_parts > 5 THEN
+						MES_step := 50;
+					ELSE
+						FOR Order_index:=0 TO Current_order_parts-1 BY 1 DO
+							memcpy(ADR(Parts_vector[Order_index]), ADR(Data_recv_vector[Order_index+2]),4);
+							IF Parts_vector[Order_index] = 1 THEN
+								Order_good := Order_good +1;
+							ELSIF Parts_vector[Order_index] = 0 THEN
+								Order_bad := Order_bad +1;
+							END_IF
+							
+						END_FOR
+					END_IF
+				
 					
 					Order_selected := TRUE;
 						MES_step := 5;
@@ -164,8 +173,7 @@ PROGRAM _CYCLIC
 			END_IF
 		
 		30:		// ST - Put box
-			Buffer_use := '0';
-			Robot_index := '0';
+			
 			String_tmp := UDINT_TO_STRING(Current_part_id);
 			Current_order_ids := CONCAT(Current_order_ids, String_tmp);
 			Current_order_ids := CONCAT(Current_order_ids, ' ');
@@ -180,6 +188,8 @@ PROGRAM _CYCLIC
 			ELSIF Order_bad > 0 AND in_buffer(ADR(variables), FALSE) THEN
 				MES_step := 35;
 			ELSE
+				Buffer_use := '0';
+				Robot_index := '0';
 				MES_step := 31;
 			END_IF;
 		
@@ -289,6 +299,8 @@ PROGRAM _CYCLIC
 		
 		45:		// ST- Finished
 			Activate_override := FALSE;
+		
+		50: // Error!
 		
 		
 		

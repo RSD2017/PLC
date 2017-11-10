@@ -17,24 +17,15 @@ $(AS_CPU_PATH)/MES_Comm/a.out: \
 
 $(AS_CPU_PATH)/MES_Comm/Client.st.o: \
 	$(AS_PROJECT_PATH)/Logical/MES_Comm/Client.st \
-	$(AS_PROJECT_PATH)/Logical/Libraries/AsTCP/AsTCP.fun \
-	$(AS_PROJECT_PATH)/Logical/Global.var \
-	$(AS_PROJECT_PATH)/Logical/Libraries/AsTCP/AsTCP.var \
-	$(AS_PROJECT_PATH)/Logical/Libraries/runtime/runtime.var \
-	$(AS_PROJECT_PATH)/Logical/MES_Comm/Client.var \
-	$(AS_PROJECT_PATH)/Logical/Libraries/AsTCP/AsTCP.typ \
-	$(AS_PROJECT_PATH)/Logical/MES_Comm/Client.typ
+	FORCE 
 	@'$(AS_BIN_PATH)/BR.AS.IecCompiler.exe' '$(AS_PROJECT_PATH)/Logical/MES_Comm/Client.st' -o '$(AS_CPU_PATH)/MES_Comm/Client.st.o'  -O '$(AS_CPU_PATH)//MES_Comm/Client.st.o.opt' -secret '$(AS_PROJECT_PATH)_br.as.ieccompiler.exe'
 
 $(AS_CPU_PATH)/MES_Comm/_bur_pvdef.st.o: \
-	$(AS_PROJECT_PATH)/Logical/Libraries/AsTCP/AsTCP.fun \
-	$(AS_PROJECT_PATH)/Logical/Global.var \
-	$(AS_PROJECT_PATH)/Logical/Libraries/AsTCP/AsTCP.var \
-	$(AS_PROJECT_PATH)/Logical/Libraries/runtime/runtime.var \
-	$(AS_PROJECT_PATH)/Logical/MES_Comm/Client.var \
-	$(AS_PROJECT_PATH)/Logical/Libraries/AsTCP/AsTCP.typ \
-	$(AS_PROJECT_PATH)/Logical/MES_Comm/Client.typ
+	FORCE 
 	@'$(AS_BIN_PATH)/BR.AS.IecCompiler.exe' '$(AS_PATH)/AS/GnuInst/V4.1.2/i386-elf/include/bur/_bur_pvdef.st' -o '$(AS_CPU_PATH)/MES_Comm/_bur_pvdef.st.o'  -O '$(AS_CPU_PATH)//MES_Comm/_bur_pvdef.st.opt' -secret '$(AS_PROJECT_PATH)_br.as.ieccompiler.exe'
 
 -include $(AS_CPU_PATH)/Force.mak 
 
+
+
+FORCE:

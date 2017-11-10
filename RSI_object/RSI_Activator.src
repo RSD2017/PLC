@@ -43,7 +43,7 @@ $VEL.ORI2=400
 
 PTP {A1 -123, A2 -50, A3 120, A4 4, A5 20, A6 -16}
 
-LIN {X -211, Y 342, Z 215, A -157, B 0, C -180}
+LIN {X -211, Y 342, Z 217, A -157, B 0, C -180}
 
 
 $OUT[100] = FALSE
@@ -98,16 +98,16 @@ WHILE TRUE
 			IF (Array[7] == FALSE) AND (Array[6] == FALSE) AND (Array[5] == FALSE) THEN
 				; Move down to conveyor
 				PTP{A6 -10}
-				LIN {X -211, Y 342, Z 195, A -68, B 0, C -180} C_DIS
+				LIN {X -211, Y 342, Z 197, A -68, B 0, C -180} C_DIS
 				
 			ENDIF
 			
 			IF (ARRAY[7] == TRUE) THEN
 				PTP{A6 -10}
-				LIN {X -211, Y 342, Z 195, A -68, B 0, C -180} C_DIS
-				LIN {X -211, Y 418, Z 195, A -68, B 0, C -180} C_DIS
-				LIN {X -375, Y 418, Z 195, A -68, B 0, C -180} C_DIS
-				LIN {X -375, Y 418, Z 240, A -68, B 0, C -180} C_DIS
+				LIN {X -211, Y 342, Z 197, A -68, B 0, C -180} C_DIS
+				LIN {X -211, Y 418, Z 197, A -68, B 0, C -180} C_DIS
+				LIN {X -375, Y 418, Z 197, A -68, B 0, C -180} C_DIS
+				LIN {X -375, Y 418, Z 242, A -68, B 0, C -180} C_DIS
 
 			ENDIF
 
@@ -115,41 +115,41 @@ WHILE TRUE
 			IF (Array[6] == FALSE) AND (Array[5] == TRUE) THEN
 				IF (ARRAY[7] == FALSE) THEN
 					PTP{A6 -10}
-					LIN {X -211, Y 342, Z 240, A -68, B 0, C -180} C_DIS
+					LIN {X -211, Y 342, Z 242, A -68, B 0, C -180} C_DIS
 				ENDIF
 			
 				; Move to 1. pos
 				IF (Array[4] == TRUE) THEN
-					LIN {X -88, Y 333, Z 240, A -68, B 0, C -180} C_DIS
-					LIN {X -88, Y 333, Z 200, A -68, B 0, C -180} C_DIS	
+					LIN {X -88, Y 333, Z 242, A -68, B 0, C -180} C_DIS
+					LIN {X -88, Y 333, Z 202, A -68, B 0, C -180} C_DIS	
 				ELSE
 					; Move to 2. pos
 					IF (Array[3] == TRUE) AND (Array[2] == TRUE) THEN
-					LIN {X -6, Y 338, Z 240, A -68, B 0, C -180} C_DIS
-					LIN {X -6, Y 338, Z 200, A -68, B 0, C -180} C_DIS
+					LIN {X -6, Y 338, Z 242, A -68, B 0, C -180} C_DIS
+					LIN {X -6, Y 338, Z 202, A -68, B 0, C -180} C_DIS
 					ENDIF
 			
 					; Move to 3. pos
 					IF (Array[3] == TRUE) AND (Array[2] == FALSE) THEN
-					LIN {X 87, Y 343, Z 240, A -68, B 0, C -180} C_DIS
-					LIN {X 87, Y 343, Z 200, A -68, B 0, C -180} C_DIS
+					LIN {X 87, Y 343, Z 242, A -68, B 0, C -180} C_DIS
+					LIN {X 87, Y 343, Z 202, A -68, B 0, C -180} C_DIS
 					ENDIF
 
 					; Move to 4. pos
 					IF (Array[3] == FALSE) AND (Array[2] == TRUE) THEN
-					LIN {X 175, Y 347, Z 240, A -68, B 0, C -180} C_DIS
-					LIN {X 175, Y 347, Z 200, A -68, B 0, C -180} C_DIS
+					LIN {X 175, Y 347, Z 242, A -68, B 0, C -180} C_DIS
+					LIN {X 175, Y 347, Z 202, A -68, B 0, C -180} C_DIS
 					ENDIF
 
 					; Move to 5. pos
 					IF (Array[3] == FALSE) AND (Array[2] == FALSE) THEN
-					LIN {X 265, Y 352, Z 240, A -68, B 0, C -180} C_DIS
-					LIN {X 265, Y 352, Z 200, A -68, B 0, C -180} C_DIS
+					LIN {X 265, Y 352, Z 242, A -68, B 0, C -180} C_DIS
+					LIN {X 265, Y 352, Z 202, A -68, B 0, C -180} C_DIS
 					ENDIF
 			
 				ENDIF
 
-				LIN {X -211, Y 330, Z 200, A -68, B 0, C -180} C_DIS
+				LIN {X -211, Y 330, Z 202, A -68, B 0, C -180} C_DIS
 			
 			ENDIF
 
@@ -157,32 +157,32 @@ WHILE TRUE
 			IF (Array[6] == TRUE) AND (Array[5] == FALSE) THEN
 				IF (ARRAY[7] == FALSE) THEN
 					PTP{A6 -10}
-					LIN {X -211, Y 342, Z 240, A -68, B 0, C -180} C_DIS
+					LIN {X -211, Y 342, Z 242, A -68, B 0, C -180} C_DIS
 				ENDIF
 			
 
 				; Move to 1. pos
 				IF (Array[3] == TRUE) AND (Array[2] == TRUE) THEN
-				LIN {X -75, Y 467, Z 240, A -68, B 0, C -180} C_DIS
-				LIN {X -75, Y 467, Z 195, A -68, B 0, C -180} C_DIS
+				LIN {X -75, Y 467, Z 242, A -68, B 0, C -180} C_DIS
+				LIN {X -75, Y 467, Z 197, A -68, B 0, C -180} C_DIS
 				ENDIF
 			
 				; Move to 2. pos
 				IF (Array[3] == TRUE) AND (Array[2] == FALSE) THEN
-				LIN {X 32, Y 473, Z 240, A -68, B 0, C -180} C_DIS
-				LIN {X 32, Y 473, Z 195, A -68, B 0, C -180} C_DIS
+				LIN {X 32, Y 473, Z 242, A -68, B 0, C -180} C_DIS
+				LIN {X 32, Y 473, Z 197, A -68, B 0, C -180} C_DIS
 				ENDIF
 
 				; Move to 3. pos
 				IF (Array[3] == FALSE) AND (Array[2] == TRUE) THEN
-				LIN {X 137, Y 479, Z 240, A -68, B 0, C -180} C_DIS
-				LIN {X 137, Y 479, Z 195, A -68, B 0, C -180} C_DIS
+				LIN {X 137, Y 479, Z 242, A -68, B 0, C -180} C_DIS
+				LIN {X 137, Y 479, Z 197, A -68, B 0, C -180} C_DIS
 				ENDIF
 
 				; Move to 4. pos
 				IF (Array[3] == FALSE) AND (Array[2] == FALSE) THEN
-				LIN {X 241, Y 485, Z 240, A -68, B 0, C -180} C_DIS
-				LIN {X 241, Y 485, Z 195, A -68, B 0, C -180} C_DIS
+				LIN {X 241, Y 485, Z 242, A -68, B 0, C -180} C_DIS
+				LIN {X 241, Y 485, Z 197, A -68, B 0, C -180} C_DIS
 				ENDIF
 
 				LIN {X -211, Y 460, Z 195, A -68, B 0, C -180} C_DIS
@@ -193,89 +193,89 @@ WHILE TRUE
 			IF (Array[6] == TRUE) AND (Array[5] == TRUE) THEN
 				IF (ARRAY[7] == FALSE) THEN
 					PTP{A6 -10}
-					LIN {X -211, Y 342, Z 240, A -68, B 0, C -180} C_DIS
+					LIN {X -211, Y 342, Z 242, A -68, B 0, C -180} C_DIS
 				ENDIF
 			
 				; Move to 1. pos
 				IF (Array[4] == TRUE) THEN
-					LIN {X -103, Y 605, Z 240, A -68, B 0, C -180} C_DIS
-					LIN {X -103, Y 605, Z 195, A -68, B 0, C -180} C_DIS	
+					LIN {X -103, Y 605, Z 242, A -68, B 0, C -180} C_DIS
+					LIN {X -103, Y 605, Z 197, A -68, B 0, C -180} C_DIS	
 				ELSE
 					; Move to 2. pos
 					IF (Array[3] == TRUE) AND (Array[2] == TRUE) THEN
-					LIN {X -15, Y 609, Z 240, A -68, B 0, C -180} C_DIS
-					LIN {X -15, Y 609, Z 195, A -68, B 0, C -180} C_DIS
+					LIN {X -15, Y 609, Z 242, A -68, B 0, C -180} C_DIS
+					LIN {X -15, Y 609, Z 197, A -68, B 0, C -180} C_DIS
 					ENDIF
 			
 					; Move to 3. pos
 					IF (Array[3] == TRUE) AND (Array[2] == FALSE) THEN
-					LIN {X 78, Y 613, Z 240, A -68, B 0, C -180} C_DIS
-					LIN {X 78, Y 613, Z 195, A -68, B 0, C -180} C_DIS
+					LIN {X 78, Y 613, Z 242, A -68, B 0, C -180} C_DIS
+					LIN {X 78, Y 613, Z 197, A -68, B 0, C -180} C_DIS
 					ENDIF
 
 					; Move to 4. pos
 					IF (Array[3] == FALSE) AND (Array[2] == TRUE) THEN
-					LIN {X 159, Y 617, Z 240, A -68, B 0, C -180} C_DIS
-					LIN {X 159, Y 617, Z 195, A -68, B 0, C -180} C_DIS
+					LIN {X 159, Y 617, Z 242, A -68, B 0, C -180} C_DIS
+					LIN {X 159, Y 617, Z 197, A -68, B 0, C -180} C_DIS
 					ENDIF
 
 					; Move to 5. pos
 					IF (Array[3] == FALSE) AND (Array[2] == FALSE) THEN
-					LIN {X 228, Y 620, Z 240, A -68, B 0, C -180} C_DIS
-					LIN {X 228, Y 620, Z 195, A -68, B 0, C -180} C_DIS
+					LIN {X 228, Y 620, Z 242, A -68, B 0, C -180} C_DIS
+					LIN {X 228, Y 620, Z 197, A -68, B 0, C -180} C_DIS
 					ENDIF
 			
 				ENDIF
 
-				LIN {X -211, Y 603, Z 195, A -68, B 0, C -180} C_DIS
+				LIN {X -211, Y 603, Z 197, A -68, B 0, C -180} C_DIS
 			
 			ENDIF
 
 			; Put in box
-			LIN {X -211, Y 418, Z 195, A -68, B 0, C -180} C_DIS
-			LIN {X -375, Y 418, Z 195, A -68, B 0, C -180} C_DIS
-			LIN {X -375, Y 418, Z 240, A -68, B 0, C -180} C_DIS
+			LIN {X -211, Y 418, Z 197, A -68, B 0, C -180} C_DIS
+			LIN {X -375, Y 418, Z 197, A -68, B 0, C -180} C_DIS
+			LIN {X -375, Y 418, Z 242, A -68, B 0, C -180} C_DIS
 			PTP{A6 -109}
 
 		
 		; Buffer
 		ELSE
 		; Move down to conveyor
-		LIN {X -211, Y 342, Z 195, A -157, B 0, C -180}
+		LIN {X -211, Y 342, Z 197, A -157, B 0, C -180}
 		WAIT SEC 0.5
 
 
 			; Sliske 1
 			IF (Array[6] == FALSE) AND (Array[5] == TRUE) THEN
-				LIN {X -211, Y 348, Z 195, A -157, B 0, C -180} C_DIS
+				LIN {X -211, Y 348, Z 197, A -157, B 0, C -180} C_DIS
 			
 				; Move to 1. pos
 				IF (Array[4] == TRUE) THEN
-					LIN {X -94, Y 352, Z 195, A -157, B 0, C -180} C_DIS
-					LIN {X -94, Y 352, Z 240, A -157, B 0, C -180} C_DIS	
+					LIN {X -94, Y 352, Z 197, A -157, B 0, C -180} C_DIS
+					LIN {X -94, Y 352, Z 242, A -157, B 0, C -180} C_DIS	
 				ELSE
 					; Move to 2. pos
 					IF (Array[3] == TRUE) AND (Array[2] == TRUE) THEN
-					LIN {X 0, Y 356, Z 195, A -157, B 0, C -180} C_DIS
-					LIN {X 0, Y 356, Z 240, A -157, B 0, C -180} C_DIS
+					LIN {X 0, Y 356, Z 197, A -157, B 0, C -180} C_DIS
+					LIN {X 0, Y 356, Z 242, A -157, B 0, C -180} C_DIS
 					ENDIF
 			
 					; Move to 3. pos
 					IF (Array[3] == TRUE) AND (Array[2] == FALSE) THEN
-					LIN {X 80, Y 360, Z 195, A -157, B 0, C -180} C_DIS
-					LIN {X 80, Y 360, Z 240, A -157, B 0, C -180} C_DIS
+					LIN {X 80, Y 360, Z 197, A -157, B 0, C -180} C_DIS
+					LIN {X 80, Y 360, Z 242, A -157, B 0, C -180} C_DIS
 					ENDIF
 
 					; Move to 4. pos
 					IF (Array[3] == FALSE) AND (Array[2] == TRUE) THEN
-					LIN {X 174, Y 365, Z 195, A -157, B 0, C -180} C_DIS
-					LIN {X 174, Y 365, Z 240, A -157, B 0, C -180} C_DIS
+					LIN {X 174, Y 365, Z 197, A -157, B 0, C -180} C_DIS
+					LIN {X 174, Y 365, Z 242, A -157, B 0, C -180} C_DIS
 					ENDIF
 
 					; Move to 5. pos
 					IF (Array[3] == FALSE) AND (Array[2] == FALSE) THEN
-					LIN {X 262, Y 368, Z 195, A -157, B 0, C -180} C_DIS
-					LIN {X 262, Y 368, Z 240, A -157, B 0, C -180} C_DIS
+					LIN {X 262, Y 368, Z 197, A -157, B 0, C -180} C_DIS
+					LIN {X 262, Y 368, Z 242, A -157, B 0, C -180} C_DIS
 					ENDIF
 			
 				ENDIF
@@ -284,65 +284,65 @@ WHILE TRUE
 
 			; Sliske 2
 			IF (Array[6] == TRUE) AND (Array[5] == FALSE) THEN
-				LIN {X -213, Y 482, Z 192, A -157, B 0, C -180} C_DIS
+				LIN {X -213, Y 482, Z 194, A -157, B 0, C -180} C_DIS
 			
 
 				; Move to 1. pos
 				IF (Array[3] == TRUE) AND (Array[2] == TRUE) THEN
-				LIN {X -100, Y 489, Z 192, A -157, B 0, C -180} C_DIS
-				LIN {X -100, Y 489, Z 240, A -157, B 0, C -180} C_DIS
+				LIN {X -100, Y 489, Z 194, A -157, B 0, C -180} C_DIS
+				LIN {X -100, Y 489, Z 242, A -157, B 0, C -180} C_DIS
 				ENDIF
 			
 				; Move to 2. pos
 				IF (Array[3] == TRUE) AND (Array[2] == FALSE) THEN
-				LIN {X 14, Y 498, Z 192, A -157, B 0, C -180} C_DIS
-				LIN {X 14, Y 498, Z 240, A -157, B 0, C -180} C_DIS
+				LIN {X 14, Y 498, Z 194, A -157, B 0, C -180} C_DIS
+				LIN {X 14, Y 498, Z 242, A -157, B 0, C -180} C_DIS
 				ENDIF
 
 				; Move to 3. pos
 				IF (Array[3] == FALSE) AND (Array[2] == TRUE) THEN
-				LIN {X 120, Y 500, Z 192, A -157, B 0, C -180} C_DIS
-				LIN {X 120, Y 500, Z 240, A -157, B 0, C -180} C_DIS
+				LIN {X 120, Y 500, Z 194, A -157, B 0, C -180} C_DIS
+				LIN {X 120, Y 500, Z 242, A -157, B 0, C -180} C_DIS
 				ENDIF
 
 				; Move to 4. pos
 				IF (Array[3] == FALSE) AND (Array[2] == FALSE) THEN
-				LIN {X 228, Y 506, Z 192, A -157, B 0, C -180} C_DIS
-				LIN {X 228, Y 506, Z 240, A -157, B 0, C -180} C_DIS
+				LIN {X 228, Y 506, Z 194, A -157, B 0, C -180} C_DIS
+				LIN {X 228, Y 506, Z 242, A -157, B 0, C -180} C_DIS
 				ENDIF
 			ENDIF
 
 			; Sliske 3
 			IF (Array[6] == TRUE) AND (Array[5] == TRUE) THEN
-				LIN {X -211, Y 621, Z 191, A -157, B 0, C -180} C_DIS
+				LIN {X -211, Y 621, Z 193, A -157, B 0, C -180} C_DIS
 			
 				; Move to 1. pos
 				IF (Array[4] == TRUE) THEN
-					LIN {X -106, Y 628, Z 191, A -157, B 0, C -180} C_DIS
-					LIN {X -106, Y 628, Z 240, A -157, B 0, C -180} C_DIS	
+					LIN {X -106, Y 628, Z 193, A -157, B 0, C -180} C_DIS
+					LIN {X -106, Y 628, Z 242, A -157, B 0, C -180} C_DIS	
 				ELSE
 					; Move to 2. pos
 					IF (Array[3] == TRUE) AND (Array[2] == TRUE) THEN
-					LIN {X -13, Y 629, Z 191, A -157, B 0, C -180} C_DIS
-					LIN {X -13, Y 629, Z 240, A -157, B 0, C -180} C_DIS
+					LIN {X -13, Y 629, Z 193, A -157, B 0, C -180} C_DIS
+					LIN {X -13, Y 629, Z 242, A -157, B 0, C -180} C_DIS
 					ENDIF
 			
 					; Move to 3. pos
 					IF (Array[3] == TRUE) AND (Array[2] == FALSE) THEN
-					LIN {X 74, Y 634, Z 191, A -157, B 0, C -180} C_DIS
-					LIN {X 74, Y 634, Z 240, A -157, B 0, C -180} C_DIS
+					LIN {X 74, Y 634, Z 193, A -157, B 0, C -180} C_DIS
+					LIN {X 74, Y 634, Z 242, A -157, B 0, C -180} C_DIS
 					ENDIF
 
 					; Move to 4. pos
 					IF (Array[3] == FALSE) AND (Array[2] == TRUE) THEN
-					LIN {X 170, Y 638, Z 191, A -157, B 0, C -180} C_DIS
-					LIN {X 170, Y 638, Z 240, A -157, B 0, C -180} C_DIS
+					LIN {X 170, Y 638, Z 193, A -157, B 0, C -180} C_DIS
+					LIN {X 170, Y 638, Z 242, A -157, B 0, C -180} C_DIS
 					ENDIF
 
 					; Move to 5. pos
 					IF (Array[3] == FALSE) AND (Array[2] == FALSE) THEN
-					LIN {X 248, Y 642, Z 191, A -157, B 0, C -180} C_DIS
-					LIN {X 248, Y 642, Z 240, A -157, B 0, C -180} C_DIS
+					LIN {X 248, Y 642, Z 193, A -157, B 0, C -180} C_DIS
+					LIN {X 248, Y 642, Z 242, A -157, B 0, C -180} C_DIS
 					ENDIF
 			
 				ENDIF
@@ -355,7 +355,7 @@ WHILE TRUE
 
 
 		; Move back to grib_sliske pos
-		LIN {X -211, Y 342, Z 215, A -157, B 0, C -180} C_DIS
+		LIN {X -211, Y 342, Z 217, A -157, B 0, C -180} C_DIS
 		$OUT[101] = FALSE
 		$OUT[100] = TRUE
 	

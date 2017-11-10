@@ -9,7 +9,7 @@ FUNCTION buffer_free
 	END_IF;
 	
 	IF type = FALSE THEN
-		IF var.isBadCounter < 5 THEN
+		IF var.isBadCounter < 4 THEN
 			buffer_free:= TRUE;
 		ELSE
 			buffer_free:=FALSE;

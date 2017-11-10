@@ -1,14 +1,14 @@
 WATCH Ver=2.00 PLCName=PLC1 CPUName=CPU TaskName=MES_Comm 
 Position X=0 Y=0 Width=0 Height=0 TabWidth Name=150 Type=0 Scope=0 Force=0 Index=14 ASCIIString=0
                                     name                                     type force                                                            value level type len format place expand specs
-                         Data_recv_index                                    USINT    0 "                                                               2"    0    5    1   10    0    0         
+                         Data_recv_index                                    USINT    0 "                                                               6"    0    5    1   10    0    0         
                         Data_recv_vector                          STRING[4][0..9]    0 "                                                               *"    0    9    5    0    0    1         
-                     Data_recv_vector[0]                                STRING[4]    0 "                                                          'ÿÿÿÿ'"    1    9    5    1    0    0         
-                     Data_recv_vector[1]                                STRING[4]    0 "                                                              ''"    1    9    5    1    0    0         
-                     Data_recv_vector[2]                                STRING[4]    0 "                                                              ''"    1    9    5    1    0    0         
+                     Data_recv_vector[0]                                STRING[4]    0 "                                                        '$14$03'"    1    9    5    1    0    0         
+                     Data_recv_vector[1]                                STRING[4]    0 "                                                           '$04'"    1    9    5    1    0    0         
+                     Data_recv_vector[2]                                STRING[4]    0 "                                                           '$01'"    1    9    5    1    0    0         
                      Data_recv_vector[3]                                STRING[4]    0 "                                                              ''"    1    9    5    1    0    0         
-                     Data_recv_vector[4]                                STRING[4]    0 "                                                              ''"    1    9    5    1    0    0         
-                     Data_recv_vector[5]                                STRING[4]    0 "                                                              ''"    1    9    5    1    0    0         
+                     Data_recv_vector[4]                                STRING[4]    0 "                                                           '$01'"    1    9    5    1    0    0         
+                     Data_recv_vector[5]                                STRING[4]    0 "                                                           '$01'"    1    9    5    1    0    0         
                      Data_recv_vector[6]                                STRING[4]    0 "                                                              ''"    1    9    5    1    0    0         
                      Data_recv_vector[7]                                STRING[4]    0 "                                                              ''"    1    9    5    1    0    0         
                      Data_recv_vector[8]                                STRING[4]    0 "                                                              ''"    1    9    5    1    0    0         
