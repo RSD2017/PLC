@@ -1,23 +1,23 @@
 WATCH Ver=2.00 PLCName=PLC1 CPUName=CPU TaskName=MES_machin 
-Position X=0 Y=0 Width=0 Height=0 TabWidth Name=150 Type=0 Scope=0 Force=0 Index=46 ASCIIString=0
+Position X=0 Y=0 Width=0 Height=0 TabWidth Name=150 Type=0 Scope=0 Force=0 Index=43 ASCIIString=0
                                     name                                     type force                                                            value level type len format place expand specs
                         Data_recv_vector                          STRING[4][0..9]    0 "                                                               *"    0    9    5    0    0    1         
-                     Data_recv_vector[0]                                STRING[4]    0 "                                                        '$14$03'"    1    9    5    1    0    0         
-                     Data_recv_vector[1]                                STRING[4]    0 "                                                           '$04'"    1    9    5    1    0    0         
-                     Data_recv_vector[2]                                STRING[4]    0 "                                                           '$01'"    1    9    5    1    0    0         
+                     Data_recv_vector[0]                                STRING[4]    0 "                                                              ''"    1    9    5    1    0    0         
+                     Data_recv_vector[1]                                STRING[4]    0 "                                                              ''"    1    9    5    1    0    0         
+                     Data_recv_vector[2]                                STRING[4]    0 "                                                              ''"    1    9    5    1    0    0         
                      Data_recv_vector[3]                                STRING[4]    0 "                                                              ''"    1    9    5    1    0    0         
-                     Data_recv_vector[4]                                STRING[4]    0 "                                                           '$01'"    1    9    5    1    0    0         
-                     Data_recv_vector[5]                                STRING[4]    0 "                                                           '$01'"    1    9    5    1    0    0         
+                     Data_recv_vector[4]                                STRING[4]    0 "                                                              ''"    1    9    5    1    0    0         
+                     Data_recv_vector[5]                                STRING[4]    0 "                                                              ''"    1    9    5    1    0    0         
                      Data_recv_vector[6]                                STRING[4]    0 "                                                              ''"    1    9    5    1    0    0         
                      Data_recv_vector[7]                                STRING[4]    0 "                                                              ''"    1    9    5    1    0    0         
                      Data_recv_vector[8]                                STRING[4]    0 "                                                              ''"    1    9    5    1    0    0         
                      Data_recv_vector[9]                                STRING[4]    0 "                                                              ''"    1    9    5    1    0    0         
-                          Order_selected                                     BOOL    0 "                                                            TRUE"    0    1    1    2    1    0         
+                          Order_selected                                     BOOL    0 "                                                           FALSE"    0    1    1    2    1    0         
                        Activate_override                                     BOOL    0 "                                                            TRUE"    0    1    1    2    0    0         
                        Current_order_ids                              STRING[200]    0 "                                                              ''"    0    9  201    1    1    0         
                                variables                                Variables    0 "                                                               *"    0   24    1    0    1    1         
                            isGoodCounter                                    USINT    0 "                                                               0"    1    5    1   10    0    0         
-                            isBadCounter                                    USINT    0 "                                                               4"    1    5    1   10    0    0         
+                            isBadCounter                                    USINT    0 "                                                               0"    1    5    1   10    0    0         
                               buffer_bad                              UDINT[0..4]    0 "                                                               *"    1    7    5    0    0    0         
                            buffer_bad[0]                                    UDINT    0 "                                                               *"    2    7    1   10    0    0         
                            buffer_bad[1]                                    UDINT    0 "                                                               *"    2    7    1   10    0    0         
@@ -34,20 +34,20 @@ Position X=0 Y=0 Width=0 Height=0 TabWidth Name=150 Type=0 Scope=0 Force=0 Index
                           buffer_good[7]                                    UDINT    0 "                                                               *"    2    7    1   10    0    0         
                           buffer_good[8]                                    UDINT    0 "                                                               *"    2    7    1   10    0    0         
                           buffer_good[9]                                    UDINT    0 "                                                               *"    2    7    1   10    0    0         
-                         Current_part_id                                    UDINT    0 "                                                            3405"    0    7    1   10    0    0         
+                         Current_part_id                                    UDINT    0 "                                                               0"    0    7    1   10    0    0         
                            Part_selected                                     BOOL    0 "                                                           FALSE"    0    1    1    2    0    0         
-                               Data_send                              STRING[200]    0 "                                                 'GET ORDER 1$n'"    0    9  201    1    0    0         
+                               Data_send                              STRING[200]    0 "                                                              ''"    0    9  201    1    0    0         
                             Parts_vector                              UDINT[0..4]    0 "                                                               *"    0    7    5    0    1    0         
                          Parts_vector[0]                                    UDINT    0 "                                                               *"    1    7    1   10    1    0         
                          Parts_vector[1]                                    UDINT    0 "                                                               *"    1    7    1   10    1    0         
                          Parts_vector[2]                                    UDINT    0 "                                                               *"    1    7    1   10    1    0         
                          Parts_vector[3]                                    UDINT    0 "                                                               *"    1    7    1   10    1    0         
                          Parts_vector[4]                                    UDINT    0 "                                                               *"    1    7    1   10    1    0         
-                                   Ready                                STRING[1]    0 "                                                             '1'"    0    9    2    1    0    0         
-                                MES_step                                    USINT    0 "                                                               5"    0    5    1   10    1    0         
-                     Current_order_parts                                    UDINT    0 "                                                               4"    0    7    1   10    1    0         
-                               Order_bad                                    UDINT    0 "                                                               1"    0    7    1   10    1    0         
-                              Order_good                                    UDINT    0 "                                                               3"    0    7    1   10    1    0         
-                        Current_order_id                                    UDINT    0 "                                                             788"    0    7    1   10    1    0         
-                             Robot_index                                STRING[2]    0 "                                                             '0'"    0    9    3    1    0    0         
+                                   Ready                                STRING[1]    0 "                                                              ''"    0    9    2    1    0    0         
+                                MES_step                                    USINT    0 "                                                               0"    0    5    1   10    1    0         
+                     Current_order_parts                                    UDINT    0 "                                                               0"    0    7    1   10    1    0         
+                               Order_bad                                    UDINT    0 "                                                               0"    0    7    1   10    1    0         
+                              Order_good                                    UDINT    0 "                                                               0"    0    7    1   10    1    0         
+                        Current_order_id                                    UDINT    0 "                                                               0"    0    7    1   10    1    0         
+                             Robot_index                                STRING[2]    0 "                                                              ''"    0    9    3    1    0    0         
                                     Tilt                                     BOOL    0 "                                                           FALSE"    0    1    1    2    0    0         

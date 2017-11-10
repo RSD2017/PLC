@@ -114,7 +114,7 @@ PROGRAM _CYCLIC
 			IF Client.TcpRecv_0.status = 0 THEN  (* Data was received sucessfully -> Send next packet *)
 				Client.sStep := 30;
 				Client.recv_timeout := 0;
-				IF Data_recv_vector[Data_recv_index] = '$n' THEN
+				IF Data_recv_vector[Data_recv_index] = '$n$n$n$n' THEN
 					Client.sStep := 3;
 					data_received := TRUE;
 				END_IF
@@ -124,7 +124,7 @@ PROGRAM _CYCLIC
 				Data_recv_index := Data_recv_index +1;
 			ELSIF Client.TcpRecv_0.status = tcpERR_NO_DATA THEN  (* No data received - wait *)
 				Client.recv_timeout := Client.recv_timeout + 1;
-				IF Client.recv_timeout > 200 THEN
+				IF Client.recv_timeout > 250 THEN
 					Client.sStep := 3;
 					Client.recv_timeout := 0;
 					data_received := TRUE;

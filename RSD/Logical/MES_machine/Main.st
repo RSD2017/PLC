@@ -134,9 +134,14 @@ PROGRAM _CYCLIC
 						END_FOR
 					END_IF
 				
-					
-					Order_selected := TRUE;
+					IF Order_good + Order_bad < 3 OR Order_good + Order_bad > 5 THEN
+						MES_step := 50;
+					ELSE	
+						Order_selected := TRUE;
 						MES_step := 5;
+					END_IF
+					
+						
 					
 					
 				END_IF
