@@ -24,12 +24,7 @@ $(AS_CPU_PATH)/MES_machin/a.out: \
 
 $(AS_CPU_PATH)/MES_machin/Main.st.o: \
 	$(AS_PROJECT_PATH)/Logical/MES_machine/Main.st \
-	$(AS_PROJECT_PATH)/Logical/Libraries/standard/standard.fun \
-	$(AS_PROJECT_PATH)/Logical/MES_machine/LocalFunctions.fun \
-	$(AS_PROJECT_PATH)/Logical/Global.var \
-	$(AS_PROJECT_PATH)/Logical/MES_machine/Variables2.var \
-	$(AS_PROJECT_PATH)/Logical/MES_machine/Variables.var \
-	$(AS_PROJECT_PATH)/Logical/Global2.typ
+	FORCE 
 	@'$(AS_BIN_PATH)/BR.AS.IecCompiler.exe' '$(AS_PROJECT_PATH)/Logical/MES_machine/Main.st' -o '$(AS_CPU_PATH)/MES_machin/Main.st.o'  -O '$(AS_CPU_PATH)//MES_machin/Main.st.o.opt' -secret '$(AS_PROJECT_PATH)_br.as.ieccompiler.exe'
 
 $(AS_CPU_PATH)/MES_machin/buffer_free.st.o: \
@@ -103,6 +98,7 @@ $(AS_CPU_PATH)/MES_machin/save_brick_decimal.st.o: \
 	@'$(AS_BIN_PATH)/BR.AS.IecCompiler.exe' '$(AS_PROJECT_PATH)/Logical/MES_machine/save_brick_decimal.st' -o '$(AS_CPU_PATH)/MES_machin/save_brick_decimal.st.o'  -O '$(AS_CPU_PATH)//MES_machin/save_brick_decimal.st.o.opt' -secret '$(AS_PROJECT_PATH)_br.as.ieccompiler.exe'
 
 $(AS_CPU_PATH)/MES_machin/_bur_pvdef.st.o: \
+	FORCE  \
 	$(AS_PROJECT_PATH)/Logical/Libraries/standard/standard.fun \
 	$(AS_PROJECT_PATH)/Logical/MES_machine/LocalFunctions.fun \
 	$(AS_PROJECT_PATH)/Logical/Global.var \

@@ -17,8 +17,9 @@ PROGRAM _CYCLIC
 			IF Order_selected = FALSE THEN
 				MES_step := 20;
 				
-			ELSIF Order_selected = TRUE THEN
-				MES_step := 25;
+				// For simulation
+			//ELSIF Order_selected = TRUE THEN
+				//MES_step := 25;
 				
 			
 			ELSIF Part_selected = FALSE AND Sensor_in THEN
