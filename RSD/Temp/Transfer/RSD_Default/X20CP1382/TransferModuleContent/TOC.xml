@@ -56,10 +56,10 @@
 			<Module Name="::Conveyor" Type="17" Size="5108" Modified="2017-11-10 14:12:21" Version="1.00" ProjectDependent="1" />
 			<Module Name="::Feeder" Type="17" Size="5296" Modified="2017-11-10 14:12:21" Version="1.00" ProjectDependent="1" />
 			<Module Name="::MES_Comm" Type="17" Size="10872" Modified="2017-11-10 14:12:20" Version="1.00" ProjectDependent="1" />
-			<Module Name="::MES_machin" Type="17" Size="17068" Modified="2017-11-10 14:16:20" Version="1.00" ProjectDependent="1" />
+			<Module Name="::MES_machin" Type="17" Size="17144" Modified="2017-11-14 09:52:22" Version="1.00" ProjectDependent="1" />
 			<Module Name="::MTBasics" Type="18" Size="76048" Modified="2016-07-22 11:16:10" Version="2.21" ProjectDependent="1" />
 			<Module Name="::MTTypes" Type="18" Size="364" Modified="2017-02-21 11:08:12" Version="1.034" ProjectDependent="1" />
-			<Module Name="::OpcUaMap" Type="134" Size="592" Modified="2017-11-10 14:12:26" Version="1.00" ProjectDependent="1" />
+			<Module Name="::OpcUaMap" Type="134" Size="592" Modified="2017-11-14 09:13:39" Version="1.00" ProjectDependent="1" />
 			<Module Name="::RSI" Type="17" Size="12568" Modified="2017-11-10 14:12:20" Version="1.00" ProjectDependent="1" />
 			<Module Name="::Role" Type="136" Size="760" Modified="2017-11-10 14:12:26" Version="1.00" ProjectDependent="1" />
 			<Module Name="::Servo" Type="17" Size="6688" Modified="2017-11-10 14:12:22" Version="1.00" ProjectDependent="1" />

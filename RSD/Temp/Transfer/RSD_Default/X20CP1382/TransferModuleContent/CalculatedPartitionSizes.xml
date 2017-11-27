@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<CFG>
+  <PROJECT ID="RSD_RSD_Default" OSVERSION="I4.33" INITIALTRANSFER="true" />
+  <FILESYSTEM>
+    <VOL ID="0" PARTITIONS="3">
+      <PARTITION ID="0" LABEL="SYSTEM" MINSIZE="67108864" />
+      <PARTITION ID="1" LABEL="RPSHD" MINSIZE="87898344" />
+      <PARTITION ID="2" LABEL="RPSHDS" MINSIZE="10394740" />
+    </VOL>
+  </FILESYSTEM>
+</CFG>

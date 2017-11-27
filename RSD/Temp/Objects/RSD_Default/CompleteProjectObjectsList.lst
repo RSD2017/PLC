@@ -5,7 +5,7 @@
     Path="C:\projects\PLC\RSD\Logical\Package.pkg"
     LogicalPath=""
     Type="Package"
-    LastWriteTime="131544457333910000" />
+    LastWriteTime="131549883857340000" />
   <Object
     Path="C:\projects\PLC\RSD\Logical\Global.typ"
     LogicalPath="Global.typ"
@@ -418,7 +418,7 @@
     Path="C:\projects\PLC\RSD\Logical\MES_machine\Main.st"
     LogicalPath="MES_machine.Main.st"
     Type="File"
-    LastWriteTime="131547933739930000"
+    LastWriteTime="131551231374790000"
     Private="false" />
   <Object
     Path="C:\projects\PLC\RSD\Logical\MES_machine\Types2.typ"
@@ -430,7 +430,7 @@
     Path="C:\projects\PLC\RSD\Logical\MES_machine\Variables2.var"
     LogicalPath="MES_machine.Variables2.var"
     Type="File"
-    LastWriteTime="131545338175330000"
+    LastWriteTime="131549891575570000"
     Private="true" />
   <Object
     Path="C:\projects\PLC\RSD\Logical\MES_machine\buffer_free.st"
@@ -490,7 +490,7 @@
     Path="C:\projects\PLC\RSD\Logical\MES_machine\Variables.var"
     LogicalPath="MES_machine.Variables.var"
     Type="File"
-    LastWriteTime="131545336557540000"
+    LastWriteTime="131549891575090000"
     Private="true" />
   <Object
     Path="C:\projects\PLC\RSD\Logical\Camera\IEC.prg"

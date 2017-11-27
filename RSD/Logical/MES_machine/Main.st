@@ -12,6 +12,8 @@ PROGRAM _CYCLIC
 		0:		// ST-Start
 			Part_selected := FALSE;
 			data_received := FALSE;
+			Robot_moving := FALSE;
+			Substep := 0;
 		
 		5:		// ST-Idle
 			IF Order_selected = FALSE THEN
@@ -22,28 +24,70 @@ PROGRAM _CYCLIC
 				//MES_step := 25;
 				
 			
-			ELSIF Part_selected = FALSE AND Sensor_in THEN
+				ELSIF Part_selected = FALSE AND Sensor_in THEN
+			//ELSIF Part_selected = FALSE THEN
 				MES_step := 10;
 			
 			ELSIF Current_part_post = FALSE AND (Camera_good OR Camera_bad) THEN
 				MES_step := 15;
 				
-			ELSIF Part_status_posted THEN
-				IF Camera_good AND Order_good > 0 THEN
-					MES_step := 30;
-				ELSIF Camera_bad AND Order_bad > 0 THEN
-					MES_step := 30;
-				ELSIF Camera_good AND buffer_free(ADR(variables), TRUE) THEN
-					MES_step := 40;
-				ELSIF Camera_bad AND buffer_free(ADR(variables), FALSE) THEN
-					MES_step := 40;
-				ELSE
-					MES_step := 43;
+			ELSIF Robot_moving THEN
+				IF Substep = 1 THEN
+					IF Ready = '0' THEN
+							Substep := 2;
+					END_IF;
+		
+				ELSIF Substep = 2 THEN
+					IF Ready = '1' THEN
+						IF Order_good = 0 AND Order_bad = 0 THEN
+							Tilt := TRUE;
+							MES_step := 25;			
+						ELSE
+							MES_step := 5;
+						END_IF
+						
+						Robot_moving := FALSE;
+						Substep := 0;	
+					END_IF;
+					
+				ELSIF Substep = 5 THEN
+					IF Ready = '0' THEN
+						Substep := 6;
+					END_IF;
+		
+				ELSIF Substep = 6 THEN
+					IF Ready = '1' THEN
+						MES_step := 5;
+						Robot_moving := FALSE;
+						Substep := 0;
+					END_IF
+					
 					
 				END_IF
 				
-				Part_status_posted := FALSE;
+				
+			ELSE
+				
+				
+				IF Part_status_posted THEN
+					IF Camera_good AND Order_good > 0 THEN
+						MES_step := 30;
+					ELSIF Camera_bad AND Order_bad > 0 THEN
+						MES_step := 30;
+					ELSIF Camera_good AND buffer_free(ADR(variables), TRUE) THEN
+						MES_step := 40;
+					ELSIF Camera_bad AND buffer_free(ADR(variables), FALSE) THEN
+						MES_step := 40;
+					ELSE
+						MES_step := 43;
+						
+					END_IF
+					
+					Part_status_posted := FALSE;
+				END_IF
+				
 			END_IF
+		
 		
 		
 		
@@ -189,6 +233,8 @@ PROGRAM _CYCLIC
 				Order_bad := Order_bad -1;
 			END_IF;
 			
+			Part_selected := FALSE;
+			
 			IF Order_good > 0 AND in_buffer(ADR(variables),TRUE) THEN
 				MES_step := 35;
 			ELSIF Order_bad > 0 AND in_buffer(ADR(variables), FALSE) THEN
@@ -196,24 +242,13 @@ PROGRAM _CYCLIC
 			ELSE
 				Buffer_use := '0';
 				Robot_index := '0';
-				MES_step := 31;
+				MES_step := 5;
 			END_IF;
 		
-		31:
-			IF Ready = '0' THEN
-				MES_step := 32;
-			END_IF;
+			Robot_moving := TRUE;
+			Substep := 1;
 		
-		32:
-			IF Ready = '1' THEN
-				IF Order_good = 0 AND Order_bad = 0 THEN
-					Tilt := TRUE;
-					MES_step := 25;			
-				ELSE
-					MES_step := 5;
-				END_IF
-				
-			END_IF;
+
 		
 		
 		35:		// ST- Tak Buf
@@ -233,22 +268,9 @@ PROGRAM _CYCLIC
 			String_tmp := UDINT_TO_STRING(Buffer_part_id);
 			Current_order_ids := CONCAT(Current_order_ids, String_tmp);
 			Current_order_ids := CONCAT(Current_order_ids, ' ');
-			MES_step := 36;
-		
-		36:
-			IF Ready = '0' THEN
-				MES_step := 37;
-			END_IF
-		
-		37:
-			IF Ready = '1' THEN
-				IF Order_good = 0 AND Order_bad = 0 THEN
-					Tilt := TRUE;
-					MES_step := 25;			
-				ELSE
-					MES_step := 5;
-				END_IF
-			END_IF
+			MES_step := 5;
+			Substep := 1;
+			Robot_moving := 1;
 		
 		
 			
@@ -263,17 +285,10 @@ PROGRAM _CYCLIC
 				Buffer_use := '1';
 				Robot_index := UDINT_TO_STRING(save_brick_decimal(ADR(variables), FALSE, Current_part_id));
 			END_IF
-			MES_step := 41;
+			MES_step := 5;
+			Robot_moving := TRUE;
+			Substep := 5;
 		
-		41:
-			IF Ready = '0' THEN
-				MES_step := 42;
-			END_IF;
-		
-		42:
-			IF Ready = '1' THEN
-				MES_step := 5;
-			END_IF
 				
 		
 				

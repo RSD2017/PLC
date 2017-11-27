@@ -4,8 +4,14 @@
   <TextEdit ID="C:\projects\PLC\RSD\Logical\MES_Comm\Client.st" CaretLine="117" CaretColumn="54" FirstVisibleLine="100">
     <Bookmarks />
   </TextEdit>
-  <TextEdit ID="C:\projects\PLC\RSD\Logical\MES_machine\Main.st" CaretLine="79" CaretColumn="5" FirstVisibleLine="70">
-    <Bookmarks />
+  <TextEdit ID="C:\projects\PLC\RSD\Logical\MES_machine\Main.st" CaretLine="144" CaretColumn="10" FirstVisibleLine="272">
+    <Bookmarks>
+      <Bookmark Line="30" />
+      <Bookmark Line="72" />
+      <Bookmark Line="76" />
+      <Bookmark Line="229" />
+      <Bookmark Line="280" />
+    </Bookmarks>
   </TextEdit>
   <TextEdit ID="C:\projects\PLC\RSD\Logical\MES_machine\buffer_free.st" CaretLine="13" CaretColumn="12" FirstVisibleLine="1">
     <Bookmarks />
@@ -16,10 +22,10 @@
   <TextEdit ID="C:\projects\PLC\RSD\Logical\MES_machine\save_brick.st" CaretLine="13" CaretColumn="32" FirstVisibleLine="1">
     <Bookmarks />
   </TextEdit>
-  <TextEdit ID="C:\projects\PLC\RSD\Logical\MES_machine\save_brick_decimal.st" CaretLine="23" CaretColumn="60" FirstVisibleLine="1">
+  <TextEdit ID="C:\projects\PLC\RSD\Logical\MES_machine\save_brick_decimal.st" CaretLine="5" CaretColumn="23" FirstVisibleLine="1">
     <Bookmarks />
   </TextEdit>
-  <TextEdit ID="C:\projects\PLC\RSD\Logical\MES_machine\fetch_brick_decimal.st" CaretLine="25" CaretColumn="61" FirstVisibleLine="1">
+  <TextEdit ID="C:\projects\PLC\RSD\Logical\MES_machine\fetch_brick_decimal.st" CaretLine="18" CaretColumn="10" FirstVisibleLine="1">
     <Bookmarks />
   </TextEdit>
   <TextEdit ID="C:\projects\PLC\RSD\Logical\MES_machine\fetch_brick.st" CaretLine="14" CaretColumn="16" FirstVisibleLine="1">
@@ -83,7 +89,13 @@
     <SelectedNodes />
     <ZoomIndices />
   </TreeView>
-  <TreeView ID="C:\projects\PLC\RSD\Logical\Global.var" EditColumn="6" TopRow="0" HorizontalScrollOffset="0" SortedColumn="0">
+  <TextEdit ID="C:\projects\PLC\RSD\Logical\RSI\Server.st" CaretLine="1" CaretColumn="1" FirstVisibleLine="11">
+    <Bookmarks />
+  </TextEdit>
+  <TextEdit ID="C:\projects\PLC\RSD\Logical\Servo\Cyclic.st" CaretLine="1" CaretColumn="1" FirstVisibleLine="1">
+    <Bookmarks />
+  </TextEdit>
+  <TreeView ID="C:\projects\PLC\RSD\Logical\Global.var" EditColumn="1" TopRow="0" HorizontalScrollOffset="0" SortedColumn="0">
     <Columns>
       <Column Index="0" Width="200" Position="0" />
       <Column Index="1" Width="100" Position="1" />
@@ -99,7 +111,7 @@
     </Columns>
     <ExpandedNodes />
     <SelectedNodes>
-      <SelectedNode Row="0" />
+      <SelectedNode Row="12" />
     </SelectedNodes>
     <ZoomIndices />
   </TreeView>
@@ -123,7 +135,7 @@
     </SelectedNodes>
     <ZoomIndices />
   </TreeView>
-  <TreeView ID="C:\projects\PLC\RSD\Logical\MES_machine\Variables2.var" EditColumn="0" TopRow="0" HorizontalScrollOffset="0" SortedColumn="0">
+  <TreeView ID="C:\projects\PLC\RSD\Logical\MES_machine\Variables2.var" EditColumn="1" TopRow="0" HorizontalScrollOffset="0" SortedColumn="0">
     <Columns>
       <Column Index="0" Width="200" Position="0" />
       <Column Index="1" Width="100" Position="1" />
@@ -139,7 +151,7 @@
     </Columns>
     <ExpandedNodes />
     <SelectedNodes>
-      <SelectedNode Row="0" />
+      <SelectedNode Row="8" />
     </SelectedNodes>
     <ZoomIndices />
   </TreeView>

@@ -16,3 +16,7 @@ VAR RETAIN
 	Current_order_ids : STRING[200];
 	Buffer_part_id : UDINT;
 END_VAR
+VAR
+	Robot_moving : BOOL;
+	Substep : USINT;
+END_VAR
